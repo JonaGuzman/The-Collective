@@ -1,0 +1,183 @@
+@media screen and (max-width: 375px) {
+
+    body {
+        background: #000;
+    }
+    .nav {
+        display: none;
+    }
+
+    .social-media-container {
+        display: none;
+    }
+
+    .nav-container {
+        background: #000;
+        color: #F2EC30;
+        z-index: 1;
+        position: relative;
+        width: 375px;
+        margin: 0 auto;
+        height: 85px;
+    }
+
+    #nav-account {
+        height: 0;
+        margin: -40px 4px 0px 0px;
+        float: right;
+        padding: 0 0 0px;
+    }
+
+    #nav-account span {
+        font-size: 10px;
+    }
+
+    .company-logo {
+        display: block;
+        width: 150px;
+        margin: 0 0px auto 110px;
+        padding: 0px;
+    }
+
+    .carousel-inner {
+        height: 200px;
+        /*!important;*/
+        margin: 0 0 10px 0;
+    }
+
+    .image-row {
+        width: 300px;
+    }
+
+    .image-row li {
+        list-style: none;
+        float: left;
+        height: 78px;
+        width: 60px;
+        margin: 0px 1px 1px 0;
+        padding: 0px 0px;
+    }
+
+    .image-row img {
+        list-style: none;
+        float: left;
+        height: 78px;
+        width: 60px;
+        margin: 0px 1px 1px 0;
+        padding: 0px 0px;
+    }
+
+    #culture1-overlay,
+    #culture2-overlay,
+    #culture3-overlay,
+    #culture4-overlay,
+    #gallery1-overlay,
+    #gallery2-overlay,
+    #gallery3-overlay,
+    #gallery4-overlay,
+    #trending1-overlay,
+    #trending2-overlay,
+    #trending3-overlay,
+    #trending4-overlay {
+        background: #000;
+        position: absolute;
+        z-index: 2;
+        text-align: center;
+        opacity: 0;
+        padding: 26px 10px;
+        height: 78px;
+        width: 60px;
+    }
+
+    #anchor-container {
+        padding: 0;
+        height: 100px;
+        width: 100px;
+    }
+
+    .tea {
+        padding: 0 0 0 0;
+        margin: 0 auto;
+        width: 667px;
+    }
+
+    .tea ul {
+        width: 350px;
+        padding: 2px 0 0 0;
+        margin-left: 17px;
+    }
+
+    .tea li {
+        /* remove float left set bootstrap to xs col size 2*/
+        list-style: none;
+        float: left;
+        width: 165px;
+        height: 155px;
+    }
+    .tea img {
+        width: 165px;
+        height: 150px;
+    }
+
+    #tea1-overlay,
+    #tea2-overlay {
+        background: #000;
+        width: 165px;
+        height: 150px;
+        position: absolute;
+        z-index: 2;
+        padding: 75px 46px 0 0;
+        opacity: 0;
+    }
+
+    .flower-row ul {
+        width: 664px;
+        padding: 0 0px 0px 15px;
+        margin-bottom: 0;
+    }
+
+    .flower-row li {
+        list-style: none;
+        height: 300px;
+        width: 350px;
+    }
+
+    .flower-row img {
+        list-style: none;
+        height: 294px;
+        width: 335px;
+    }
+
+    #ind-overlay,
+    #sat-overlay,
+    #hyb-overlay {
+        background: #000;
+        height: 300px;
+        width: 416px;
+        position: absolute;
+        z-index: 2;
+        text-align: center;
+        padding: 103px;
+        opacity: 0;
+    }
+
+    .footer {
+        position: relative;
+        bottom: 0;
+        width: 400px;
+        height: 200px;
+        background-color: #000;
+        color: #F2EC30;
+        margin: 2px auto;
+        text-align: center;
+        list-style: none;
+    }
+
+    #map {
+        display: none;
+    }
+
+    #footer-items {
+        display: none;
+    }
+}
