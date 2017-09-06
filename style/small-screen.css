@@ -56,6 +56,7 @@
         width: 60px;
         margin: 0px 1px 1px 0;
         padding: 0px 0px;
+        display: block;
     }
 
     .image-row img {
@@ -84,15 +85,19 @@
         z-index: 2;
         text-align: center;
         opacity: 0;
-        padding: 26px 10px;
+        padding: 10px 8px;
         height: 78px;
         width: 60px;
     }
 
     #anchor-container {
         padding: 0;
-        height: 100px;
-        width: 100px;
+        height: 70px;
+        width: 35px;
+    }
+    
+     h3 {
+        font-size: 18px;
     }
 
     .tea {
@@ -104,56 +109,66 @@
     .tea ul {
         width: 350px;
         padding: 2px 0 0 0;
-        margin-left: 17px;
+        margin-left: 2px;
+        display: inline-flex;
     }
 
     .tea li {
         /* remove float left set bootstrap to xs col size 2*/
         list-style: none;
-        float: left;
-        width: 165px;
+        width: 176px;
         height: 155px;
     }
     .tea img {
-        width: 165px;
+        width: 177px;
         height: 150px;
     }
 
     #tea1-overlay,
     #tea2-overlay {
         background: #000;
-        width: 165px;
+        width: 177px;
         height: 150px;
         position: absolute;
         z-index: 2;
-        padding: 75px 46px 0 0;
         opacity: 0;
+        padding: 15px;
+    }
+
+    .anchor-items {}
+    
+    .anchor-items li,
+    .anchor-items ul {
+        list-style: none;
+        height: 15px;
+        width: auto;
+        display: block;
     }
 
     .flower-row ul {
         width: 664px;
-        padding: 0 0px 0px 15px;
+        padding: 0 0px 0px 2px;
         margin-bottom: 0;
     }
 
     .flower-row li {
         list-style: none;
-        height: 300px;
+        height: 270px;
         width: 350px;
     }
 
     .flower-row img {
         list-style: none;
-        height: 294px;
-        width: 335px;
+        height: 265px;
+        width: 361px;
     }
 
     #ind-overlay,
     #sat-overlay,
     #hyb-overlay {
         background: #000;
-        height: 300px;
-        width: 416px;
+        height: 265px;
+        width: 361px;
         position: absolute;
         z-index: 2;
         text-align: center;
@@ -164,7 +179,7 @@
     .footer {
         position: relative;
         bottom: 0;
-        width: 400px;
+        width: 200px;
         height: 200px;
         background-color: #000;
         color: #F2EC30;
@@ -178,6 +193,9 @@
     }
 
     #footer-items {
-        display: none;
+        display: grid;
+        width: 260px;
+        margin: 0 0 5px 31px;
+        padding: 0 80px 129px 0px;
     }
 }
