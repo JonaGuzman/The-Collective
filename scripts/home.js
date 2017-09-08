@@ -5,7 +5,7 @@ $(document).ready(function () {
     });
 });
 
-
+// Fades in Overlay
 function overlayDisplay(name) {
     let cntrName = "#" + name + "-container";
     let ovrlName = "#" + name + "-overlay";
@@ -23,7 +23,8 @@ function overlayDisplay(name) {
 
 $(document).ready(function () {
 
-    let names = ["culture1", "culture2", "culture3", "culture4", "gallery1", "gallery2", "gallery3", "gallery4", "trending1", "trending2", "trending3", "trending4", "tea1", "tea2", "ind", "hyb", "sat"];
+    //"culture1", "culture2", "culture3",
+    let names = ["tea1", "tea2", "flower1", "flower2", "flower3"];
 
     names.forEach(function (item, index, array) {
         console.log("setting functionality on " + item);

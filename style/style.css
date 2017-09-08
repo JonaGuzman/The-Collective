@@ -7,11 +7,11 @@
     ipad pro: 1024 x 1366
 
     bootstrap grid options: 
-Extra small <576px
-Small ≥576px	
-Medium ≥768px
-Large ≥992px
-Extra large ≥1200px
+    Extra small <576px
+    Small ≥576px	
+    Medium ≥768px
+    Large ≥992px
+    Extra large ≥1200px
 */
 
 html,
@@ -43,72 +43,51 @@ body {
     opacity: .3;
 }
 
-.image-row {
-    padding: 0 0 0 0;
-    margin: 1px 0px 0 -1px;
-    width: 1300px;
-}
-
-
-/*
-@media (max-width: 1265px) {
-	.image-row {
-		width: 1000px;
-	}
-}
-*/
-.image-row ul {
-    width: 1365px;
-    padding: 0px 0 0px 2px;
-    margin: 0px 0px 0 3px;
-}
-
-.image-row li {
-    list-style: none;
-    height: 196px;
-    width: 210px;
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
-}
-
-.image-row img {
-    list-style: none;
-    height: 193px;
-    width: 206px;
-}
-
-.image-row img:hover {
-    color: #F2EC30;
-    background: gray;
-}
-
 .tea {
     padding: 0 0 0 0;
     margin: 0 auto;
-    width: 1300px;
+    width: 1245px;
+    text-align: center;
 }
 
 .tea ul {
-    width: 1365px;
-    padding: 0 0 0px 3px;
-    margin-bottom: 0px;
+    padding: 0 0px 0 0;
+    margin: 40px 20px;
+    width: 1245px;
 }
 
 
 .tea li{
     list-style: none;
-    height: 302px;
-    width: 625px;
-    margin: 2px;
+    height: 580px;
+    width: 398px;
+    margin: 0px;
     padding: 0 0 0 0px;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .tea img {
     list-style: none;
-    height: 300px;
-    width: 625px;
+    height: 528px;
+    width: 366px;
     margin: 0px auto;
+}
+
+#tea1-overlay,
+#tea2-overlay {
+    background: #000;
+    height: 528px;
+    width: 366px;
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    margin: 0 0 0 15px;
+    padding: 155px 0;
+}
+
+#tea-text {
+    text-align: center;
+    padding: 66px 8px;
 }
 
 .flower-row {
@@ -136,6 +115,19 @@ body {
     width: 416px;
 }
 
+#flower1-overlay,
+#flower3-overlay,
+#flower2-overlay {
+    background: #000;
+    height: 300px;
+    width: 416px;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    padding: 103px;
+    opacity: 0;
+}
+
 .anchor-items li,
 .anchor-items ul {
     list-style: none;
@@ -151,36 +143,28 @@ body {
     margin-left: -10px;
 }
 
-
-/*
-#allheader-category-icon {
-    font-size: 20px;
-    text-align: left;
-}
-
-#allheader-text {
-    text-align: center;
-}
-*/
-
 #anchor-container {
     padding: 60px 0;
     margin: 0;
     height: 96px;
 }
 
+#tea1-container,
+#tea2-container {}
+
+#flower1-container,
+#flower3-container,
+#flower2-container {}
+
+/* culture may not have overlay functionality
+#culture1-container,
+#culture2-container,
+#culture3-container {}
+
 #culture1-overlay,
 #culture2-overlay,
-#culture3-overlay,
-#culture4-overlay,
-#gallery1-overlay,
-#gallery2-overlay,
-#gallery3-overlay,
-#gallery4-overlay,
-#trending1-overlay,
-#trending2-overlay,
-#trending3-overlay,
-#trending4-overlay {
+#culture3-overlay
+{
     background: #000;
     position: absolute;
     z-index: 2;
@@ -190,47 +174,4 @@ body {
     height: 193px;
     width: 206px;
 }
-
-#tea1-overlay,
-#tea2-overlay {
-    background: #000;
-    height: 300px;
-    width: 625px;
-    position: absolute;
-    z-index: 2;
-    padding: 75px 46px 0 0;
-    opacity: 0;
-}
-
-#ind-overlay,
-#sat-overlay,
-#hyb-overlay {
-    background: #000;
-    height: 300px;
-    width: 416px;
-    position: absolute;
-    z-index: 2;
-    text-align: center;
-    padding: 103px;
-    opacity: 0;
-}
-
-#culture1-container,
-#culture2-container,
-#culture3-container,
-#culture4-container,
-#gallery1-container,
-#gallery2-container,
-#gallery3-container,
-#gallery4-container,
-#trending1-container,
-#trending2-container,
-#trending3-container,
-#trending4-container {}
-
-#tea1-container,
-#tea2-container {}
-
-#ind-container,
-#sat-container,
-#hyb-container {}
+*/

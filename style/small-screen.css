@@ -45,41 +45,9 @@
         margin: 0 0 10px 0;
     }
 
-    .image-row {
-        width: 300px;
-    }
-
-    .image-row li {
-        list-style: none;
-        float: left;
-        height: 78px;
-        width: 60px;
-        margin: 0px 1px 1px 0;
-        padding: 0px 0px;
-        display: block;
-    }
-
-    .image-row img {
-        list-style: none;
-        float: left;
-        height: 78px;
-        width: 60px;
-        margin: 0px 1px 1px 0;
-        padding: 0px 0px;
-    }
-
     #culture1-overlay,
     #culture2-overlay,
-    #culture3-overlay,
-    #culture4-overlay,
-    #gallery1-overlay,
-    #gallery2-overlay,
-    #gallery3-overlay,
-    #gallery4-overlay,
-    #trending1-overlay,
-    #trending2-overlay,
-    #trending3-overlay,
-    #trending4-overlay {
+    #culture3-overlay {
         background: #000;
         position: absolute;
         z-index: 2;
@@ -163,9 +131,9 @@
         width: 361px;
     }
 
-    #ind-overlay,
-    #sat-overlay,
-    #hyb-overlay {
+    #flower1-overlay,
+    #flower3-overlay,
+    #flower2-overlay {
         background: #000;
         height: 265px;
         width: 361px;
