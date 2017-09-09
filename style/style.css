@@ -93,7 +93,7 @@ body {
 .flower-row {
     padding: 0 0 0 0;
     margin: 0 auto;
-    width: 1300px;
+    width: 1184px;
 }
 
 .flower-row ul {
@@ -104,23 +104,23 @@ body {
 
 .flower-row li {
     list-style: none;
-    height: 300px;
-    width: 420px;
+    height: 580px;
+    width: 407px;
     padding: 0 0 0 4px;
 }
 
 .flower-row img {
     list-style: none;
-    height: 298px;
-    width: 416px;
+    height: 528px;
+    width: 366px;
 }
 
 #flower1-overlay,
 #flower3-overlay,
 #flower2-overlay {
     background: #000;
-    height: 300px;
-    width: 416px;
+    height: 528px;
+    width: 366px;
     position: absolute;
     z-index: 2;
     text-align: center;
