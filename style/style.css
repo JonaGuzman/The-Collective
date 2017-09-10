@@ -43,6 +43,13 @@ body {
     opacity: .3;
 }
 
+
+#tea-header,
+#tea-header li {
+    height: 1px;
+    width: 1243px;
+}
+
 .tea {
     padding: 0 0 0 0;
     margin: 0 auto;
@@ -87,8 +94,80 @@ body {
 
 #tea-text {
     text-align: center;
-    padding: 66px 8px;
+    padding: 20px 8px;
 }
+
+#culture-header
+{
+    height: 1px;
+    width: 460px;
+    text-align: center;
+    padding-left: 34px;
+}
+
+,
+#culture-header li
+{
+    height: 1px;
+    width: 430px;
+}
+
+.culture {
+    padding: 0 0 0 0;
+    margin: 0 auto;
+    width: 1189px;
+    text-align: center;
+}
+
+.culture ul {
+    padding: 0 0px 0 0;
+    margin: 0px 20px;
+    width: 1289px;
+}
+
+
+.culture li{
+    list-style: none;
+    height: 530px;
+    width: 347px;
+    margin: 0px 0;
+    padding: 0 0 0 39px;
+    font-size: 16px;
+}
+
+.culture img {
+    list-style: none;
+    height: 510px;
+    width: 350px;
+    margin: 0px auto;
+}
+
+#culture1-overlay,
+#culture2-overlay {
+    background: #000;
+    height: 528px;
+    width: 366px;
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    margin: 0 0 0 15px;
+    padding: 155px 0;
+}
+
+#culture-text {
+    text-align: center;
+    padding: 50px 0px;
+    width: 310px;
+    margin: 0 0px 0 0px;
+}
+
+#flower-header,
+#flower-header li {
+    height: 55px;
+    width: 1175px;
+    text-align: center;
+}
+
 
 .flower-row {
     padding: 0 0 0 0;
@@ -124,7 +203,7 @@ body {
     position: absolute;
     z-index: 2;
     text-align: center;
-    padding: 103px;
+    padding: 245px 0;
     opacity: 0;
 }
 
@@ -156,7 +235,6 @@ body {
 #flower3-container,
 #flower2-container {}
 
-/* culture may not have overlay functionality
 #culture1-container,
 #culture2-container,
 #culture3-container {}
@@ -174,4 +252,3 @@ body {
     height: 193px;
     width: 206px;
 }
-*/
