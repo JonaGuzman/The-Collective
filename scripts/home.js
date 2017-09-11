@@ -12,7 +12,7 @@ function overlayDisplay(name) {
 
     $(cntrName).hover(function () {
         $(ovrlName).animate({
-            opacity: .9
+            opacity: .97
         }).fadeIn('fast');
     }, function () {
         $(ovrlName).animate({

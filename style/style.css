@@ -18,6 +18,12 @@ html,
 body {
     font-family: "helvetica neue", sans-serif;
     overflow-x: hidden;
+    color: #B97F6D;
+    background-color: #EDEDEE;
+}
+
+a {
+    color: #d0b0a6;
 }
 
 .carousel {
@@ -82,7 +88,7 @@ body {
 
 #tea1-overlay,
 #tea2-overlay {
-    background: #000;
+    background: #123132;
     height: 528px;
     width: 366px;
     position: absolute;
@@ -90,6 +96,7 @@ body {
     opacity: 0;
     margin: 0 0 0 15px;
     padding: 155px 0;
+    color: #ede1de;
 }
 
 #tea-text {
@@ -102,13 +109,12 @@ body {
     height: 1px;
     width: 460px;
     text-align: center;
-    padding-left: 34px;
 }
 
 #culture-header li
 {
     height: 1px;
-    width: 430px;
+    width: 400px;
 }
 
 .culture {
@@ -143,7 +149,7 @@ body {
 
 #culture1-overlay,
 #culture2-overlay {
-    background: #000;
+    background: #123132;
     height: 528px;
     width: 366px;
     position: absolute;
@@ -196,7 +202,7 @@ body {
 #flower1-overlay,
 #flower3-overlay,
 #flower2-overlay {
-    background: #000;
+    background: #123132;
     height: 528px;
     width: 366px;
     position: absolute;
@@ -242,7 +248,7 @@ body {
 #culture2-overlay,
 #culture3-overlay
 {
-    background: #000;
+    background: #123132;
     position: absolute;
     z-index: 2;
     text-align: center;
