@@ -14,9 +14,26 @@
     Extra large ≥1200px
 */
 
+/* latin-ext */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Karla'), local('Karla-Regular'), url(https://fonts.gstatic.com/s/karla/v5/S1bXQ0LrY7AzefpgNae9sYDGDUGfDkXyfkzVDelzfFk.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Karla'), local('Karla-Regular'), url(https://fonts.gstatic.com/s/karla/v5/JaMH4jmmzP070-OYo03anaCWcynf_cDxXwCLxiixG1c.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
 html,
 body {
-    font-family: "helvetica neue", sans-serif;
     overflow-x: hidden;
     color: #B97F6D;
     background-color: #EDEDEE;
@@ -114,13 +131,14 @@ a {
 #culture-header li
 {
     height: 1px;
-    width: 400px;
+    text-align: left;
+    margin-left: 60px;
 }
 
 .culture {
     padding: 0 0 0 0;
     margin: 0 auto;
-    width: 1189px;
+    width: 1242px;
     text-align: center;
 }
 
@@ -134,7 +152,7 @@ a {
 .culture li{
     list-style: none;
     height: 530px;
-    width: 347px;
+    width: 361px;
     margin: 0px 0;
     padding: 0 0 0 39px;
     font-size: 16px;
@@ -143,7 +161,7 @@ a {
 .culture img {
     list-style: none;
     height: 510px;
-    width: 350px;
+    width: 364px;
     margin: 0px auto;
 }
 
@@ -162,8 +180,8 @@ a {
 #culture-text {
     text-align: center;
     padding: 50px 0px;
-    width: 310px;
-    margin: 0 0px 0 0px;
+    width: 285px;
+    margin: 0 0 0 0px;
 }
 
 #flower-header,
