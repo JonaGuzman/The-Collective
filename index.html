@@ -24,9 +24,24 @@
 
         <div class="nav-container">
 
-            <div class="row ">
+            <div class="row">
 
                 <div class="nav col-md-2">
+
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a class="nav-items" href="#">Culture</a>
+                        <a class="nav-items" href="#">Flower</a>
+                        <a class="nav-items" href="#">Hi-Tea</a>
+                        <a class="nav-items" href="#">Trending</a>
+                        <a class="nav-items" href="#">Gallery</a>
+                    </div>
+
+                    <span style="font-size:30px;cursor:pointer;margin-left:17px" onclick="openNav()">&#9776;</span>
+                </div>
+
+                <!-- Hamburger for Devices with max-width: 375px -->
+                <div class="nav-small col-md-2">
 
                     <div id="mySidenav" class="sidenav">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -113,7 +128,7 @@
                         </div>
 
                         <ul>
-                            <li class="col-md-2">
+                            <li class="col-md-2 col-xs-2">
                                 <div id="tea1-container">
                                     <div id="tea1-overlay">
                                         <div class="anchor-items">
@@ -139,22 +154,22 @@
                                 </div>
                             </li>
 
-                            <div class="col-md-1">
-                                <li>
-                                    <div id="tea-text">
+                            <div class="col-md-1 col-xs-1">
+                                <div id="tea-text">
+                                    <li>
                                         <p>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut nisl interdum, blandit augue et, efficitur sem. Curabitur ultrices rhoncus iaculis. Integer condimentum turpis aliquam interdum interdum. Nam venenatis erat quis nulla aliquet tempus quis ut neque. Pellentesque sed sem mi. Donec et odio sit amet orci pellentesque pharetra id sed sapien. Quisque luctus hendrerit tincidunt. Suspendisse vel elementum lorem.
                                         </p>
                                         <p>
                                             Vivamus lacus nisi, gravida sed magna non, rhoncus condimentum leo. Cras eleifend, magna sed imperdiet vestibulum, orci lectus vulputate velit, et venenatis neque magna at nulla. Nullam id dui eu neque lobortis imperdiet non quis diam. Quisque a dui purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In eu semper diam. Nullam malesuada accumsan vulputate. Duis ac arcu lectus. Pellentesque nec velit posuere, semper neque eget, sollicitudin nisl. Mauris maximus nisl id quam lacinia, a efficitur est consectetur. Donec convallis sapien quis tristique tempor.
                                         </p>
-                                    </div>
-                                </li>
+                                    </li>
+                                </div>
                             </div>
 
-                            <div class="col-md-3"></div>
+                            <div class="col-md-3 col-xs-1"></div>
 
-                            <li class="col-md-2">
+                            <li class="col-md-2 col-xs-2">
                                 <div id="tea2-container">
                                     <div id="tea2-overlay">
                                         <div class="anchor-items">
@@ -198,19 +213,20 @@
                         </div>
 
                         <ul>
-                            <div class="col-md-4">
-                                <li>
-                                    <div id="culture-text">
+                            <div class="col-md-4 col-xs-3">
+                                <div id="culture-text">
+                                    <li>
                                         <p>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut nisl interdum, blandit augue et, efficitur sem. Curabitur ultrices rhoncus iaculis. Integer condimentum turpis aliquam interdum interdum. Nam venenatis erat quis nulla aliquet tempus quis ut neque. Pellentesque sed sem mi. Donec et odio sit amet orci pellentesque pharetra id sed sapien. Quisque luctus hendrerit tincidunt.
-                                            <p>
-                                                Vivamus lacus nisi, gravida sed magna non, rhoncus condimentum leo. Cras eleifend, magna sed imperdiet vestibulum, orci lectus vulputate velit, et venenatis neque magna at nulla. Nullam id dui eu neque lobortis imperdiet non quis diam. Quisque a dui purus.
-                                            </p>
-                                    </div>
-                                </li>
+                                        </p>
+                                        <p>
+                                            Vivamus lacus nisi, gravida sed magna non, rhoncus condimentum leo. Cras eleifend, magna sed imperdiet vestibulum, orci lectus vulputate velit, et venenatis neque magna at nulla. Nullam id dui eu neque lobortis imperdiet non quis diam. Quisque a dui purus.
+                                        </p>
+                                    </li>
+                                </div>
                             </div>
 
-                            <li class="col-md-2">
+                            <li class="col-md-2 col-xs-3">
                                 <div id="culture1-container">
                                     <div>
                                         <img src="images/home/culture1.jpeg" />
@@ -218,7 +234,7 @@
                                 </div>
                             </li>
 
-                            <li class="col-md-2">
+                            <li class="col-md-2 col-xs-3">
                                 <div id="culture2-container">
                                     <div>
                                         <img src="images/home/culture2.jpeg" />
@@ -244,7 +260,7 @@
                         </div>
 
                         <ul>
-                            <li class="col-md-4">
+                            <li class="col-md-4 col-xs-3">
                                 <div id="flower1-container">
                                     <div id="flower1-overlay">
                                         <a href="#">
@@ -256,7 +272,7 @@
                                 </div>
                             </li>
 
-                            <li class="col-md-4">
+                            <li class="col-md-4 col-xs-3">
                                 <div id="flower2-container">
                                     <div id="flower2-overlay">
                                         <a href="#">
@@ -268,7 +284,7 @@
                                 </div>
                             </li>
 
-                            <li class="col-md-4">
+                            <li class="col-md-4 col-xs-3">
                                 <div id="flower3-container">
                                     <div id="flower3-overlay">
                                         <a href="#">
@@ -340,12 +356,7 @@
 
             <div class="row">
                 <li class="col-md-1"></li>
-                <li class="col-md-8">
-                    <div class="container-fluid">
-                        <!--- <div id="map"></div>
-                        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBt-Vm99mpjLqXHnuDIX3EiQI_URst0NW8&callback=initMap"></script> --->
-                    </div>
-                </li>
+                <li class="col-md-8"></li>
             </div>
 
             <div class="row"></div>

@@ -1,24 +1,33 @@
 @media screen and (max-width: 375px) {
 
     body {
-        background: #000;
+        color: #B97F6D;
+        background-color: #EDEDEE;
     }
+    
     .nav {
         display: none;
     }
 
+    .nav-small {
+        display: block;
+        text-align: left;
+        height: 12px;
+        line-height: 60px;    
+    }
+    
     .social-media-container {
         display: none;
     }
 
     .nav-container {
-        background: #000;
-        color: #F2EC30;
+        background: #123132;
+        color: #B97F6D;
         z-index: 1;
         position: relative;
         width: 375px;
         margin: 0 auto;
-        height: 85px;
+        height: 65px;
     }
 
     #nav-account {
@@ -45,6 +54,42 @@
         margin: 0 0 10px 0;
     }
 
+    .culture {
+        padding: 0 0 0 0;
+        margin: 0px auto;
+        width: 375px;
+        text-align: center;
+    }
+
+    #culture-header {
+        height: 50px;
+        width: 330px;
+        text-align: center;
+    }
+
+    #culture-header li {
+        height: 1px;
+        text-align: center;
+        margin-left: 0;
+        padding-left: 23px;
+        width: 345px;
+    }
+
+    .culture ul {
+        padding: 0 0px 0 0;
+        margin: 0px auto;
+        width: 300px;
+    }
+
+    .culture li {
+        list-style: none;
+        height: 228px;
+        text-align: left;
+        margin: 0px 0;
+        padding: 0px 0 0 0px;
+        font-size: 10px;
+    }
+
     #culture1-overlay,
     #culture2-overlay,
     #culture3-overlay {
@@ -63,48 +108,76 @@
         height: 70px;
         width: 35px;
     }
-    
-     h3 {
-        font-size: 18px;
+
+    #culture-text {
+        text-align: center;
+        padding: 40px 0px;
+        font-size: 10px;
+        width: 345px;
+        display: none;
+    }
+
+    .culture img {
+        list-style: none;
+        height: 207px;
+        width: 300px;
+        margin: 0px auto;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    #tea-header,
+    #tea-header li {
+        height: 50px;
+        width: 373px;
+        padding-left: 0;
     }
 
     .tea {
         padding: 0 0 0 0;
         margin: 0 auto;
-        width: 667px;
+        width: 630px;
     }
 
     .tea ul {
         width: 350px;
-        padding: 2px 0 0 0;
-        margin-left: 2px;
-        display: inline-flex;
+        padding: 0px 0 0 0;
+        display: block;
+        margin: 0 0;
     }
 
     .tea li {
-        /* remove float left set bootstrap to xs col size 2*/
         list-style: none;
-        width: 176px;
-        height: 155px;
+        width: 372px;
+        height: 350px;
     }
+
     .tea img {
-        width: 177px;
-        height: 150px;
+        width: 300px;
+        height: 325px;
     }
 
     #tea1-overlay,
     #tea2-overlay {
-        background: #000;
+        background: #123132;
         width: 177px;
         height: 150px;
         position: absolute;
         z-index: 2;
         opacity: 0;
-        padding: 15px;
+    }
+
+    #tea-text {
+        text-align: center;
+        padding: 10px 8px;
+        font-size: 8px;
+        display: none;
     }
 
     .anchor-items {}
-    
+
     .anchor-items li,
     .anchor-items ul {
         list-style: none;
@@ -113,43 +186,54 @@
         display: block;
     }
 
+    .flower-row {
+        padding: 0 0 0 0;
+        margin: 0 auto;
+        width: 300px;
+    }
+
+    #flower-header,
+    #flower-header li {
+        height: 60px;
+        width: 300px;
+    }
+
     .flower-row ul {
-        width: 664px;
-        padding: 0 0px 0px 2px;
-        margin-bottom: 0;
+        width: 400px;
+        padding: 0 0;
     }
 
     .flower-row li {
         list-style: none;
-        height: 270px;
-        width: 350px;
+        height: 272px;
+        width: 325px;
+        padding: 0 0 0;
     }
 
     .flower-row img {
         list-style: none;
-        height: 265px;
-        width: 361px;
+        height: 250px;
+        width: 300px;
     }
 
     #flower1-overlay,
     #flower3-overlay,
     #flower2-overlay {
-        background: #000;
-        height: 265px;
-        width: 361px;
+        background: #123132;
+        height: 103px;
+        width: 125px;
         position: absolute;
         z-index: 2;
         text-align: center;
-        padding: 103px;
         opacity: 0;
     }
 
     .footer {
         position: relative;
         bottom: 0;
-        width: 200px;
-        height: 200px;
-        background-color: #000;
+        width: 500px;
+        height: 440px;
+        background-color: #123132;
         color: #F2EC30;
         margin: 2px auto;
         text-align: center;
@@ -162,8 +246,8 @@
 
     #footer-items {
         display: grid;
-        width: 260px;
-        margin: 0 0 5px 31px;
-        padding: 0 80px 129px 0px;
+        width: 405px;
+        margin: 0 0;
+        padding: 0 0;
     }
 }

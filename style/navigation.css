@@ -72,6 +72,11 @@
     text-align: left;
     height: 70px;
     line-height: 70px;
+    display: block;
+}
+
+.nav-small {
+    display: none;
 }
 
 .company-logo {
@@ -114,6 +119,12 @@
     background: #B97F6D;
     color: #EDEDEE;
 }
+
+/*
+    HTML Implementation
+    <div id="map"></div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBt-Vm99mpjLqXHnuDIX3EiQI_URst0NW8&callback=initMap"></script> 
+*/
 
 #map {
     height: 250px;
