@@ -12,7 +12,8 @@
 }
 
 #nav-account {
-    margin: 6px 0 0 128px;
+    margin: 4px 0 0 84px;
+    width: 180px;
 }
 
 .sidenav {
@@ -87,8 +88,8 @@
 }
 
 .social-media-container {
-    padding: 0px 1px 0 5px;
-    margin: 1px -1px 0px 101px;
+    width: 200px;
+    margin: 0 0 0 100px;
 }
 
 .fa {
