@@ -23,31 +23,40 @@ function overlayDisplay(name) {
 
 $(document).ready(function () {
 
-    //"culture1", "culture2", "culture3",
     let names = ["tea1", "tea2", "flower1", "flower2", "flower3"];
 
     names.forEach(function (item, index, array) {
-        console.log("setting functionality on " + item);
         overlayDisplay(item);
     })
 });
 
 function openNav() {
+    var sidenav;
+    var wdth;
+    
+    if(Modernizr.mq('only screen and (device-width: 375px) and (device-height: 667px) and (orientation : portrait)')) {
+        sidenav = 'mySidenav-small';
+        wdth = '100%';
+    } 
+    else {
+        sidenav = 'mySidenav';
+        wdth = '375px';
+    }
+    
     $(".nav-items").animate({ opacity: 1}).fadeIn("fast");
-    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById(sidenav).style.width = wdth;
 }
 
 function closeNav() {
+    var sidenav;
+    
+    if(Modernizr.mq('only screen and (device-width: 375px) and (device-height: 667px) and (orientation : portrait)')) {
+        sidenav = 'mySidenav-small';
+    } 
+    else {
+        sidenav = 'mySidenav';
+    }
+    
     $(".nav-items").css("opacity", "0");
-    document.getElementById("mySidenav").style.width = "0";
-}
-
-function openNavSmall() {
-    $(".nav-items").animate({ opacity: 1}).fadeIn("fast");
-    document.getElementById("mySidenav-small").style.width = "375px";
-}
-
-function closeNavSmall() {
-    $(".nav-items").css("opacity", "0");
-    document.getElementById("mySidenav-small").style.width = "0";
+    document.getElementById(sidenav).style.width = "0";
 }

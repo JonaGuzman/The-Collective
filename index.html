@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./style/small-screen.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="scripts/modernizr-custom.js" type="text/javascript"></script>
     <script src="scripts/home.js"></script>
     <script src="scripts/googlemap.js"></script>
 </head>
@@ -27,8 +28,8 @@
             <div class="row">
 
                 <div class="nav col-md-2">
-
-                    <div id="mySidenav" class="sidenav">
+                    <!--TODO: add function that will return an id dependeding on screen size-->
+                    <div id="mySidenav" class="sidenav"> 
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                         <a class="nav-items" href="index.html">Home</a>
                         <a class="nav-items" href="#">Culture</a>
@@ -41,11 +42,11 @@
                     <span style="font-size:30px;cursor:pointer;margin-left:17px" onclick="openNav()">&#9776;</span>
                 </div>
 
-                <!-- Hamburger for Devices with max-width: 375px -->
+                <!-- Hamburger for Devices with max-width: 375px--> 
                 <div class="nav-small col-md-2">
 
                     <div id="mySidenav-small" class="sidenav">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNavSmall()">&times;</a>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                         <a class="nav-items" href="index.html">Home</a>
                         <a class="nav-items" href="#">Culture</a>
                         <a class="nav-items" href="#">Flower</a>
@@ -54,7 +55,7 @@
                         <a class="nav-items" href="#">Gallery</a>
                     </div>
 
-                    <span style="font-size:30px;cursor:pointer;margin-left:17px" onclick="openNavSmall()">&#9776;</span>
+                    <span style="font-size:30px;cursor:pointer;margin-left:17px" onclick="openNav()">&#9776;</span>
                 </div>
 
                 <div class="col-md-8">
