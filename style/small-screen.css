@@ -13,17 +13,27 @@
         display: block;
         text-align: left;
         height: 12px;
-        line-height: 60px;    
+        line-height: 60px;
+        z-index: 10;
     }
     
     .social-media-container {
         display: none;
     }
+    
+    .sidenav a {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    
+    .sidenav {
+        text-align: center;
+    }
 
     .nav-container {
         background: #123132;
         color: #B97F6D;
-        z-index: 1;
+        z-index: 16;
         position: relative;
         width: 100%;
         margin: 0 auto;
@@ -272,7 +282,8 @@
         display: block;
         text-align: left;
         height: 12px;
-        line-height: 60px;    
+        line-height: 60px;
+        z-index: 10;
     }
     
     .social-media-container {
@@ -282,7 +293,7 @@
     .nav-container {
         background: #123132;
         color: #B97F6D;
-        z-index: 1;
+        z-index: 16;
         position: relative;
         width: 100%;
         margin: 0 auto;
@@ -367,6 +378,7 @@
         height: 78px;
         width: 60px;
         display: none;
+        visibility: hidden;
     }
 
     #anchor-container {
@@ -434,6 +446,7 @@
         z-index: 2;
         opacity: 0;
         display: none;
+        visibility: hidden;
     }
 
     #tea-text {
@@ -494,6 +507,7 @@
         text-align: center;
         opacity: 0;
         display: none;
+        visibility: hidden;
     }
 
     .footer {

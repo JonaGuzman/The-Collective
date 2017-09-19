@@ -41,3 +41,13 @@ function closeNav() {
     $(".nav-items").css("opacity", "0");
     document.getElementById("mySidenav").style.width = "0";
 }
+
+function openNavSmall() {
+    $(".nav-items").animate({ opacity: 1}).fadeIn("fast");
+    document.getElementById("mySidenav-small").style.width = "375px";
+}
+
+function closeNavSmall() {
+    $(".nav-items").css("opacity", "0");
+    document.getElementById("mySidenav-small").style.width = "0";
+}

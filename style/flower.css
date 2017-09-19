@@ -1,0 +1,32 @@
+html,
+body {
+    overflow-x: hidden;
+    color: #B97F6D;
+    background-color: #EDEDEE;
+}
+
+a {
+    color: #d0b0a6;
+}
+
+.flower-items {
+    width: 1300px;
+}
+
+.flower-items ul {
+    list-style: none;
+    display: inline-flex;
+    width: 1300px;
+    margin: 30px 30px 40px 30px;
+}
+
+.flower-items li {
+    list-style: none;
+    width: 400px;
+    height: 340px;
+}
+
+.flower-items img {
+    width: 350px;
+    height: 350px;
+}
