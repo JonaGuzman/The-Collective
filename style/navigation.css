@@ -94,6 +94,12 @@
     display: block;
 }
 
+.nav span {
+    font-size:30px;
+    cursor:pointer;
+    margin-left:17px
+}
+
 .nav-small {
     display: none;
 }

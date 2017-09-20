@@ -18,6 +18,11 @@
  only screen and (max-width: 412px) and (device-height: 732px)
  
 */
+.nav-small span {
+    font-size:30px;
+    cursor:pointer;
+    margin-left:17px
+}
 
 @media only screen and (device-width: 375px) and (device-height: 667px) and (orientation : portrait)  {
     
@@ -80,9 +85,12 @@
     }
 
     .carousel-inner {
-        height: 200px;
-        /*!important;*/
+        height: 530px;
         margin: 0 0 10px 0;
+    }
+    
+    #myCarousel img {
+        height: 530px;
     }
 
     .culture {
