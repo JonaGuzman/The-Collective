@@ -1,5 +1,3 @@
-
-
 /*
   TODO: Refactor media queries to remove redundant code
   ---iphone 6---
@@ -18,20 +16,24 @@
  only screen and (max-width: 412px) and (device-height: 732px)
  
 */
+
 .nav-small span {
-    font-size:30px;
-    cursor:pointer;
-    margin-left:17px
+    font-size: 30px;
+    cursor: pointer;
+    padding-left: 5px;
 }
 
-    
 body {
     color: #B97F6D;
     background-color: #EDEDEE;
 }
 
-@media only screen and (device-width: 375px) and (device-height: 667px) and (orientation : portrait)  {
-    
+@media only screen and (device-width: 375px) and (device-height: 667px) and (orientation: portrait) {
+
+    .nav-container ul {
+        padding: 0;
+    }
+
     .nav {
         display: none;
     }
@@ -43,16 +45,16 @@ body {
         line-height: 60px;
         z-index: 16;
     }
-    
+
     .social-media-container {
         display: none;
     }
-    
+
     .sidenav a {
         font-size: 30px;
         margin-bottom: 0;
     }
-    
+
     .sidenav {
         text-align: center;
     }
@@ -88,8 +90,9 @@ body {
     .carousel-inner {
         height: 530px;
         margin: 0 0 10px 0;
+        width: 400px;
     }
-    
+
     #myCarousel img {
         height: 530px;
     }
@@ -296,9 +299,11 @@ body {
 }
 
 
+
 /* Landscape */
-@media only screen and (device-height: 375px) and (device-width: 667px) and (orientation : landscape)  {
-    
+
+@media only screen and (device-height: 375px) and (device-width: 667px) and (orientation: landscape) {
+
     .nav {
         display: none;
     }
@@ -310,7 +315,7 @@ body {
         line-height: 60px;
         z-index: 10;
     }
-    
+
     .social-media-container {
         display: none;
     }
@@ -356,10 +361,10 @@ body {
         text-align: center;
     }
 
-    .landscape { 
+    .landscape {
         display: none;
     }
-    
+
     #culture-header {
         height: 50px;
         width: 330px;
@@ -445,10 +450,10 @@ body {
     }
 
     .tea ul {
-    width: 350px;
-    padding: 0px 0 0 0;
-    display: flex;
-    margin: 0 0;
+        width: 350px;
+        padding: 0px 0 0 0;
+        display: flex;
+        margin: 0 0;
     }
 
     .tea li {
@@ -561,7 +566,7 @@ body {
 
 
 @media only screen and (device-width: 414px) and (device-height: 736px) {
-        
+
     .nav {
         display: none;
     }
@@ -570,9 +575,9 @@ body {
         display: block;
         text-align: left;
         height: 12px;
-        line-height: 60px;    
+        line-height: 60px;
     }
-    
+
     .social-media-container {
         display: none;
     }
@@ -809,11 +814,13 @@ body {
         width: 405px;
         margin: 0 0;
         padding: 0 0;
-    }  
+    }
 }
 
+
 /* Landscape */
-@media only screen and (device-width: 736px) and (device-height: 414px) and (orientation : landscape)  {
+
+@media only screen and (device-width: 736px) and (device-height: 414px) and (orientation: landscape) {
 
     .nav {
         display: none;
@@ -823,9 +830,9 @@ body {
         display: block;
         text-align: left;
         height: 12px;
-        line-height: 60px;    
+        line-height: 60px;
     }
-    
+
     .social-media-container {
         display: none;
     }
@@ -871,10 +878,10 @@ body {
         text-align: center;
     }
 
-    .landscape { 
+    .landscape {
         display: none;
     }
-    
+
     #culture-header {
         height: 50px;
         width: 330px;
@@ -959,10 +966,10 @@ body {
     }
 
     .tea ul {
-    width: 350px;
-    padding: 0px 0 0 0;
-    display: flex;
-    margin: 0 0;
+        width: 350px;
+        padding: 0px 0 0 0;
+        display: flex;
+        margin: 0 0;
     }
 
     .tea li {
@@ -1074,8 +1081,8 @@ body {
 }
 
 
-@media only screen and (max-width: 360px) and (orientation : portrait)  {
-    
+@media only screen and (max-width: 360px) and (orientation: portrait) {
+
     .nav {
         display: none;
     }
@@ -1084,9 +1091,9 @@ body {
         display: block;
         text-align: left;
         height: 12px;
-        line-height: 60px;    
+        line-height: 60px;
     }
-    
+
     .social-media-container {
         display: none;
     }
@@ -1336,9 +1343,9 @@ body {
         display: block;
         text-align: left;
         height: 12px;
-        line-height: 60px;    
+        line-height: 60px;
     }
-    
+
     .social-media-container {
         display: none;
     }
@@ -1575,8 +1582,5 @@ body {
         width: 405px;
         margin: 0 0;
         padding: 0 0;
-    }  
+    }
 }
-
-
-    
