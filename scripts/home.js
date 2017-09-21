@@ -5,6 +5,21 @@ $(document).ready(function () {
     });
 });
 
+function writeMenuItems(navid) {
+    $(navid).append("<a href=javascript:void(0) class=closebtn onclick=closeNav()>&times;</a>");
+    $(navid).append("<a class=nav-items href=index.html>Home</a>");
+    $(navid).append("<a class=nav-items href=#>Culture</a>");
+    $(navid).append("<a class=nav-items href=./pages/flower-all.html>Flower</a>");
+    $(navid).append("<a class=nav-items href=#>Hi-Tea</a>");
+    $(navid).append("<a class=nav-items href=#>Trending</a>");
+    $(navid).append("<a class=nav-items href=#>Gallery</a>");
+}
+
+$(document).ready(function () {
+    writeMenuItems('#mySidenav');
+    writeMenuItems('#mySidenav-small');
+});
+
 // Fades in Overlay
 function overlayDisplay(name) {
     let cntrName = "#" + name + "-container";
@@ -30,11 +45,13 @@ $(document).ready(function () {
     })
 });
 
+var mqSmallScreen = 'only screen and (device-width: 375px) and (device-height: 667px) and (orientation : portrait)';
+
 function openNav() {
     var sidenav;
     var wdth;
     
-    if(Modernizr.mq('only screen and (device-width: 375px) and (device-height: 667px) and (orientation : portrait)')) {
+    if(Modernizr.mq(mqSmallScreen)) {
         sidenav = 'mySidenav-small';
         wdth = '100%';
     } 
@@ -50,7 +67,7 @@ function openNav() {
 function closeNav() {
     var sidenav;
     
-    if(Modernizr.mq('only screen and (device-width: 375px) and (device-height: 667px) and (orientation : portrait)')) {
+    if(Modernizr.mq(mqSmallScreen)) {
         sidenav = 'mySidenav-small';
     } 
     else {

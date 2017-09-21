@@ -26,36 +26,19 @@
         <div class="nav-container">
 
             <div class="row">
-
+                <!--TODO:put divs in ul-->
                 <div class="nav col-md-2">
-                    <!--TODO: add function that will return an id dependeding on screen size-->
-                    <div id="mySidenav" class="sidenav"> 
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <a class="nav-items" href="index.html">Home</a>
-                        <a class="nav-items" href="#">Culture</a>
-                        <a class="nav-items" href="./pages/flower-all.html">Flower</a>
-                        <a class="nav-items" href="#">Hi-Tea</a>
-                        <a class="nav-items" href="#">Trending</a>
-                        <a class="nav-items" href="#">Gallery</a>
+                    <div id="mySidenav" class="sidenav">
+                        <!-- populated using writeMenuItems function -->
                     </div>
-
-                    <span onclick="openNav()">&#9776;</span>
+                    <span id="ham-menu" onclick="openNav()">&#9776;</span>
                 </div>
 
-                <!-- Hamburger for Devices with max-width: 375px--> 
+                <!-- Hamburger for Devices with max-width: 375px-->
                 <div class="nav-small col-md-2">
-
                     <div id="mySidenav-small" class="sidenav">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <a class="nav-items" href="index.html">Home</a>
-                        <a class="nav-items" href="#">Culture</a>
-                        <a class="nav-items" href="#">Flower</a>
-                        <a class="nav-items" href="#">Hi-Tea</a>
-                        <a class="nav-items" href="#">Trending</a>
-                        <a class="nav-items" href="#">Gallery</a>
-                        
+                         <!-- populated using writeMenuItems function -->
                     </div>
-
                     <span onclick="openNav()">&#9776;</span>
                 </div>
 
@@ -209,7 +192,7 @@
 
                         <ul>
                             <div class="col-md-4 col-xs-3 landscape">
-                                 <div id="culture-header">
+                                <div id="culture-header">
                                     <li>
                                         <h1>C U L T U R E</h1>
                                     </li>
