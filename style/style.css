@@ -247,20 +247,41 @@ a {
 #flower3-container,
 #flower2-container {}
 
-#culture1-container,
-#culture2-container,
-#culture3-container {}
-
-#culture1-overlay,
-#culture2-overlay,
-#culture3-overlay
+/*
+#culture2-container
 {
     background: #123132;
     position: absolute;
     z-index: 2;
-    text-align: center;
-    opacity: 0;
-    padding: 26px 10px;
-    height: 193px;
-    width: 206px;
+    text-align: left;
+    padding: 200px 0px 0 0px;
+    height: 510px;
+    width: 373px;
+    margin: 0px auto;
 }
+
+#culture2-container ul {
+    list-style: none;
+    width: 400px;
+    height: 500px;
+    display: inline-flex;
+}
+
+#culture2-container li {
+    list-style: none;
+    width: 350px;
+    height: 350px;
+}
+
+#culture2-container img {
+    list-style: none;
+    width: 300px;
+    height: 300px;
+}
+
+#culture2-container span {
+    padding-bottom: 0px;
+    border-bottom: 1px solid;
+    display: inline-block;
+}
+*/
