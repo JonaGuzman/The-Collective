@@ -111,6 +111,10 @@ a {
     text-align: center;
 }
 
+#landscape-header {
+    display: none;
+}
+
 #culture-header li {
     height: 1px;
     text-align: left;
@@ -168,6 +172,59 @@ a {
     padding: 0px 0px;
     width: 285px;
     margin: 0 0 0 0px;
+}
+
+#cult2 {
+    display: none;
+}
+
+#est-container
+{
+    background: #123132;
+    position: absolute;
+    z-index: 2;
+    text-align: left;
+    padding: 150px 0px 0 0px;
+    height: 510px;
+    width: 373px;
+    margin: 0px auto;
+    color: #EDEDEE;
+}
+
+#est-container h1 {
+    text-align: center;
+}
+
+#est-container ul {
+    list-style: none;
+    width: 310px;
+    height: 400px;
+    display: inline-flex;
+    margin-left: 32px;
+}
+
+#est-container li {
+    list-style: none;
+    width: 90px;
+    height: 200px;
+    padding-left: 0;
+}
+
+#silhouette {
+    margin-right: 100px;
+}
+
+#est-container img {
+    list-style: none;
+    width: 200px;
+    height: 140px;
+}
+
+#est-container span {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    border-bottom: 1px solid;
+    display: inline-block;
 }
 
 #flower-header,
@@ -246,42 +303,3 @@ a {
 #flower1-container,
 #flower3-container,
 #flower2-container {}
-
-/*
-#culture2-container
-{
-    background: #123132;
-    position: absolute;
-    z-index: 2;
-    text-align: left;
-    padding: 200px 0px 0 0px;
-    height: 510px;
-    width: 373px;
-    margin: 0px auto;
-}
-
-#culture2-container ul {
-    list-style: none;
-    width: 400px;
-    height: 500px;
-    display: inline-flex;
-}
-
-#culture2-container li {
-    list-style: none;
-    width: 350px;
-    height: 350px;
-}
-
-#culture2-container img {
-    list-style: none;
-    width: 300px;
-    height: 300px;
-}
-
-#culture2-container span {
-    padding-bottom: 0px;
-    border-bottom: 1px solid;
-    display: inline-block;
-}
-*/
