@@ -32,3 +32,25 @@ a {
     width: 370px;
     height: 350px;
 }
+
+#inline-content {
+    background-color: #fff;
+    height: 329px;
+    width: 329px;
+    align-content: center;
+}
+
+#sb-body div{
+    background-color: #fff;
+}
+
+#sb-body img {
+    width: 150px;
+    height: 150px;
+}
+
+#sb-body ul {
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+}
