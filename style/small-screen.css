@@ -66,7 +66,7 @@ body {
         position: relative;
         width: 100%;
         margin: 0 auto;
-        height: 65px;
+        height: 80px;
     }
 
     #nav-account {
@@ -74,6 +74,7 @@ body {
         margin: -40px 0px 0 0px;
         float: right;
         width: 48px;
+        padding-left: 0;
     }
 
     #nav-account span {
@@ -273,6 +274,7 @@ body {
 
 
 
+
 /* Landscape */
 
 @media only screen and (device-height: 375px) and (device-width: 667px) and (orientation: landscape) {
@@ -300,7 +302,7 @@ body {
         position: relative;
         width: 100%;
         margin: 0 auto;
-        height: 65px;
+        height: 80px;
     }
 
     #nav-account {
@@ -308,6 +310,7 @@ body {
         margin: -40px 0px 0 0px;
         float: right;
         width: 48px;
+        padding-left: 0;
     }
 
     #nav-account span {
@@ -317,16 +320,19 @@ body {
     .company-logo {
         display: block;
         width: 150px;
-        margin: 0 0px auto 265px;
+        margin: 0 0px auto 220px;
         padding: 0px;
     }
 
     .carousel-inner {
-        height: 200px;
-        /*!important;*/
+        height: 530px;
         margin: 0 0 10px 0;
+        width: 100%;
     }
 
+    #myCarousel img {
+        height: 530px;
+    }
     .culture {
         padding: 0 0 0 0;
         margin: 0px auto;
@@ -535,7 +541,12 @@ body {
         position: relative;
         width: 100%;
         margin: 0 auto;
-        height: 65px;
+        height: 80px;
+    }
+
+    .nav-container ul {
+        list-style: none;
+        padding-left: 15px;
     }
 
     #nav-account {
@@ -543,6 +554,7 @@ body {
         margin: -40px 0px 0 0px;
         float: right;
         width: 48px;
+        padding-left: 0;
     }
 
     #nav-account span {
@@ -552,13 +564,12 @@ body {
     .company-logo {
         display: block;
         width: 150px;
-        margin: 0 0px auto 130px;
+        margin: 0 0px auto 125px;
         padding: 0px;
     }
 
     .carousel-inner {
-        height: 200px;
-        /*!important;*/
+        height: 550px;
         margin: 0 0 10px 0;
     }
 
@@ -597,7 +608,7 @@ body {
         padding: 0px 0 0 0px;
         font-size: 10px;
     }
-    
+
     #culture-text {
         display: none;
     }
@@ -608,7 +619,7 @@ body {
         width: 300px;
         margin: 0px auto;
     }
-    
+
     #cult2 {
         display: inline;
     }
@@ -735,6 +746,7 @@ body {
 }
 
 
+
 /* Landscape */
 
 @media only screen and (device-width: 736px) and (device-height: 414px) and (orientation: landscape) {
@@ -761,7 +773,7 @@ body {
         position: relative;
         width: 100%;
         margin: 0 auto;
-        height: 65px;
+        height: 80px;
     }
 
     #nav-account {
@@ -769,6 +781,7 @@ body {
         margin: -40px 0px 0 0px;
         float: right;
         width: 48px;
+        padding-left: 0;
     }
 
     #nav-account span {
@@ -778,7 +791,7 @@ body {
     .company-logo {
         display: block;
         width: 150px;
-        margin: 0 0px auto 280px;
+        margin: 0 0px auto 256px;
         padding: 0px;
     }
 
@@ -987,7 +1000,7 @@ body {
         position: relative;
         width: 100%;
         margin: 0 auto;
-        height: 65px;
+        height: 80px;
     }
 
     #nav-account {
@@ -995,6 +1008,7 @@ body {
         margin: -40px 0px 0 0px;
         float: right;
         width: 48px;
+        padding-left: 0;
     }
 
     #nav-account span {
@@ -1218,7 +1232,7 @@ body {
         position: relative;
         width: 100%;
         margin: 0 auto;
-        height: 65px;
+        height: 80px;
     }
 
     #nav-account {
@@ -1226,6 +1240,7 @@ body {
         margin: -40px 0px 0 0px;
         float: right;
         width: 48px;
+        padding-left: 0;
     }
 
     #nav-account span {
