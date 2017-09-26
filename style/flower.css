@@ -11,22 +11,24 @@ a {
 
 .flower-items {
     width: 1300px;
+    height: 855px;
 }
 
 .flower-items ul {
     list-style: none;
     display: inline-flex;
     width: 1300px;
-    margin: 30px 30px 40px 30px;
+    margin: 45px auto;
+    padding-left: 42px;
 }
 
 .flower-items li {
     list-style: none;
-    width: 400px;
-    height: 340px;
+    width: 405px;
+    height: 405px;
 }
 
 .flower-items img {
-    width: 350px;
+    width: 370px;
     height: 350px;
 }
