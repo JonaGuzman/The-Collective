@@ -16,7 +16,12 @@ function writeMenuItems(navid) {
 }
 
 $(document).ready(function () {
+    $('.nav').append("<div id=mySidenav class=sidenav></div>");
+    $('.nav').append("<span onclick=openNav()>&#9776;</span>");
     writeMenuItems('#mySidenav');
+    
+    $('.nav-small').append("<div id=mySidenav-small class=sidenav></div>");
+    $('.nav-small').append("<span onclick=openNav()>&#9776;</span>");
     writeMenuItems('#mySidenav-small');
 });
 

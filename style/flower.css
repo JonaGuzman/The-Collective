@@ -33,6 +33,11 @@ a {
     height: 350px;
 }
 
+#flower-name {
+    text-align: center;
+    z-index: 6;
+}
+
 #inline-content {
     background-color: #fff;
     height: 329px;
@@ -40,17 +45,48 @@ a {
     align-content: center;
 }
 
+#sb-overlay {
+    background-color: #123132 !important;
+}
+
+#sb-loading-inner {
+    padding-left: 55px;
+}
+
+#sb-wrapper-inner {
+    height: 500px !important;
+    bottom: 50px; !important;
+}
+
 #sb-body div{
     background-color: #fff;
 }
 
 #sb-body img {
-    width: 150px;
-    height: 150px;
+    width: 340px;
+    height: 258px;
 }
 
 #sb-body ul {
     list-style: none;
     text-align: center;
     padding-left: 0;
+    margin: 0;
+}
+
+#sb-body li {
+}
+
+#sb-info {
+    bottom: 45px !important;
+}
+
+.ratings {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.ratings li {
+    height: 15px !important;
+    text-align: left;
 }
