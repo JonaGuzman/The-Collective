@@ -62,7 +62,23 @@ function closeNav() {
 function writeFooter() {
     $(".social-media-container").append("<a href=# class='fa fa-facebook'></a>");
     $(".social-media-container").append("<a href=# class='fa fa-twitter'></a>");
-    $(".social-media-container").append("<a href=# class='fa fa-instagram'></a>");  
+    $(".social-media-container").append("<a href=# class='fa fa-instagram'></a>"); 
+    
+    $("#loc").append("<ul><li><h3>Our Store</h3></li>" 
+                                     + "<li>9999 Crenshaw Blvd</li>" 
+                                     + "<li>Los Angeles, CA 90008</li>"
+                                     + "<li>123-456-7890</li>"
+                                     + "<li>info@my-domain.com</li></ul>");
+    
+    $("#hours").append("<ul><li><h3>Hours</h3></li>" 
+                                     + "<li>Mon - Fri: 7am - 10pm</li>" 
+                                     + "<li>Saturday: 8am - 10pm</li>"
+                                     + "<li>Sunday: 8am - 11pm</li></ul>");
+    
+    $("#help").append("<ul><li><h3>Help</h3></li>"
+                      + "<li><a class=text-muted href=#>Shipping &amp; Returns</a></li>"
+                      + "<li><a class=text-muted href=#>Privacy Policy</a></li>"
+                      + "<li><a class=text-muted href=#>FAQ</a></li></ul>");
 }
 
 $(document).ready(function () {
