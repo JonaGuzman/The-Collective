@@ -72,9 +72,10 @@ function writeFooter() {
                               + "<li id=help class='col-md-2 text-muted'></li>"
                               + "</ul>");
     
-    $(".social-media-container").append("<a href=# class='fa fa-facebook'></a>");
-    $(".social-media-container").append("<a href=# class='fa fa-twitter'></a>");
-    $(".social-media-container").append("<a href=# class='fa fa-instagram'></a>"); 
+    $(".social-media-container").append("<a href=# class='fa fa-facebook'></a>" +
+                                        "<a href=# class='fa fa-twitter'></a>" +
+                                        "<a href=# class='fa fa-instagram'></a>");
+    
     
     $("#loc").append("<ul><li><h3>Our Store</h3></li>" 
                                      + "<li>9999 Crenshaw Blvd</li>" 
