@@ -1,4 +1,4 @@
-function writeMenuHeaders() {
+function writeHeader() {
     $('.nav').append("<div id=mySidenav class=sidenav></div>");
     $('.nav').append("<span onclick=openNav()>&#9776;</span>");
     
@@ -21,7 +21,7 @@ function writeMenuItems(navid) {
 }
 
 $(document).ready(function () {
-    writeMenuHeaders();
+    writeHeader();
     writeMenuItems('#mySidenav');
     writeMenuItems('#mySidenav-small');
 });
