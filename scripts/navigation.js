@@ -60,6 +60,18 @@ function closeNav() {
 }
 
 function writeFooter() {
+    
+    $("#footer-items").append("<div class=social-media-container></div>");
+    $("#footer-items").append("<ul>"
+                              + "<li id=loc class='col-md-3 text-muted'></li>"
+                              + "<li class=col-md-1></li>"
+                              + "<li class=col-md-1></li>"
+                              + "<li id=hours class='col-md-2 text-muted'></li>"
+                              + "<li class=col-md-1></li>"
+                              + "<li class=col-md-1></li>"
+                              + "<li id=help class='col-md-2 text-muted'></li>"
+                              + "</ul>");
+    
     $(".social-media-container").append("<a href=# class='fa fa-facebook'></a>");
     $(".social-media-container").append("<a href=# class='fa fa-twitter'></a>");
     $(".social-media-container").append("<a href=# class='fa fa-instagram'></a>"); 
