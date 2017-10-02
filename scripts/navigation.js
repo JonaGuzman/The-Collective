@@ -1,4 +1,30 @@
-function writeHeader() {
+function writeHeader(pwd) {
+    
+    var navContents = 
+        "<div class=row>" +
+            "<ul>" +
+                "<li>" +
+                    "<div class='nav col-md-2'></div>" +
+                    "<div class='nav-small col-md-2'></div>" +
+                "</li>" + 
+                "<li>" +
+                    "<div id=hivie class=col-md-8>" +
+                        "<div id=silo-nav>" +
+                            "<img src=" + pwd + "/images/home/silo.png />" +
+                        "</div>" +
+                        "<a href=" + pwd + "/index.html>" + "<h1>The HiViE</h1>" + "</a>" +
+                    "</div>" +
+                "</li>" +
+                "<li>" +
+                    "<div class=col-md-2>" +
+                        "<div id=nav-account></div>" +
+                    "</div>" +
+                "</li>" +
+            "</ul>" +
+        "</div>";
+    
+    $('.nav-container').append(navContents);
+
     $('.nav').append("<div id=mySidenav class=sidenav></div>");
     $('.nav').append("<span onclick=openNav()>&#9776;</span>");
     
@@ -21,7 +47,6 @@ function writeMenuItems(navid) {
 }
 
 $(document).ready(function () {
-    writeHeader();
     writeMenuItems('#mySidenav');
     writeMenuItems('#mySidenav-small');
 });

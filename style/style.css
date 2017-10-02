@@ -193,6 +193,7 @@ a {
 
 #est-container h1 {
     text-align: center;
+    margin: 2px 10px 0 auto;
 }
 
 #est-container ul {

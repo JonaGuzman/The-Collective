@@ -5,154 +5,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>The Collective - Flower 3</title>
+    <title>The HiVie - Flower 3</title>
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../style/navigation.css" type="text/css">
     <link rel="stylesheet" href="../style/small-screen.css" type="text/css">
     <link rel="stylesheet" href="../style/flower.css" type="text/css">
+    <link rel="stylesheet" href="../scripts/shadowbox/shadowbox.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="../scripts/googlemap.js"></script>
+    <script src="../scripts/modernizr-custom.js" type="text/javascript"></script>
     <script src="../scripts/home.js"></script>
+    <script src="../scripts/navigation.js"></script>
+    <script src="../scripts/flower.js"></script>
+    <script src="../scripts/shadowbox/shadowbox.js"></script>
+    <script type="text/javascript">
+        Shadowbox.init();
+    </script>
+
 </head>
 
 <body>
 
     <div class="main-container">
 
-        <div class="nav-container">
-
-            <div class="row">
-
-                <div class="nav col-md-2">
-
-                    <div id="mySidenav" class="sidenav">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <a class="nav-items" href="../index.html">Home</a>
-                        <a class="nav-items" href="#">Culture</a>
-                        <a class="nav-items" href="./flower-all.html">Flower</a>
-                        <a class="nav-items" href="#">Hi-Tea</a>
-                        <a class="nav-items" href="#">Trending</a>
-                        <a class="nav-items" href="#">Gallery</a>
-                    </div>
-
-                    <span style="font-size:30px;cursor:pointer;margin-left:17px" onclick="openNav()">&#9776;</span>
-                </div>
-
-                <!-- Hamburger for Devices with max-width: 375px -->
-                <div class="nav-small col-md-2">
-
-                    <div id="mySidenav" class="sidenav">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <a class="nav-items" href="#">Culture</a>
-                        <a class="nav-items" href="#">Flower</a>
-                        <a class="nav-items" href="#">Hi-Tea</a>
-                        <a class="nav-items" href="#">Trending</a>
-                        <a class="nav-items" href="#">Gallery</a>
-                    </div>
-
-                    <span style="font-size:30px;cursor:pointer;margin-left:17px" onclick="openNav()">&#9776;</span>
-                </div>
-
-                <div class="col-md-8">
-                    <a href="../index.html"><img src='../images/home/the-collective-logo1.png' class='company-logo' /></a>
-                </div>
-
-                <div class="col-md-2">
-                    <div class="social-media-container">
-                        <a href="#" class="fa fa-facebook"></a>
-                        <a href="#" class="fa fa-twitter"></a>
-                        <a href="#" class="fa fa-instagram"></a>
-                    </div>
-
-                    <div id="nav-account"><span class="glyphicon glyphicon-user"></span> /<span class="glyphicon glyphicon-shopping-cart"></span></div>
-                </div>
-            </div>
+        <div class="nav-container">              
+            <script>
+                window.onload = writeHeader("..");
+            </script>
         </div>
 
         <div id="main">
 
-            <div class="row">
-                <div class="flower-items">
-                    <ul>
-                        <li><img src="images/flower.jpg"></li>
-                        <li><img src="images/flower.jpg"></li>
-                        <li><img src="images/flower.jpg"></li>
-                    </ul>
-                </div>
-            </div>
+            <div class="flower-items">
+                <ul>
+                    <div class="row">
+                        
+                        <li class="col-md-3"><a href="#inline-content" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a>   
+                            <div id="inline-content" style="display:none;">
+                                <script>
+                                    inlineTitle("Flower Name");
+                                    inlineItems("");
+                                </script>
+                            </div>
+                        </li>
 
-            <div class="row">
-                <div class="flower-items">
-                    <ul>
-                        <li><img src="images/flower.jpg"></li>
-                        <li><img src="images/flower.jpg"></li>
-                        <li><img src="images/flower.jpg"></li>
-                    </ul>
-                </div>
+                        <li class="col-md-3"><a href="#inline-content" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a></li>
+                        <li class="col-md-3"><a href="#inline-content" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a></li>    
+                        <li class="col-md-3"><a href="#inline-content" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a></li>  
+                        <li class="col-md-3"><a href="#inline-content" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a></li>
+                        <li class="col-md-3"><a href="#inline-content" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a></li>
+                        
+                    </div>
+                </ul>
+
             </div>
 
         </div>
         <!-- End of Main -->
 
         <div class="footer">
-
             <div class="row">
                 <footer>
-                    <div id="footer-items">
-                        <ul>
-                            <li class="col-md-3 text-muted">
-                                <ul>
-                                    <li>
-                                        <h3>Our Store</h3>
-                                    </li>
-                                    <li>9999 Crenshaw Blvd</li>
-                                    <li>Los Angeles, CA 90008</li>
-                                    <li>123-456-7890</li>
-                                    <li>info@my-domain.com</li>
-                                </ul>
-                            </li>
-
-                            <li class="col-md-1"></li>
-                            <li class="col-md-1"></li>
-
-                            <li class="col-md-2 text-muted">
-                                <ul>
-                                    <li>
-                                        <h3>Hours</h3>
-                                    </li>
-                                    <li>Mon - Fri: 7am - 10pm</li>
-                                    <li>Saturday: 8am - 10pm</li>
-                                    <li>Sunday: 8am - 11pm</li>
-                                </ul>
-                            </li>
-
-                            <li class="col-md-1"></li>
-                            <li class="col-md-1"></li>
-
-                            <li class="col-md-2 text-muted">
-                                <ul>
-                                    <li>
-                                        <h3>Help</h3>
-                                    </li>
-                                    <li><a class="text-muted" href="#">Shipping &amp; Returns</a></li>
-                                    <li><a class="text-muted" href="#">Privacy Policy</a></li>
-                                    <li><a class="text-muted" href="#">FAQ</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+                    <div id="footer-items"></div>
                 </footer>
             </div>
-
-            <div class="row">
-                <li class="col-md-1"></li>
-                <li class="col-md-8"></li>
-            </div>
-
-            <div class="row"></div>
         </div>
 
     </div>
