@@ -41,7 +41,7 @@ function writeMenuItems(navid) {
     $(navid).append("<a class=nav-items href=index.html>Home</a>");
     $(navid).append("<a class=nav-items href=#>Culture</a>");
     $(navid).append("<a class=nav-items href=./pages/flower-all.html>Flower</a>");
-    $(navid).append("<a class=nav-items href=#>Hi-Tea</a>");
+    $(navid).append("<a class=nav-items href=./pages/tea-all.html>Hi-Tea</a>");
     $(navid).append("<a class=nav-items href=#>Trending</a>");
     $(navid).append("<a class=nav-items href=#>Gallery</a>");
 }

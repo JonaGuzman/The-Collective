@@ -1,0 +1,139 @@
+html,
+body {
+    overflow-x: hidden;
+    color: #B97F6D;
+    background-color: #EDEDEE;
+}
+
+a {
+    color: #d0b0a6;
+}
+
+.tea-items {
+    width: 1300px;
+    height: 500px;
+}
+
+.tea-items ul {
+    list-style: none;
+    display: inline-flex;
+    width: 1300px;
+    margin: 45px auto;
+    padding-left: 42px;
+}
+
+.tea-items li {
+    list-style: none;
+    width: 405px;
+    height: 405px;
+}
+
+.tea-items img {
+    width: 370px;
+    height: 350px;
+}
+
+#tea-name {
+    text-align: center;
+    z-index: 6;
+}
+
+#inline-content {
+    background-color: #fff;
+    height: 329px;
+    width: 329px;
+    align-content: center;
+}
+
+#sb-overlay {
+    background-color: #123132 !important;
+}
+
+#sb-loading-inner {
+    padding-left: 55px;
+}
+
+#sb-wrapper-inner {
+    height: 500px !important;
+    bottom: 50px; !important;
+}
+
+#sb-body div{
+    background-color: #fff;
+}
+
+#sb-body img {
+    width: 290px;
+    height: 225px;
+}
+
+#sb-body ul {
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+    margin: 0;
+}
+
+#sb-body li {
+}
+
+#sb-info {
+    bottom: 45px !important;
+}
+
+#tea-info {
+    z-index: 2;
+}
+
+#tea-info p {
+    margin: 0 0;
+    height: 55px;
+    font-size: 13px;
+}
+
+.ratings {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.ratings ol {
+    padding-left: 0;
+    display: flex;
+    text-align: left;
+    list-style: none;
+    height: 26px;
+}
+
+.ratings li {
+    text-align: left;
+    list-style: none;
+}
+
+.progress-bar-success {
+    background-color: #5cb85c !important;
+}
+
+.progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: left;
+    background-color: #B97F6D !important;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+    padding-left: 5px;
+}
+
+.progress {
+    height: 20px;
+    margin: 8px 0 0 3px;
+    background-color: #415A5B !important;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1) !important;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1) !important;
+}

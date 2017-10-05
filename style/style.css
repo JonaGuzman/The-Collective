@@ -72,7 +72,7 @@ a {
 
 .tea li{
     list-style: none;
-    height: 580px;
+    height: 558px;
     width: 398px;
     margin: 0px;
     padding: 0 0 0 0px;
@@ -142,7 +142,7 @@ a {
 .culture li{
     list-style: none;
     height: 530px;
-    width: 372px;
+    width: 378px;
     margin: 0px 0;
     padding: 0 0 0 39px;
     font-size: 16px;
@@ -151,7 +151,7 @@ a {
 .culture img {
     list-style: none;
     height: 510px;
-    width: 373px;
+    width: 378px;
     margin: 0px auto;
 }
 
@@ -172,6 +172,7 @@ a {
     padding: 0px 0px;
     width: 285px;
     margin: 0 0 0 0px;
+    height: 500px;
 }
 
 #cult2 {
@@ -186,7 +187,7 @@ a {
     text-align: left;
     padding: 150px 0px 0 0px;
     height: 510px;
-    width: 373px;
+    width: 366px;
     margin: 0px auto;
     color: #EDEDEE;
 }
