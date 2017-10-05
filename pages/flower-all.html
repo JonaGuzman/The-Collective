@@ -2,20 +2,29 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+   <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>The HiViE - Flower All</title>
+    <title>The HiVie - Flower 2</title>
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../style/navigation.css" type="text/css">
     <link rel="stylesheet" href="../style/small-screen.css" type="text/css">
     <link rel="stylesheet" href="../style/flower.css" type="text/css">
+    <link rel="stylesheet" href="../scripts/shadowbox/shadowbox.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="../scripts/googlemap.js"></script>
-    <script src="../scripts/home.js"></script>
+    <script src="../scripts/modernizr-custom.js" type="text/javascript"></script>
+    <script src="../scripts/navigation.js"></script>
+    <script src="../scripts/flower.js"></script>
+    <script src="../scripts/inline-content.js"></script>
+    <script src="../scripts/shadowbox/shadowbox.js"></script>
+    <script type="text/javascript">
+        Shadowbox.init();
+    </script>
+
 </head>
 
 <body>
@@ -28,65 +37,173 @@
                 window.onload = writeHeader("..");
             </script>
         </div>
-
+        
         <div id="main">
 
             <div class="row">
-                <div class="flower-items">
+                <div class="flower-items" style="height:325px;margin-bottom:80px">
                     <ul>
-                        <li><img src="images/flower.jpg"></li>
-                        <li><img src="images/flower.jpg"></li>
-                        <li><img src="images/flower.jpg"></li>
+                        <div id="inline-content1" style=" display:none;">
+                            <script>
+                               setContentFlower("Flower One", "Type 1", "#inline-content1", " Consequat ea Investigationes in enim congue. Option velit volutpat quod blandit ex. Congue parum praesent aliquam nam clari. Qui praesent quam sollemnes id vulputate. In imperdiet diam at sequitur et. Minim delenit in dolor dolore typi.", [40, 80, 65, 95])
+                            </script>
+                        </div>
+                        
+                        <div id="inline-content2" style=" display:none;">
+                            <script>
+                                setContentFlower("Flower Two", "Type 1", "#inline-content2", " Content2 ea Investigationes in enim congue. Option velit volutpat quod blandit ex. Congue parum praesent aliquam nam clari. Qui praesent quam sollemnes id vulputate. In imperdiet diam at sequitur et. Minim delenit in dolor dolore typi.", [10, 90, 50, 100])
+                            </script>
+                        </div>
+                        
+                        <div id="inline-content3" style=" display:none;">
+                            <script>
+                                setContentFlower("Flower Three", "Type 1", "#inline-content3", " Content3 ea Investigationes in enim congue. Option velit volutpat quod blandit ex. Congue parum praesent aliquam nam clari. Qui praesent quam sollemnes id vulputate. In imperdiet diam at sequitur et. Minim delenit in dolor dolore typi.", [28, 60, 75, 80])
+                            </script>
+                        </div>
+                        
+                        <li><a href="#inline-content1" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a></li>
+                        <li><a href="#inline-content2" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a></li>
+                        <li><a href="#inline-content3" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="row">
-                <div class="flower-items">
+                <div class="flower-items" style="height:325px;margin-bottom:80px">
                     <ul>
-                        <li><img src="images/flower.jpg"></li>
-                        <li><img src="images/flower.jpg"></li>
-                        <li><img src="images/flower.jpg"></li>
+                        <div id="inline-content4" style=" display:none;">
+                            <script>
+                               setContentFlower("Flower Four", "Type 1", "#inline-content4", " Consequat ea Investigationes in enim congue. Option velit volutpat quod blandit ex. Congue parum praesent aliquam nam clari. Qui praesent quam sollemnes id vulputate. In imperdiet diam at sequitur et. Minim delenit in dolor dolore typi.", [40, 80, 65, 95])
+                            </script>
+                        </div>
+                        
+                        <div id="inline-content5" style=" display:none;">
+                            <script>
+                                setContentFlower("Flower Five", "Type 1", "#inline-content5", " Content2 ea Investigationes in enim congue. Option velit volutpat quod blandit ex. Congue parum praesent aliquam nam clari. Qui praesent quam sollemnes id vulputate. In imperdiet diam at sequitur et. Minim delenit in dolor dolore typi.", [10, 90, 50, 100])
+                            </script>
+                        </div>
+                        
+                        <div id="inline-content6" style=" display:none;">
+                            <script>
+                                setContentFlower("Flower Six", "Type 1", "#inline-content6", " Content3 ea Investigationes in enim congue. Option velit volutpat quod blandit ex. Congue parum praesent aliquam nam clari. Qui praesent quam sollemnes id vulputate. In imperdiet diam at sequitur et. Minim delenit in dolor dolore typi.", [28, 60, 75, 80])
+                            </script>
+                        </div>
+                        
+                        <li><a href="#inline-content4" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a></li>
+                        <li><a href="#inline-content5" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a></li>
+                        <li><a href="#inline-content6" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="row">
-                <div class="flower-items">
+                <div class="flower-items" style="height:325px;margin-bottom:80px">
                     <ul>
-                        <li><img src="images/flower.jpg"></li>
-                        <li><img src="images/flower.jpg"></li>
-                        <li><img src="images/flower.jpg"></li>
+                        <div id="inline-content7" style=" display:none;">
+                            <script>
+                               setContentFlower("Flower Seven", "Type 2", "#inline-content7", " Consequat ea Investigationes in enim congue. Option velit volutpat quod blandit ex. Congue parum praesent aliquam nam clari. Qui praesent quam sollemnes id vulputate. In imperdiet diam at sequitur et. Minim delenit in dolor dolore typi.", [40, 80, 65, 95])
+                            </script>
+                        </div>
+                        
+                        <div id="inline-content8" style=" display:none;">
+                            <script>
+                                setContentFlower("Flower Eight", "Type 2", "#inline-content8", " Content2 ea Investigationes in enim congue. Option velit volutpat quod blandit ex. Congue parum praesent aliquam nam clari. Qui praesent quam sollemnes id vulputate. In imperdiet diam at sequitur et. Minim delenit in dolor dolore typi.", [10, 90, 50, 100])
+                            </script>
+                        </div>
+                        
+                        <div id="inline-content9" style=" display:none;">
+                            <script>
+                                setContentFlower("Flower Nine", "Type 2", "#inline-content9", " Content3 ea Investigationes in enim congue. Option velit volutpat quod blandit ex. Congue parum praesent aliquam nam clari. Qui praesent quam sollemnes id vulputate. In imperdiet diam at sequitur et. Minim delenit in dolor dolore typi.", [28, 60, 75, 80])
+                            </script>
+                        </div>
+                        
+                        <li><a href="#inline-content7" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a></li>
+                        <li><a href="#inline-content8" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a></li>
+                        <li><a href="#inline-content9" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="row">
-                <div class="flower-items">
+                <div class="flower-items" style="height:325px;margin-bottom:80px">
                     <ul>
-                        <li><img src="images/flower.jpg"></li>
-                        <li><img src="images/flower.jpg"></li>
-                        <li><img src="images/flower.jpg"></li>
+                        <div id="inline-content10" style=" display:none;">
+                            <script>
+                               setContentFlower("Flower Ten", "Type 2", "#inline-content10", " Consequat ea Investigationes in enim congue. Option velit volutpat quod blandit ex. Congue parum praesent aliquam nam clari. Qui praesent quam sollemnes id vulputate. In imperdiet diam at sequitur et. Minim delenit in dolor dolore typi.", [40, 80, 65, 95])
+                            </script>
+                        </div>
+                        
+                        <div id="inline-content11" style=" display:none;">
+                            <script>
+                                setContentFlower("Flower Eleven", "Type 2", "#inline-content11", " Content2 ea Investigationes in enim congue. Option velit volutpat quod blandit ex. Congue parum praesent aliquam nam clari. Qui praesent quam sollemnes id vulputate. In imperdiet diam at sequitur et. Minim delenit in dolor dolore typi.", [10, 90, 50, 100])
+                            </script>
+                        </div>
+                        
+                        <div id="inline-content12" style=" display:none;">
+                            <script>
+                                setContentFlower("Flower Twelve", "Type 2", "#inline-content12", " Content3 ea Investigationes in enim congue. Option velit volutpat quod blandit ex. Congue parum praesent aliquam nam clari. Qui praesent quam sollemnes id vulputate. In imperdiet diam at sequitur et. Minim delenit in dolor dolore typi.", [28, 60, 75, 80])
+                            </script>
+                        </div>
+                        
+                        <li><a href="#inline-content10" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a></li>
+                        <li><a href="#inline-content11" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a></li>
+                        <li><a href="#inline-content12" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="row">
-                <div class="flower-items">
+                <div class="flower-items" style="height:325px;margin-bottom:80px">
                     <ul>
-                        <li><img src="images/flower.jpg"></li>
-                        <li><img src="images/flower.jpg"></li>
-                        <li><img src="images/flower.jpg"></li>
+                        <div id="inline-content13" style=" display:none;">
+                            <script>
+                               setContentFlower("Flower Thirteen", "Type 3", "#inline-content13", " Consequat ea Investigationes in enim congue. Option velit volutpat quod blandit ex. Congue parum praesent aliquam nam clari. Qui praesent quam sollemnes id vulputate. In imperdiet diam at sequitur et. Minim delenit in dolor dolore typi.", [40, 80, 65, 95])
+                            </script>
+                        </div>
+                        
+                        <div id="inline-content14" style=" display:none;">
+                            <script>
+                                setContentFlower("Flower Fourteen", "Type 3", "#inline-content14", " Content2 ea Investigationes in enim congue. Option velit volutpat quod blandit ex. Congue parum praesent aliquam nam clari. Qui praesent quam sollemnes id vulputate. In imperdiet diam at sequitur et. Minim delenit in dolor dolore typi.", [10, 90, 50, 100])
+                            </script>
+                        </div>
+                        
+                        <div id="inline-content15" style=" display:none;">
+                            <script>
+                                setContentFlower("Flower Fifteen", "Type 3", "#inline-content15", " Content3 ea Investigationes in enim congue. Option velit volutpat quod blandit ex. Congue parum praesent aliquam nam clari. Qui praesent quam sollemnes id vulputate. In imperdiet diam at sequitur et. Minim delenit in dolor dolore typi.", [28, 60, 75, 80])
+                            </script>
+                        </div>
+                        
+                        <li><a href="#inline-content13" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a></li>
+                        <li><a href="#inline-content14" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a></li>
+                        <li><a href="#inline-content15" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="row">
-                <div class="flower-items">
+                <div class="flower-items" style="height:325px;margin-bottom:80px">
                     <ul>
-                        <li><img src="images/flower.jpg"></li>
-                        <li><img src="images/flower.jpg"></li>
-                        <li><img src="images/flower.jpg"></li>
+                        <div id="inline-content16" style=" display:none;">
+                            <script>
+                               setContentFlower("Flower Sixteen", "Type 3", "#inline-content16", " Consequat ea Investigationes in enim congue. Option velit volutpat quod blandit ex. Congue parum praesent aliquam nam clari. Qui praesent quam sollemnes id vulputate. In imperdiet diam at sequitur et. Minim delenit in dolor dolore typi.", [40, 80, 65, 95])
+                            </script>
+                        </div>
+                        
+                        <div id="inline-content17" style=" display:none;">
+                            <script>
+                                setContentFlower("Flower Seventeen", "Type 3", "#inline-content17", " Content2 ea Investigationes in enim congue. Option velit volutpat quod blandit ex. Congue parum praesent aliquam nam clari. Qui praesent quam sollemnes id vulputate. In imperdiet diam at sequitur et. Minim delenit in dolor dolore typi.", [10, 90, 50, 100])
+                            </script>
+                        </div>
+                        
+                        <div id="inline-content18" style=" display:none;">
+                            <script>
+                                setContentFlower("Flower Eighteen", "Type 3", "#inline-content18", " Content3 ea Investigationes in enim congue. Option velit volutpat quod blandit ex. Congue parum praesent aliquam nam clari. Qui praesent quam sollemnes id vulputate. In imperdiet diam at sequitur et. Minim delenit in dolor dolore typi.", [28, 60, 75, 80])
+                            </script>
+                        </div>
+                        
+                        <li><a href="#inline-content16" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a></li>
+                        <li><a href="#inline-content17" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a></li>
+                        <li><a href="#inline-content18" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a></li>
                     </ul>
                 </div>
             </div>
