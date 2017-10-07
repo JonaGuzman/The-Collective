@@ -26,8 +26,8 @@
     color: #B97F6D;
     z-index: 1;
     position: relative;
-    width: 1280px;
-    margin: 0 0;
+    width: 1285px;
+    margin: 0 auto;
 }
 
 .nav-container ul {
