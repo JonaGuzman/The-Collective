@@ -1,0 +1,49 @@
+html,
+body {
+    overflow-x: hidden;
+    color: #B97F6D;
+    background-color: #EDEDEE;
+}
+
+a {
+    color: #d0b0a6;
+}
+
+#merch-title {
+    text-align: center;
+}
+
+.shop-items {
+    text-align: center;
+    font-style: italic;
+}
+
+.shop-items ul {
+    list-style: none;
+    display: block;
+    margin: 25px auto;
+    padding-left: 48px;
+}
+
+.shop-items li {
+    list-style: none;
+    width: 405px;
+    height: 405px;
+}
+
+.shop-items img {
+    width: 370px;
+    height: 350px;
+}
+
+.shop-items p {
+    margin: 0 auto;
+}
+
+#sb-overlay {
+    background-color: #123132 !important;
+}
+
+#sb-loading-inner {
+    padding-left: 55px;
+}

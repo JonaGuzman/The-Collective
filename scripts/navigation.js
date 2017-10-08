@@ -43,7 +43,7 @@ function writeMenuItems(navid) {
     $(navid).append("<a class=nav-items href=./pages/flower-all.html>Flower</a>");
     $(navid).append("<a class=nav-items href=./pages/tea-all.html>Hi-Tea</a>");
     $(navid).append("<a class=nav-items href=#>Trending</a>");
-    $(navid).append("<a class=nav-items href=#>Gallery</a>");
+    $(navid).append("<a class=nav-items href=./pages/merch.html>Shop</a>");
 }
 
 $(document).ready(function () {

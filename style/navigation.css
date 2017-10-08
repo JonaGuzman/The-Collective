@@ -41,7 +41,8 @@
 }
 
 #hivie {
-    width: 765px;
+    width: 790px;
+    padding-left: 40px;
 }
 
 #hivie a {
@@ -49,13 +50,13 @@
 }
 
 #silo-nav {
-    margin: 0 411px;
+    margin: 0 409px;
     height: 18px;
 }
 
 #silo-nav img {
-    height: 58px;
-    width: 103px;
+    height: 59px;
+    width: 105px;
 }
 
 #nav-menu {
