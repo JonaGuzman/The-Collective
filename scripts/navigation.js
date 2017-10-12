@@ -47,7 +47,7 @@ function writeMenuItems(navid) {
 }
 
 $(document).ready(function () {
-    writeMenuItems('#mySidenav');
+    //writeMenuItems('#mySidenav');
     writeMenuItems('#mySidenav-small');
 });
 

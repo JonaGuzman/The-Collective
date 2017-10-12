@@ -25,6 +25,21 @@ a {
     color: #d0b0a6;
 }
 
+#caruousel-text {
+    position: absolute;
+    width: 1285px;
+    z-index: 2;
+    margin: 237px auto;
+    height: 500px;
+    text-align: center;
+    color: #EDEDEE;
+    opacity: 0.7;
+}
+
+#caruosel-text h1 {
+    font-size: 60px;
+}
+
 .carousel {
     margin-bottom: -7px;
     width: 1285px;
