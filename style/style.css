@@ -29,11 +29,11 @@ a {
     position: absolute;
     width: 1285px;
     z-index: 2;
-    margin: 237px auto;
+    margin: 140px auto;
     height: 500px;
     text-align: center;
     color: #EDEDEE;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 #caruosel-text h1 {

@@ -77,6 +77,11 @@
     margin: 20px 20px;
 }
 
+#current-deals {
+    width: 400px;
+    display: flex;
+}
+
 /*
 #nav-account {
     margin: 27px auto auto 165px;
@@ -87,8 +92,8 @@
 
 #nav-account {
     margin: 15px auto;
-    padding-left: 485px;
-    width: 565px;
+    padding-left: 100px;
+    width: 200px;
     height: 40px;
     font-size: 20px;
 }
