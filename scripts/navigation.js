@@ -1,60 +1,82 @@
-// TODO: need to rewrite using new nav bar.
 function writeHeader(pwd) {
     
+    $('.nav-container').append("<div id=nav-root class=row></div>");
     
-    var navContents = 
-        "<div class=row>" +
-            "<ul>" +
+    // Menu for larger devices
+    var inlineNav = 
+        "<div id=inline-nav>" +
+            "<ul class=col-md-12>" +
                 "<li>" +
-                    "<div class='nav col-md-2'></div>" +
-                    "<div class='nav-small col-md-2'></div>" +
-                "</li>" + 
-                "<li>" +
-                    "<div id=hivie class=col-md-8>" +
-                        "<div id=silo-nav>" +
-                            "<img src=" + pwd + "/images/home/silo.png />" +
+                    "<nav class='navbar navbar-default'>" +
+                        "<div class=container-fluid>" +
+                            "<div class=navbar-header>" +
+                                "<a class=navbar-brand href=" + pwd + "/index.html><h1>The HiViE</h1></a>" +
+                            "</div>" +
+                        "<ul id=mySidenav class='nav navbar-nav'>" +
+                            "<li><a href=" + pwd + "/index.html>Home</a></li>" +
+                            "<li><a href=#>Culture</a></li>" +
+                            "<li><a href=" + pwd + "/pages/flower-all.html>Flower</a></li>" +
+                            "<li><a href=" + pwd + "/pages/tea-all.html>Hi-Tea</a></li>" +
+                            "<li><a href=#>Trending</a></li>" +
+                            "<li><a href=" + pwd + "/pages/merch.html>Shop</a></li>" +
+                        "</ul>" +
                         "</div>" +
-                        "<a href=" + pwd + "/index.html>" + "<h1>The HiViE</h1>" + "</a>" +
+                    "</nav>" +
+                "</li>" +
+                "<li>" +
+                    "<div id=current-deals>" +
+                        "<ol>" +
+                            "<li><h2>Today's Deals:</h2></li>" +
+                            "<li style=padding-left:20px><h2>Deal One</h2></li>" +
+                        "</ol>" +
                     "</div>" +
                 "</li>" +
                 "<li>" +
-                    "<div class=col-md-2>" +
-                        "<div id=nav-account></div>" +
+                    "<div>" +
+                        "<div id=nav-account>" +
+                            "<span class='glyphicon glyphicon-user' style=color:#EDEDEE>" + 
+                                "</span> / <span class='glyphicon glyphicon-shopping-cart' style=color:#EDEDEE></span>" +
+                        "</div>" +
                     "</div>" +
                 "</li>" +
             "</ul>" +
         "</div>";
     
-    $('.nav-container').append(navContents);
-
-    $('.nav').append("<div id=mySidenav class=sidenav></div>");
-    $('.nav').append("<span onclick=openNav()>&#9776;</span>");
+    // Menu for smaller devices
+    var smallNav = 
+        "<div id=smallnav-container>" +
+            "<ul>" +
+                "<li>" +
+                    "<div id=hivie class=col-sm-6>" +
+                        "<div id=silo-nav><img src=" + pwd + "/images/home/silo.png></div>" +
+                        "<a href=./index.html><h2>The HiViE</h2></a>" +
+                    "</div>" +
+                "</li>" +
+                "<li>" +
+                    "<div class='nav-small col-sm-6'>" +
+                        "<div id=mySidenav-small class=sidenav></div><span onclick=openNav()>☰</span></div>" +
+                        "<div>" +
+                            "<div id=mySidenav-small class=sidenav>" +
+                                "<a href=javascript:void(0) class=closebtn onclick=closeNav()>×</a>" +
+                                "<a class=nav-items href=" + pwd + "index.html>Home</a>" +
+                                "<a class=nav-items href=#>Culture</a>" +
+                                "<a class=nav-items href=" + pwd + "/pages/flower-all.html>Flower</a>" +
+                                "<a class=nav-items href=" + pwd + "/pages/tea-all.html>Hi-Tea</a>" +
+                                "<a class=nav-items href=#>Trending</a>" +
+                                "<a class=nav-items href=" + pwd + "/pages/merch.html>Shop</a>" +
+                            "</div>" +
+                    "</div>" +
+                "</li>" +
+            "</ul>" +
+        "</div>";
     
-    $('.nav-small').append("<div id=mySidenav-small class=sidenav></div>");
-    $('.nav-small').append("<span onclick=openNav()>&#9776;</span>");
-
-    $('#nav-account').append("<span class='glyphicon glyphicon-user'></span>");
-    $('#nav-account').append(" / ") 
-    $('#nav-account').append("<span class='glyphicon glyphicon-shopping-cart'></span>");
+    $('#nav-root').append(inlineNav);
+    $('#nav-root').append(smallNav);
 }
-
-function writeMenuItems(navid) {
-    $(navid).append("<a href=javascript:void(0) class=closebtn onclick=closeNav()>&times;</a>");
-    $(navid).append("<a class=nav-items href=index.html>Home</a>");
-    $(navid).append("<a class=nav-items href=#>Culture</a>");
-    $(navid).append("<a class=nav-items href=./pages/flower-all.html>Flower</a>");
-    $(navid).append("<a class=nav-items href=./pages/tea-all.html>Hi-Tea</a>");
-    $(navid).append("<a class=nav-items href=#>Trending</a>");
-    $(navid).append("<a class=nav-items href=./pages/merch.html>Shop</a>");
-}
-
-$(document).ready(function () {
-    //writeMenuItems('#mySidenav');
-    writeMenuItems('#mySidenav-small');
-});
 
 var mqSmallScreen = 'only screen and (device-width: 375px) and (device-height: 667px) and (orientation : portrait)';
 
+//
 function openNav() {
     var sidenav;
     var wdth;

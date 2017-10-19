@@ -28,6 +28,11 @@ body {
     background-color: #EDEDEE;
 }
 
+div #hivie a {
+    color: #B97F6D;
+}
+
+
 @media only screen and (device-width: 375px) and (device-height: 667px) and (orientation: portrait) {
 
     #smallnav-container {
@@ -54,7 +59,7 @@ body {
     #hivie {
         text-align: center;
     }
-
+    
     .nav-small {
         display: block;
         text-align: center;
