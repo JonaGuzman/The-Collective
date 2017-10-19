@@ -12,6 +12,7 @@ a {
 .tea-items {
     width: 1300px;
     height: 500px;
+    margin: 0 auto;
 }
 
 .tea-items ul {

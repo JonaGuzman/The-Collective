@@ -30,19 +30,36 @@ body {
 
 @media only screen and (device-width: 375px) and (device-height: 667px) and (orientation: portrait) {
 
+    #smallnav-container {
+        display: block;
+    }
+
     .nav-container ul {
         padding: 0;
     }
 
-    .nav {
+    #silo-nav {
+        height: 50px;
+    }
+
+    #silo-nav img {
+        height: 85px;
+        width: 85px;
+    }
+
+    #inline-nav {
         display: none;
+    }
+
+    #hivie {
+        text-align: center;
     }
 
     .nav-small {
         display: block;
-        text-align: left;
+        text-align: center;
         height: 12px;
-        line-height: 60px;
+        line-height: 10px;
         z-index: 16;
     }
 
@@ -53,6 +70,7 @@ body {
     .sidenav a {
         font-size: 30px;
         margin-bottom: 0;
+        padding: 20px 8px 8px 5px;
     }
 
     .sidenav {
@@ -66,7 +84,7 @@ body {
         position: relative;
         width: 100%;
         margin: 0 auto;
-        height: 80px;
+        height: 140px;
     }
 
     #nav-account {
@@ -279,16 +297,29 @@ body {
 
 @media only screen and (device-height: 375px) and (device-width: 667px) and (orientation: landscape) {
 
-    .nav {
+    #inline-nav {
         display: none;
+    }
+
+    #silo-nav {
+        height: 25px;
+    }
+
+    #silo-nav img {
+        height: 50px;
+        width: 50px;
     }
 
     .nav-small {
         display: block;
-        text-align: left;
+        text-align: center;
         height: 12px;
-        line-height: 60px;
+        line-height: 10px;
         z-index: 10;
+    }
+
+    #hivie {
+        text-align: center;
     }
 
     .social-media-container {
@@ -302,7 +333,7 @@ body {
         position: relative;
         width: 100%;
         margin: 0 auto;
-        height: 80px;
+        height: 140px;
     }
 
     #nav-account {
@@ -519,15 +550,28 @@ body {
 
 @media only screen and (device-width: 414px) and (device-height: 736px) {
 
-    .nav {
+    #inline-nav {
         display: none;
+    }
+
+    #silo-nav {
+        height: 25px;
+    }
+
+    #silo-nav img {
+        height: 50px;
+        width: 50px;
+    }
+
+    #hivie {
+        text-align: center;
     }
 
     .nav-small {
         display: block;
-        text-align: left;
+        text-align: center;
         height: 12px;
-        line-height: 60px;
+        line-height: 10px;
     }
 
     .social-media-container {
@@ -541,7 +585,7 @@ body {
         position: relative;
         width: 100%;
         margin: 0 auto;
-        height: 80px;
+        height: 140px;
     }
 
     .nav-container ul {
@@ -751,15 +795,28 @@ body {
 
 @media only screen and (device-width: 736px) and (device-height: 414px) and (orientation: landscape) {
 
-    .nav {
+    #inline-nav {
         display: none;
+    }
+
+    #silo-nav {
+        height: 25px;
+    }
+
+    #silo-nav img {
+        height: 50px;
+        width: 50px;
+    }
+
+    #hivie {
+        text-align: center;
     }
 
     .nav-small {
         display: block;
-        text-align: left;
+        text-align: center;
         height: 12px;
-        line-height: 60px;
+        line-height: 10px;
     }
 
     .social-media-container {
@@ -773,7 +830,7 @@ body {
         position: relative;
         width: 100%;
         margin: 0 auto;
-        height: 80px;
+        height: 140px;
     }
 
     #nav-account {
@@ -978,15 +1035,28 @@ body {
 
 @media only screen and (max-width: 360px) and (orientation: portrait) {
 
-    .nav {
+    #inline-nav {
         display: none;
+    }
+
+    #silo-nav {
+        height: 25px;
+    }
+
+    #silo-nav img {
+        height: 50px;
+        width: 50px;
+    }
+
+    #hivie {
+        text-align: center;
     }
 
     .nav-small {
         display: block;
-        text-align: left;
+        text-align: center;
         height: 12px;
-        line-height: 60px;
+        line-height: 10px;
     }
 
     .social-media-container {
@@ -1000,7 +1070,7 @@ body {
         position: relative;
         width: 100%;
         margin: 0 auto;
-        height: 80px;
+        height: 140px;
     }
 
     #nav-account {
@@ -1210,15 +1280,28 @@ body {
 
 @media only screen and (max-width: 412px) and (device-height: 732px) {
 
-    .nav {
+    #inline-nav {
         display: none;
+    }
+
+    #silo-nav {
+        height: 25px;
+    }
+
+    #hivie {
+        text-align: center;
+    }
+
+    #silo-nav img {
+        height: 50px;
+        width: 50px;
     }
 
     .nav-small {
         display: block;
-        text-align: left;
+        text-align: center;
         height: 12px;
-        line-height: 60px;
+        line-height: 10px;
     }
 
     .social-media-container {
@@ -1232,7 +1315,7 @@ body {
         position: relative;
         width: 100%;
         margin: 0 auto;
-        height: 80px;
+        height: 140px;
     }
 
     #nav-account {

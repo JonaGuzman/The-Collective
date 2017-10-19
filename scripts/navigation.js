@@ -1,4 +1,6 @@
+// TODO: need to rewrite using new nav bar.
 function writeHeader(pwd) {
+    
     
     var navContents = 
         "<div class=row>" +
@@ -59,12 +61,8 @@ function openNav() {
     
     if(Modernizr.mq(mqSmallScreen)) {
         sidenav = 'mySidenav-small';
-        wdth = '100%';
+        wdth = '380px';
     } 
-    else {
-        sidenav = 'mySidenav';
-        wdth = '375px';
-    }
     
     $(".nav-items").animate({ opacity: 1}).fadeIn("fast");
     document.getElementById(sidenav).style.width = wdth;

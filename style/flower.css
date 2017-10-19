@@ -12,6 +12,7 @@ a {
 .flower-items {
     width: 1300px;
     height: 855px;
+    margin: 0 auto;
 }
 
 .flower-items ul {

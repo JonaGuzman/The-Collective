@@ -27,7 +27,7 @@ a {
 
 #caruousel-text {
     position: absolute;
-    width: 1285px;
+    width: 100%;
     z-index: 2;
     margin: 140px auto;
     height: 500px;

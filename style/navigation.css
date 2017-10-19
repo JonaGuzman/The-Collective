@@ -48,38 +48,22 @@
     color: #EDEDEE;
 }
 
-#hivie h1 {
-    font-size: 65px;
-    text-align: center;
-    color: #EDEDEE;
+#inline-nav ul {
+    display: inline-flex;
 }
 
-#hivie {
-    width: 790px;
-    padding-left: 40px;
+#inline-nav nav {
+    margin-bottom: 0;
 }
 
-#hivie a {
-    text-decoration: none;
+.navbar-brand h1 {
+    margin: 0;
 }
 
-#silo-nav {
-    margin: 0 409px;
-    height: 18px;
-}
-
-#silo-nav img {
-    height: 59px;
-    width: 105px;
-}
-
-#nav-menu {
-    margin: 20px 20px;
-}
-
-#current-deals {
+#current-deals, #current-deals ol {
     width: 400px;
-    display: flex;
+    display: inline-flex;
+    list-style: none;
 }
 
 /*
@@ -168,7 +152,7 @@
     cursor:pointer;
 }
 
-.nav-small {
+#smallnav-container {
     display: none;
 }
 
