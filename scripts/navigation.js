@@ -1,6 +1,6 @@
 function writeHeader(pwd) {
     
-    $('.nav-container').append("<div id=nav-root class=row></div>");
+    $('.nav-container').append("<div class=row></div>");
     
     // Menu for larger devices
     var inlineNav = 
@@ -47,44 +47,40 @@ function writeHeader(pwd) {
         "<div id=smallnav-container>" +
             "<ul>" +
                 "<li>" +
-                    "<div id=hivie class=col-sm-6>" +
+                    "<div id=hivie class=col-md-2>" +
                         "<div id=silo-nav><img src=" + pwd + "/images/home/silo.png></div>" +
                         "<a href=./index.html><h2>The HiViE</h2></a>" +
                     "</div>" +
                 "</li>" +
                 "<li>" +
-                    "<div class='nav-small col-sm-6'>" +
-                        "<div id=mySidenav-small class=sidenav></div><span onclick=openNav()>☰</span></div>" +
-                        "<div>" +
-                            "<div id=mySidenav-small class=sidenav>" +
-                                "<a href=javascript:void(0) class=closebtn onclick=closeNav()>×</a>" +
-                                "<a class=nav-items href=" + pwd + "index.html>Home</a>" +
-                                "<a class=nav-items href=#>Culture</a>" +
-                                "<a class=nav-items href=" + pwd + "/pages/flower-all.html>Flower</a>" +
-                                "<a class=nav-items href=" + pwd + "/pages/tea-all.html>Hi-Tea</a>" +
-                                "<a class=nav-items href=#>Trending</a>" +
-                                "<a class=nav-items href=" + pwd + "/pages/merch.html>Shop</a>" +
-                            "</div>" +
+                    "<div class='nav-small col-md-2'>" +
+                        "<div id=mySidenav-small class=sidenav>" +
+                            "<a href=javascript:void(0) class=closebtn onclick=closeNav()>×</a>" +
+                            "<a class=nav-items href=" + pwd + "/index.html>Home</a>" +
+                            "<a class=nav-items href=" + pwd + "/#>Culture</a>" +
+                            "<a class=nav-items href=" + pwd + "/pages/flower-all.html>Flower</a>" +
+                            "<a class=nav-items href=" + pwd + "/pages/tea-all.html>Hi-Tea</a>" +
+                            "<a class=nav-items href=" + pwd + "/#>Trending</a>" +
+                            "<a class=nav-items href=" + pwd + "/pages/merch.html>Shop</a>" +
+                        "</div>" +
+                        "<span onclick=openNav()>☰</span>" +
                     "</div>" +
                 "</li>" +
             "</ul>" +
         "</div>";
     
-    $('#nav-root').append(inlineNav);
-    $('#nav-root').append(smallNav);
+    $('.row').append(inlineNav);
+    $('.row').append(smallNav);
 }
 
-var mqSmallScreen = 'only screen and (device-width: 375px) and (device-height: 667px) and (orientation : portrait)';
-
-//
 function openNav() {
     var sidenav;
     var wdth;
     
-    if(Modernizr.mq(mqSmallScreen)) {
-        sidenav = 'mySidenav-small';
-        wdth = '380px';
-    } 
+
+    sidenav = 'mySidenav-small';
+    wdth = '380px';
+
     
     $(".nav-items").animate({ opacity: 1}).fadeIn("fast");
     document.getElementById(sidenav).style.width = wdth;
@@ -93,12 +89,7 @@ function openNav() {
 function closeNav() {
     var sidenav;
     
-    if(Modernizr.mq(mqSmallScreen)) {
-        sidenav = 'mySidenav-small';
-    } 
-    else {
-        sidenav = 'mySidenav';
-    }
+    sidenav = 'mySidenav-small';
     
     $(".nav-items").css("opacity", "0");
     document.getElementById(sidenav).style.width = "0";

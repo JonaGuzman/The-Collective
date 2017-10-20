@@ -21,6 +21,7 @@
     font-size: 30px;
     cursor: pointer;
     padding-left: 5px;
+    line-height: 10px;
 }
 
 body {
@@ -30,6 +31,46 @@ body {
 
 div #hivie a {
     color: #B97F6D;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    background-color: #123132;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #B97F6D;
+    display: block;
+    transition: 0.5s;
+    margin-bottom: -30px
+}
+
+.nav-items {
+    opacity: 0;
+}
+
+.sidenav a:hover,
+.offcanvas a:focus {
+    color: #ede1de;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 
@@ -60,11 +101,15 @@ div #hivie a {
         text-align: center;
     }
     
+    #mySidenav-small {
+        line-height: 50px;
+    }
+    
     .nav-small {
         display: block;
         text-align: center;
         height: 12px;
-        line-height: 10px;
+        line-height: 20px;
         z-index: 16;
     }
 

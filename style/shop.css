@@ -14,8 +14,10 @@ a {
 }
 
 .shop-items {
+    width: 1300px;
     text-align: center;
     font-style: italic;
+    margin: 0 auto;
 }
 
 .shop-items ul {

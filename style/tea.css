@@ -11,7 +11,7 @@ a {
 
 .tea-items {
     width: 1300px;
-    height: 500px;
+    height: 400px;
     margin: 0 auto;
 }
 
@@ -19,7 +19,7 @@ a {
     list-style: none;
     display: inline-flex;
     width: 1300px;
-    margin: 45px auto;
+    margin: 25px auto;
     padding-left: 42px;
 }
 

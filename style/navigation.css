@@ -66,60 +66,12 @@
     list-style: none;
 }
 
-/*
-#nav-account {
-    margin: 27px auto auto 165px;
-    width: 200px;
-    height: 65px;
-    font-size: 20px;
-}*/
-
 #nav-account {
     margin: 15px auto;
     padding-left: 100px;
     width: 200px;
     height: 40px;
     font-size: 20px;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 4;
-    top: 0;
-    left: 0;
-    background-color: #123132;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #B97F6D;
-    display: block;
-    transition: 0.5s;
-    margin-bottom: -30px
-}
-
-.nav-items {
-    opacity: 0;
-}
-
-.sidenav a:hover,
-.offcanvas a:focus {
-    color: #ede1de;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
 }
 
 #main {
