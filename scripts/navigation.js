@@ -17,7 +17,7 @@ function writeHeader(pwd) {
                             "<li><a href=#>Culture</a></li>" +
                             "<li><a href=" + pwd + "/pages/flower-all.html>Flower</a></li>" +
                             "<li><a href=" + pwd + "/pages/tea-all.html>Hi-Tea</a></li>" +
-                            "<li><a href=#>Trending</a></li>" +
+                            "<li><a href=" + pwd + "/pages/trending.html>Trending</a></li>" +
                             "<li><a href=" + pwd + "/pages/merch.html>Shop</a></li>" +
                         "</ul>" +
                         "</div>" +

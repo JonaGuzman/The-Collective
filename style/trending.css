@@ -1,0 +1,95 @@
+html,
+body {
+    overflow-x: hidden;
+    color: #B97F6D;
+    background-color: #EDEDEE;
+}
+
+a {
+    color: #d0b0a6;
+}
+
+#trending-title {
+    text-align: left;
+    width: 1280px;
+    margin: 0 auto 30px auto;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #cfcfcf
+}
+
+.trending-items {
+    width: 1280px;
+    font-style: italic;
+    margin: 0 auto 15px auto;
+    border-bottom: 1px solid #cfcfcf
+}
+
+#date {
+    display: block;
+}
+
+#rec-posts h4 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.trending-items ul {
+    list-style: none;
+    display: block;
+    margin: 25px auto;
+    padding-left: 48px;
+}
+
+.trending-items li {
+    list-style: none;
+    width: 550px;
+    height: 405px;
+}
+
+.trending-items img {
+    width: 550px;
+    height: 400px;
+}
+
+.trending-items p {
+    margin: 0 auto;
+}
+
+#sb-overlay {
+    background-color: #123132 !important;
+}
+
+#sb-loading-inner {
+    padding-left: 55px;
+}
+.post {
+    height: 600px;
+    width: 600px;
+    margin: 0 auto;
+}
+
+#rec-posts {
+    height: 300px;
+    text-align: left;
+}
+
+#rec-posts ul {
+    height: 180px;
+    width: 180px;
+}
+
+#rec-posts li {
+    height: 60px;
+    width: 130px;
+}
+
+.post h1 {
+    text-align: center;
+    width: 600px;
+}
+
+#load-more {
+    width: 500px;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}

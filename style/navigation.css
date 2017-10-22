@@ -30,6 +30,11 @@
     margin: 0 auto;
 }
 
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: #B97F6D;
+    background-color: transparent;
+}
+
 .nav-container ul {
     list-style: none;
 }
