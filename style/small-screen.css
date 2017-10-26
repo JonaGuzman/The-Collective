@@ -17,72 +17,90 @@
  
 */
 
-.nav-small span {
-    font-size: 30px;
-    cursor: pointer;
-    padding-left: 5px;
-    line-height: 10px;
-}
-
-body {
-    color: #B97F6D;
-    background-color: #EDEDEE;
-}
-
-div #hivie a {
-    color: #B97F6D;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 4;
-    top: 0;
-    left: 0;
-    background-color: #123132;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #B97F6D;
-    display: block;
-    transition: 0.5s;
-    margin-bottom: -30px
-}
-
-.nav-items {
-    opacity: 0;
-}
-
-.sidenav a:hover,
-.offcanvas a:focus {
-    color: #ede1de;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-
-@media only screen and (device-width: 375px) and (device-height: 667px) and (orientation: portrait) {
-
+@media (max-width: 425px) {
+    
     #smallnav-container {
         display: block;
     }
+    
+    #inline-nav {
+        display: none;
+    }
 
-    .nav-container ul {
+    .nav-small span {
+        font-size: 30px;
+        cursor: pointer;
+        padding-left: 5px;
+        line-height: 10px;
+    }
+
+    body {
+        color: #B97F6D;
+        background-color: #EDEDEE;
+    }
+
+    div #hivie a {
+        color: #B97F6D;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 4;
+        top: 0;
+        left: 0;
+        background-color: #123132;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #B97F6D;
+        display: block;
+        transition: 0.5s;
+        margin-bottom: -30px
+    }
+
+    .nav-items {
+        opacity: 0;
+    }
+
+    .sidenav a:hover,
+    .offcanvas a:focus {
+        color: #ede1de;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    
+        .nav-container ul {
         padding: 0;
     }
+    
+        .social-media-container {
+        display: none;
+    }
+    
+    #map {
+        display: none;
+    }
+    
+    #carousel-text {
+        display: none;
+    }
+
+}
+@media screen and (device-width: 375px) and (device-height: 667px) and (orientation: portrait) {
 
     #silo-nav {
         height: 50px;
@@ -93,16 +111,8 @@ div #hivie a {
         width: 85px;
     }
 
-    #inline-nav {
-        display: none;
-    }
-
     #hivie {
         text-align: center;
-    }
-    
-    #mySidenav-small {
-        line-height: 50px;
     }
     
     .nav-small {
@@ -228,14 +238,14 @@ div #hivie a {
     #tea-header,
     #tea-header li {
         height: 50px;
-        width: 373px;
+        width: 365px;
         padding-left: 0;
     }
 
     .tea {
         padding: 0 0 0 0;
         margin: 0 auto;
-        width: 630px;
+        width: 375px;
     }
 
     .tea ul {
@@ -326,10 +336,6 @@ div #hivie a {
         list-style: none;
     }
 
-    #map {
-        display: none;
-    }
-
     #footer-items {
         display: grid;
         width: 405px;
@@ -339,13 +345,9 @@ div #hivie a {
 }
 
 
-
-
-
-
 /* Landscape */
 
-@media only screen and (device-height: 375px) and (device-width: 667px) and (orientation: landscape) {
+@media screen and (device-height: 375px) and (device-width: 667px) and (orientation: landscape) {
 
     #inline-nav {
         display: none;
@@ -496,10 +498,9 @@ div #hivie a {
     }
 
     .tea ul {
-        width: 350px;
+        width: 300px;
         padding: 0px 0 0 0;
-        display: flex;
-        margin: 0 0;
+        display: block;
     }
 
     .tea li {
@@ -598,11 +599,7 @@ div #hivie a {
 }
 
 
-@media only screen and (device-width: 414px) and (device-height: 736px) {
-
-    #inline-nav {
-        display: none;
-    }
+@media screen and (device-width: 414px) and (device-height: 736px) {
 
     #silo-nav {
         height: 25px;
@@ -622,10 +619,6 @@ div #hivie a {
         text-align: center;
         height: 12px;
         line-height: 10px;
-    }
-
-    .social-media-container {
-        display: none;
     }
 
     .nav-container {
@@ -833,7 +826,7 @@ div #hivie a {
 
     #footer-items {
         display: grid;
-        width: 405px;
+        width: 433px;
         margin: 0 0;
         padding: 0 0;
     }
@@ -843,7 +836,7 @@ div #hivie a {
 
 /* Landscape */
 
-@media only screen and (device-width: 736px) and (device-height: 414px) and (orientation: landscape) {
+@media screen and (device-width: 736px) and (device-height: 414px) and (orientation: landscape) {
 
     #inline-nav {
         display: none;
@@ -1083,11 +1076,7 @@ div #hivie a {
 }
 
 
-@media only screen and (max-width: 360px) and (orientation: portrait) {
-
-    #inline-nav {
-        display: none;
-    }
+@media screen and (max-width: 360px) and (orientation: portrait) {
 
     #silo-nav {
         height: 25px;
@@ -1142,16 +1131,27 @@ div #hivie a {
         padding: 0px;
     }
 
+    .carousel {
+        margin-bottom: -7px;
+        width: 350px;
+        height: 600px;
+        margin: 0 auto;
+    }
+    
     .carousel-inner {
-        height: 200px;
-        /*!important;*/
+        width: 100%;
+        height: 600px;
         margin: 0 0 10px 0;
+    }
+    
+    .carousel-inner .item img {
+        height: 600px;
     }
 
     .culture {
         padding: 0 0 0 0;
         margin: 0px auto;
-        width: 375px;
+        width: 350px;
         text-align: center;
     }
 
@@ -1177,13 +1177,48 @@ div #hivie a {
 
     .culture li {
         list-style: none;
-        height: 228px;
+        height: 350px;
         text-align: left;
         margin: 0px 0;
         padding: 0px 0 0 0px;
         font-size: 10px;
     }
-
+    
+    #est-container {
+        padding: 85px 0px 0 0px;
+        height: 350px;
+        width: 300px;
+    }
+    
+    #est-container h1 {
+        text-align: center;
+        margin: 2px 15px 0 auto;
+    }
+    
+    #silhouette {
+        margin-right: 60px;
+    }
+    
+    #est-container ul {
+        list-style: none;
+        width: 180px;
+        display: inline-flex;
+        margin-left: 10px;
+    }
+    
+    #est-container li {
+        list-style: none;
+        width: 90px;
+        height: 200px;
+        padding-left: 0;
+    }
+    
+    #est-container img {
+        list-style: none;
+        width: 160px;
+        height: 140px;
+    }
+    
     #culture1-overlay,
     #culture2-overlay,
     #culture3-overlay {
@@ -1206,7 +1241,7 @@ div #hivie a {
 
     .culture img {
         list-style: none;
-        height: 207px;
+        height: 325px;
         width: 300px;
         margin: 0px auto;
     }
@@ -1217,8 +1252,8 @@ div #hivie a {
 
     #tea-header,
     #tea-header li {
-        height: 50px;
-        width: 373px;
+        height: 25px;
+        width: 340px;
         padding-left: 0;
     }
 
@@ -1229,15 +1264,14 @@ div #hivie a {
     }
 
     .tea ul {
-        width: 350px;
+        width: 300px;
         padding: 0px 0 0 0;
         display: block;
-        margin: 0 0;
     }
 
     .tea li {
         list-style: none;
-        width: 372px;
+        width: 300px;
         height: 350px;
     }
 
@@ -1270,7 +1304,7 @@ div #hivie a {
 
     .flower-row {
         padding: 0 0 0 0;
-        margin: 0 auto;
+        margin: 10px auto;
         width: 300px;
     }
 
@@ -1328,11 +1362,7 @@ div #hivie a {
     }
 }
 
-@media only screen and (max-width: 412px) and (device-height: 732px) {
-
-    #inline-nav {
-        display: none;
-    }
+@media screen and (max-width: 412px) and (device-height: 732px) {
 
     #silo-nav {
         height: 25px;
