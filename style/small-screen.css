@@ -186,9 +186,11 @@
         height: 325px;
     }
 
-    #tea1-overlay,
-    #tea2-overlay {
-        display: none;
+    #tea1-overlay, #tea2-overlay {
+        height: 325px;
+        width: 300px;
+        margin: 0 0 0 35px;
+        padding: 105px 0;
     }
 
     #tea-text {
@@ -196,6 +198,11 @@
         padding: 10px 8px;
         font-size: 8px;
         display: none;
+    }
+    
+    .anchor-items li, .anchor-items ul {
+        width: 304px !important;
+        height: 10px !important;
     }
 
     h3 {
@@ -234,7 +241,10 @@
     #flower1-overlay,
     #flower3-overlay,
     #flower2-overlay {
-        display: none;
+        height: 250px;
+        width: 300px;
+        margin: 0 0 0 0px;
+        padding: 105px 0;
     }
 
     .footer {

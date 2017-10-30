@@ -49,7 +49,7 @@ function writeHeader(pwd) {
                 "<li>" +
                     "<div id=hivie class=col-md-2>" +
                         "<div id=silo-nav><img src=" + pwd + "/images/home/silo.png></div>" +
-                        "<a href=./index.html><h2>The HiViE</h2></a>" +
+                        "<a href=" + pwd + "/index.html><h2>The HiViE</h2></a>" +
                     "</div>" +
                 "</li>" +
                 "<li>" +
