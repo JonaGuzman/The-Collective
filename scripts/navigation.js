@@ -81,8 +81,8 @@ function openNav() {
     wdth = '380px';
 
     
-    $(".nav-items").animate({ opacity: 1}, 400, "linear", function() {
-        $( this ).fadeIn()
+    $(".nav-items").animate({ opacity: 1}, "slow", "linear", function() {
+        $(this).fadeIn()
     });
     $("#" + sidenav).css("width", wdth);
     //document.getElementById(sidenav).style.width = wdth;
