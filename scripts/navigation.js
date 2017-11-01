@@ -82,7 +82,7 @@ function openNav() {
 
     
     $("#" + sidenav).css("width", wdth);
-    $(".nav-items").animate({ opacity: 1}, 800, "linear", function() {
+    $(".nav-items").animate({ opacity: 1}, "fast", "linear", function() {
         $(this).fadeIn()
     });
     
