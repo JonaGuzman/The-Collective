@@ -45,6 +45,7 @@
 
       #hivie {
         text-align: center;
+        height: 65px;
     }
     
     .sidenav {
@@ -189,7 +190,7 @@
     #tea1-overlay, #tea2-overlay {
         height: 325px;
         width: 300px;
-        margin: 0 0 0 35px;
+        margin: 0 0 0 54px;
         padding: 105px 0;
     }
 
@@ -267,14 +268,6 @@
 }
 
 @media screen and (max-width: 360px) {
-    #silo-nav {
-        height: 25px;
-    }
-
-    #silo-nav img {
-        height: 50px;
-        width: 50px;
-    }
 
     .nav-small {
         line-height: 10px;
@@ -389,15 +382,6 @@
 }
 
 @media screen and (max-width: 375px) {
-    
-    #silo-nav {
-        height: 50px;
-    }
-
-    #silo-nav img {
-        height: 85px;
-        width: 85px;
-    }
   
     .nav-small {
         line-height: 20px;
@@ -486,15 +470,6 @@
 /* Landscape */
 
 @media screen and (max-width: 667px) and (min-width: 420px) {
-
-    #silo-nav {
-        height: 25px;
-    }
-
-    #silo-nav img {
-        height: 50px;
-        width: 50px;
-    }
 
     .nav-small {
         line-height: 10px;
@@ -662,15 +637,6 @@
 
 @media screen and (max-width: 414px) and (min-width: 400px) {
 
-    #silo-nav {
-        height: 25px;
-    }
-
-    #silo-nav img {
-        height: 50px;
-        width: 50px;
-    }
-
     .nav-small {
         line-height: 10px;
     }
@@ -774,19 +740,10 @@
 
 @media screen and (device-width: 736px) and (device-height: 414px) and (orientation: landscape) {
 
-    #silo-nav {
-        height: 25px;
-    }
-
     #inline-nav ul {
         display: inline-flex;
         width: 470px;
         height: 54px;
-    }
-    
-    #silo-nav img {
-        height: 50px;
-        width: 50px;
     }
 
     #hivie {
@@ -1049,18 +1006,10 @@
 
 @media screen and (max-width: 412px) and (device-height: 732px) {
 
-    #silo-nav {
-        height: 25px;
-    }
-
     #hivie {
         text-align: center;
     }
 
-    #silo-nav img {
-        height: 50px;
-        width: 50px;
-    }
 
     .nav-small {
         line-height: 10px;

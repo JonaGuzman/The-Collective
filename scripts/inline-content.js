@@ -27,6 +27,8 @@ function setContentFlower(flowerName, type, inlineId, desc, catVal) {
 function setContentTea(teaName, type, inlineId, desc, catVal) {
     
     var catValues = catVal;
+    
+    // TODO: use modernizr to mq the size of the screen return list of categories split into 3 boxes with 3-4 desc each with a checkmark attribute
     var progressBar1 = "<li><ol><li style=width:460px;height:21px><div class=progress>" +
                         "<div class='progress-bar progress-bar-success' role=progressbar aria-valuenow=";
     var progressBar2 = "aria-valuemin=0 aria-valuemax=100 style=width:";

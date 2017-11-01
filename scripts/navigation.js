@@ -48,8 +48,7 @@ function writeHeader(pwd) {
             "<ul>" +
                 "<li>" +
                     "<div id=hivie class=col-md-2>" +
-                        "<div id=silo-nav><img src=" + pwd + "/images/home/silo.png></div>" +
-                        "<a href=" + pwd + "/index.html><h2>The HiViE</h2></a>" +
+                        "<a href=" + pwd + "/index.html><h1>The HiViE</h1></a>" +
                     "</div>" +
                 "</li>" +
                 "<li>" +
@@ -82,7 +81,7 @@ function openNav() {
     wdth = '380px';
 
     
-    $(".nav-items").animate({ opacity: 1}).fadeIn("fast");
+    $(".nav-items").animate({ opacity: 1}).fadeIn("fast", "linear");
     document.getElementById(sidenav).style.width = wdth;
 }
 
@@ -91,7 +90,7 @@ function closeNav() {
     
     sidenav = 'mySidenav-small';
     
-    $(".nav-items").css("opacity", "0");
+    $(".nav-items").fadeOut("fast"); //animate({ opacity: 0}, "fast", "linear", $(".nav-items")).fadeOut("fast");
     document.getElementById(sidenav).style.width = "0";
 }
 

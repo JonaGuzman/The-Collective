@@ -1,6 +1,13 @@
 
-function teaA1(){  
-    return '{ "name":"Tea One", "type":"Type 1", "inline":"#inline-content1", "content": "Consequat ea Investigationes in enim congue. Option velit volutpat quod blandit ex. Congue parum praesent aliquam nam clari. Qui praesent quam sollemnes id vulputate. In imperdiet diam at sequitur et. Minim delenit in dolor dolore typi.", "ratings":[40, 80, 65, 95]}';
+function teaA1(){ 
+     var query = Modernizr.mq('(max-width: 425px)');
+     if (query) {
+         var desc = '{"desc1": "check", "desc2": "", "desc3": "", "desc4": "", "desc5": "check", "desc6": ""}';
+         return '{ "name":"Tea One", "type":"Type 1", "inline":"#inline-content1", "content": "", "ratings": ' + desc + '}';
+     }
+    else {
+       return '{ "name":"Tea One", "type":"Type 1", "inline":"#inline-content1", "content": "Consequat ea Investigationes in enim congue. Option velit volutpat quod blandit ex. Congue parum praesent aliquam nam clari. Qui praesent quam sollemnes id vulputate. In imperdiet diam at sequitur et. Minim delenit in dolor dolore typi.", "ratings":[40, 80, 65, 95]}'; 
+    }
 }
 
 function teaA2(){  
