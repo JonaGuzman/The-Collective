@@ -57,7 +57,9 @@
         left: 0;
         background-color: #123132;
         overflow-x: hidden;
-        transition: 1.1s;
+        /*transition: 0.9s;
+            Removed due to render issue on mobile
+        */
         padding-top: 60px;
     }
     
