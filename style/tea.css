@@ -95,6 +95,7 @@ a {
 .ratings {
     list-style: none;
     padding-left: 20px;
+    display: block;
 }
 
 .ratings ol {
@@ -148,7 +149,7 @@ a {
     .tea-items ul {
         width: 400px;
         height: 1050px;
-        padding-left: 42px;
+        padding-left: 28px;
     }
     
     .tea-items li {
@@ -159,5 +160,9 @@ a {
     .tea-items img {
         width: 320px;
         height: 320px;
+    }
+    
+    .ratings {
+        display: none;
     }
 }
