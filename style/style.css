@@ -216,17 +216,17 @@ a {
 
 #est-container ul {
     list-style: none;
-    width: 310px;
+    width: 267px;
     height: 400px;
     display: inline-flex;
-    margin-left: 32px;
+    margin-left: 0px;
 }
 
 #est-container li {
     list-style: none;
-    width: 90px;
+    width: 100px;
     height: 200px;
-    padding-left: 0;
+    padding-left: 5px;
 }
 
 #silhouette {
@@ -235,8 +235,8 @@ a {
 
 #est-container img {
     list-style: none;
-    width: 200px;
-    height: 140px;
+    width: 175px;
+    height: 130px;
 }
 
 #est-container span {

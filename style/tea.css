@@ -196,4 +196,9 @@ a {
     .glyphicon, .glyphicon-ok {
         color: #007F00;
     }
+    
+    #all img {
+        width: 100px;
+        height: 135px;
+    }
 }

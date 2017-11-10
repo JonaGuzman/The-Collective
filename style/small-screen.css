@@ -48,6 +48,10 @@
         height: 65px;
     }
     
+    #silhouette {
+        margin-right: 60px;
+    }
+    
     .sidenav {
         height: 100%;
         width: 0;
@@ -192,7 +196,7 @@
     #tea1-overlay, #tea2-overlay {
         height: 325px;
         width: 300px;
-        margin: 0 0 0 54px;
+        margin: 0 0 0 36px;
         padding: 105px 0;
     }
 
@@ -254,10 +258,9 @@
         position: relative;
         bottom: 0;
         width: 500px;
-        height: 440px;
+        height: 500px;
         background-color: #123132;
         color: #F2EC30;
-        margin: 2px auto;
         text-align: center;
         list-style: none;
     }
@@ -313,10 +316,6 @@
     #est-container h1 {
         text-align: center;
         margin: 2px 15px 0 auto;
-    }
-    
-    #silhouette {
-        margin-right: 60px;
     }
     
     #est-container ul {
@@ -432,7 +431,10 @@
     }
 
     #est-container {
-        display: none;
+        display: inline;
+        padding-top: 25px;
+        height: 208px;
+        width: 300px;    
     }
 
     #tea-header,

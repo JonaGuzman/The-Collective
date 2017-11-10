@@ -59,7 +59,7 @@ function writeHeader(pwd) {
                             "<a class=nav-items href=" + pwd + "/#>Culture</a>" +
                             "<a class=nav-items href=" + pwd + "/pages/flower-all.html>Flower</a>" +
                             "<a class=nav-items href=" + pwd + "/pages/tea-all.html>Hi-Tea</a>" +
-                            "<a class=nav-items href=" + pwd + "/#>Trending</a>" +
+                            "<a class=nav-items href=" + pwd + "/pages/trending.html>Trending</a>" +
                             "<a class=nav-items href=" + pwd + "/pages/merch.html>Shop</a>" +
                         "</div>" +
                         "<span onclick=openNav()>☰</span>" +
