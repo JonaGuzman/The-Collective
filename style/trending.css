@@ -93,3 +93,46 @@ a {
     margin: 0 auto;
     padding-bottom: 5px;
 }
+
+@media (max-width: 425px) {
+    
+    .trending-items {
+        width: 400px;
+        margin: 0 auto 10px auto;
+    }
+    
+    .trending-items ul {
+        list-style: none;
+        display: block;
+        margin: 15px auto;
+        padding-left: 15px;
+    }
+    
+    .trending-items li {
+        width: 315px;
+        height: 371px;
+    }
+    
+    .trending-items img {
+        width: 315px;
+        height: 370px;
+    }
+
+    #rec-posts {
+        display: none;
+    }
+    
+    .post {
+        height: 600px;
+        width: 375px;
+        margin: 0 auto;
+    }
+    
+    .post h1 {
+        width: 345px;
+    }
+    
+    #load-more img {
+        width: 380px;
+    }
+}
