@@ -49,3 +49,22 @@ a {
 #sb-loading-inner {
     padding-left: 55px;
 }
+
+@media (max-width: 425px) {
+    .shop-items {
+        width: 400px;
+    }
+    
+    .shop-items ul {
+        margin: 10px auto;
+        padding-left: 0px;
+    }
+    
+    .shop-items li {
+        width: 398px;
+    }
+    
+    .shop-items img {
+        width: 370px;
+    }
+}

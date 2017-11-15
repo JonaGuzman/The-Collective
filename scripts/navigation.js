@@ -78,7 +78,13 @@ function openNav() {
     
 
     sidenav = 'mySidenav-small';
-    wdth = '380px';
+    
+    if (Modernizr.mq('screen and (max-width: 414px) and (min-width: 400px)')) {
+         wdth = '414px';
+    }
+    else {
+        wdth = '380px';
+    }
 
     
     $("#" + sidenav).css("width", wdth);
