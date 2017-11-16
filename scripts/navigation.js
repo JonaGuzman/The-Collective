@@ -56,7 +56,7 @@ function writeHeader(pwd) {
                         "<div id=mySidenav-small class=sidenav>" +
                             "<a href=javascript:void(0) class=closebtn onclick=closeNav()>×</a>" +
                             "<a class=nav-items href=" + pwd + "/index.html>Home</a>" +
-                            "<a class=nav-items href=" + pwd + "/#>Culture</a>" +
+                            "<a class=nav-items href=#>Culture</a>" +
                             "<a class=nav-items href=" + pwd + "/pages/flower-all.html>Flower</a>" +
                             "<a class=nav-items href=" + pwd + "/pages/tea-all.html>Hi-Tea</a>" +
                             "<a class=nav-items href=" + pwd + "/pages/trending.html>Trending</a>" +

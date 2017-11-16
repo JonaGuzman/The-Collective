@@ -17,6 +17,10 @@ a {
     border-bottom: 1px solid #cfcfcf
 }
 
+#sub-header {
+    display: block;
+}
+
 .trending-items {
     width: 1280px;
     font-style: italic;
@@ -36,18 +40,17 @@ a {
 .trending-items ul {
     list-style: none;
     display: block;
-    margin: 25px auto;
-    padding-left: 48px;
+    margin: 20px auto;
 }
 
 .trending-items li {
     list-style: none;
-    width: 550px;
+    width: 700px;
     height: 405px;
 }
 
 .trending-items img {
-    width: 550px;
+    width: 700px;
     height: 400px;
 }
 
@@ -62,10 +65,11 @@ a {
 #sb-loading-inner {
     padding-left: 55px;
 }
+
 .post {
-    height: 600px;
-    width: 600px;
-    margin: 0 auto;
+    height: 700px;
+    width: 700px;
+    margin: 0 0;
 }
 
 #rec-posts {
@@ -83,21 +87,33 @@ a {
     width: 130px;
 }
 
+#last-item {
+    border: none;
+}
+
 .post h1 {
     text-align: center;
-    width: 600px;
+    width: 746px;
 }
 
 #load-more {
-    width: 500px;
+    width: 752px;
     margin: 0 auto;
     padding-bottom: 5px;
 }
 
+#load-more img {
+    width: 700px;
+}
+
 @media (max-width: 425px) {
     
+    #sub-header {
+        display: none;
+    }
+    
     .trending-items {
-        width: 400px;
+        width: 400px !important;
         margin: 0 auto 10px auto;
     }
     
@@ -124,7 +140,7 @@ a {
     
     .post {
         height: 600px;
-        width: 375px;
+        width: 340px;
         margin: 0 auto;
     }
     
@@ -132,7 +148,17 @@ a {
         width: 345px;
     }
     
-    #load-more img {
-        width: 380px;
+    #load-more {
+        width: 350px;
     }
+    
+    #load-more img {
+        width: 350px;
+    }
+}
+
+    @media (max-width: 375px) {
+        .post {
+            width: 375px;
+        }
 }

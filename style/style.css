@@ -322,3 +322,18 @@ a {
 #flower1-container,
 #flower3-container,
 #flower2-container {}
+
+@media (max-width: 425px) {
+    .carousel {
+        width: 415px;
+    }
+    
+    .carousel-inner {
+        height: 550px;
+        width: 600px;
+    }
+    
+    .carousel-inner img {
+        height: 600px;
+    }
+}
