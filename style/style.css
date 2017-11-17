@@ -150,8 +150,8 @@ a {
 }
 
 .culture ul {
-    padding: 0 0px 0 0;
-    margin: 0px 0px;
+    padding: 0 0 0 4px;
+    margin: 0 0;
     width: 1289px;
 }
 
@@ -230,13 +230,13 @@ a {
 }
 
 #silhouette {
-    margin-right: 100px;
+    margin-right: 118px;
 }
 
 #est-container img {
     list-style: none;
-    width: 175px;
-    height: 130px;
+    width: 225px;
+    height: 140px;
 }
 
 #est-container span {
@@ -335,5 +335,15 @@ a {
     
     .carousel-inner img {
         height: 600px;
+    }
+    
+    #est-container img {
+        list-style: none;
+        width: 175px;
+        height: 130px;
+    }
+    
+    #silhouette {
+        margin-right: 100px;
     }
 }

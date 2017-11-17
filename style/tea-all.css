@@ -1,0 +1,20 @@
+
+@media (min-width:500px) {
+    #main {
+        height: 800px;
+    }
+    
+    .tea-items {
+        height: 380px;
+    }
+}
+
+@media (max-width: 500px) {
+    #main {
+        height: 385px;
+    }
+    
+    .tea-items {
+        height: 170px;
+    }
+}

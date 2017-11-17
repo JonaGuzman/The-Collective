@@ -143,6 +143,16 @@ a {
     padding-left: 18px;
 }
 
+@media (min-width: 500px) {
+    .ratings {
+        display: block;
+    }
+    
+    .mobile-ratings {
+        display: none; 
+    }
+}
+
 @media (max-width: 425px) {
     .flower-items {
         width: 400px;
@@ -199,5 +209,11 @@ a {
     #all img {
         width: 110px;
         height: 160px;
+    }
+}
+
+@media (max-width: 425px) and (min-width:410px) {
+    .flower-items ul {
+        padding-left: 30px;
     }
 }

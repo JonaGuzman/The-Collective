@@ -1,0 +1,12 @@
+
+@media (min-width:500px) {    
+    .flower-items {
+        height: 375px;
+    }
+}
+
+@media (max-width:500px) {    
+    .flower-items {
+        height: 190px;
+    }
+}
