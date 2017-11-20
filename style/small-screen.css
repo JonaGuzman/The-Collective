@@ -552,10 +552,6 @@
         display: inline;
     }
 
-    #est-container {
-        display: none;
-    }
-
     .culture img {
         height: 207px;
         width: 299px;
@@ -586,12 +582,6 @@
         list-style: none;
         width: 372px;
         height: 350px;
-    }
-
-    #tea1-overlay,
-    #tea2-overlay {
-        display: none;
-        visibility: hidden;
     }
 
     .flower-row {
@@ -764,8 +754,21 @@
 }
 
 /* Landscape */
+@media screen and (max-width: 667px) and (min-width: 650px) and (orientation: landscape) {
+        .carousel-indicators {
+            width: 705px;
+        }
+        
+        .culture {
+            padding-left: 3px !important;
+        }
+    
+        .tea {
+            padding-left: 3px !important;
+        }
+    }
 
-@media screen and (device-width: 736px) and (device-height: 414px) and (orientation: landscape) {
+@media screen and (max-width: 736px) and (orientation: landscape) {
 
     #inline-nav ul {
         display: inline-flex;
@@ -833,7 +836,7 @@
     .carousel-indicators {
         margin-left: -52%;
     }
-
+    
     .culture {
         padding: 0 0 0 0;
         margin: 0px auto;
@@ -912,6 +915,10 @@
         height: 200px;
         padding-left: 0;
     }
+    
+    #silhouette {
+        margin-right: 101px;
+    }
 
     h3 {
         font-size: 14px;
@@ -947,10 +954,12 @@
         width: 300px;
         height: 325px;
     }
-
-    #tea1-overlay,
-    #tea2-overlay {
-        visibility: hidden;
+    
+    #tea1-overlay, #tea2-overlay {
+        margin-left: 0;
+        height: 330px;
+        width: 300px;
+        padding: 110px 0;
     }
 
     #tea-text {
