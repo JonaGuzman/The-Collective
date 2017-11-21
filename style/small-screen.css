@@ -608,13 +608,6 @@
         width: 190px;
     }
 
-    #flower1-overlay,
-    #flower3-overlay,
-    #flower2-overlay {
-        display: none;
-        visibility: hidden;
-    }
-
     .footer {
         width: 100%;
     }
@@ -1007,13 +1000,6 @@
         list-style: none;
         height: 225px;
         width: 190px;
-    }
-
-    #flower1-overlay,
-    #flower3-overlay,
-    #flower2-overlay {
-        display: none;
-        visibility: hidden;
     }
 
     .footer {

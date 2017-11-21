@@ -165,6 +165,10 @@ a {
         height: 340px;
         padding-left: 33px;
     }
+    
+    #mobile-img {
+        height: 230px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -287,6 +291,115 @@ a {
     
     #sb-wrapper {
         top: 90px !important;
+    }
+    
+    .glyphicon, .glyphicon-ok {
+        color: #007F00;
+    }
+    
+    #all {
+        margin: 32px auto;
+    }
+    
+    #all img {
+        width: 100px;
+        height: 135px;
+    }
+
+    #all img {
+        width: 100px;
+        height: 135px;
+    }
+    
+    #all li {
+        padding-left: 18px;
+        height: 165px;
+        width: 127px;
+        padding-right: 0px;
+    }
+}
+
+@media (max-width: 750px) and (min-width: 700px) and (orientation: landscape) {
+    .tea-items ul {
+        padding-left: 45px !important;
+    }
+    
+    #sb-wrapper {
+        top: 118px !important;
+    }
+}
+
+@media (max-width: 750px) and (orientation: landscape) {
+
+    .tea-items {
+        width: 800px;
+    }
+    
+    .tea-items ul {
+        padding-left: 16px;
+        margin: 100px auto;
+    }
+    
+    .tea-items li {
+       width: 220px;
+    }
+    
+    .tea-items img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    #tea-info p {
+        font-size: 22px;
+    }
+    
+    .ratings {
+        display: none;
+    }
+    
+    #sb-body img {
+        width: 170px;
+        height: 170px;
+    }
+    
+    .mobile-ratings {
+        display: inline-flex;
+        width: 315px;
+        padding-left: 7px;
+        padding-top: 5px
+    }
+    
+    .mobile-ratings ul {
+        width: 145px;
+    }
+    
+    .mobile-ratings li {
+        height: 30px;
+    }
+    
+    #mobile-img {
+        height: 136px;
+    }
+    
+    #yes {
+        padding-left: 28px;
+    }
+    
+    #tea-info img {
+        height: 135px;
+    }
+    
+    #sb-wrapper {
+        top: 90px !important;
+    }
+    
+    #sb-body {
+        height: 368px !important;
+    }
+    
+    #sb-wrapper-inner {
+        height: 370px !important;
+        bottom: 115px;
     }
     
     .glyphicon, .glyphicon-ok {

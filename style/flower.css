@@ -212,8 +212,124 @@ a {
     }
 }
 
+@media (max-width: 690px) and (min-width: 650px) and (orientation: landscape) {
+    #sb-wrapper {
+        top: 91px !important;
+    }
+    
+    .flower-items ul {
+        padding-left: 19px !important;
+    }
+}
+
 @media (max-width: 425px) and (min-width:410px) {
     .flower-items ul {
         padding-left: 30px;
+    }
+}
+
+@media (max-width: 750px) and (orientation: landscape) {
+
+    #main {
+        height: 590px;    
+    }
+    
+    .flower-items {
+        width: 800px;
+    }
+    
+    .flower-items ul {
+        padding-left: 50px;
+        margin: 75px auto 0 auto;
+        height: 500px;
+        width: 665px;
+    }
+    
+    .flower-items li {
+       width: 215px;
+       height: 222px;
+    }
+    
+    .flower-items img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    #flower-info p {
+        font-size: 22px;
+    }
+    
+    .ratings {
+        display: none;
+    }
+    
+    #sb-body img {
+        width: 170px;
+        height: 170px;
+    }
+    
+    .mobile-ratings {
+        display: inline-flex;
+        width: 315px;
+        padding-left: 7px;
+        padding-top: 5px
+    }
+    
+    .mobile-ratings ul {
+        width: 145px;
+    }
+    
+    .mobile-ratings li {
+        height: 30px;
+    }
+    
+    #mobile-img {
+        height: 136px;
+    }
+    
+    #yes {
+        padding-left: 28px;
+    }
+    
+    #flower-info img {
+        height: 135px;
+    }
+    
+    #sb-wrapper {
+        top: 105px !important;
+    }
+    
+    #sb-body {
+        height: 368px !important;
+    }
+    
+    #sb-wrapper-inner {
+        height: 370px !important;
+        bottom: 115px;
+    }
+    
+    .glyphicon, .glyphicon-ok {
+        color: #007F00;
+    }
+    
+    #all {
+        margin: 32px auto;
+    }
+    
+    #all img {
+        width: 100px;
+        height: 135px;
+    }
+
+    #all img {
+        width: 100px;
+        height: 135px;
+    }
+    
+    #all li {
+        padding-left: 18px;
+        height: 165px;
+        width: 127px;
+        padding-right: 0px;
     }
 }

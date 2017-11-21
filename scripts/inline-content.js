@@ -1,23 +1,23 @@
 function setContentFlower(flowerName, type, inlineId, desc, catVal, ...args) {
     
-    if (Modernizr.mq('(max-width: 425px)')) {
+    if (Modernizr.mq('(max-width: 425px)') || Modernizr.mq('(max-width: 750px) and (orientation: landscape)')) {
          let mobileDesc = ['low', 'med', 'high'];
          
          var inlineContent = "<div id=flower-name><h3>" + flowerName + "</h3><h4>" + type + "</h4></div>" +
                                 "<div id=flower-info><ul>" +
-                                    "<li style=height:230px><img src=images/flower.jpg /></li>" +
+                                    "<li id=mobile-img><img src=images/flower.jpg /></li>" +
                                     "<li><div class=mobile-ratings><ul>" +
                                     "<li>" + "<p>" + mobileDesc[0] + "  </p>" + "</li>" +
-                                    "<li>" + "<p>" + mobileDesc[1] + "  <span class='glyphicon glyphicon-ok'></span>" + "</p>" + "</li>" +
+                                    "<li id=yes>" + "<p>" + mobileDesc[1] + "  <span class='glyphicon glyphicon-ok'></span>" + "</p>" + "</li>" +
                                     "<li>" + "<p>" + mobileDesc[2] + "  </p>" + "</li>" +            
                                 "</ul>" + 
                                 "<ul>" +
                                     "<li>" + "<p>" + mobileDesc[0] + "  </p>" + "</li>" +
                                     "<li>" + "<p>" + mobileDesc[1] + "  </p>" + "</li>" +
-                                    "<li>" + "<p>" + mobileDesc[2] + "  <span class='glyphicon glyphicon-ok'></span>" +"</p>" + "</li>" +            
+                                    "<li id=yes>" + "<p>" + mobileDesc[2] + "  <span class='glyphicon glyphicon-ok'></span>" +"</p>" + "</li>" +            
                                 "</ul>" +
                                 "<ul>" +
-                                    "<li>" + "<p>" + mobileDesc[0] + "  <span class='glyphicon glyphicon-ok'></span>" +"</p>" + "</li>" +
+                                    "<li id=yes>" + "<p>" + mobileDesc[0] + "  <span class='glyphicon glyphicon-ok'></span>" +"</p>" + "</li>" +
                                     "<li>" + "<p>" + mobileDesc[1] + "  </p>" + "</li>" +
                                     "<li>" + "<p>" + mobileDesc[2] + "  </p>" +"</p>" + "</li>" +            
                                 "</ul>" + "</div></div>";
@@ -52,24 +52,24 @@ function setContentFlower(flowerName, type, inlineId, desc, catVal, ...args) {
 
 function setContentTea(teaName, type, inlineId, desc, catVal, ...args) {
      
-    if (Modernizr.mq('(max-width: 425px)')) {
+    if (Modernizr.mq('(max-width: 425px)') || Modernizr.mq('(max-width: 750px) and (orientation: landscape)')) {
          let mobileDesc = ['low', 'med', 'high'];
          
          var inlineContent = "<div id=tea-name><h3>" + teaName + "</h3><h4>" + type + "</h4></div>" +
                                 "<div id=tea-info><ul>" +
-                                    "<li style=height:230px><img src=images/tea.jpg /></li>" +
+                                    "<li id=mobile-img><img src=images/tea.jpg /></li>" +
                                     "<li><div class=mobile-ratings><ul>" +
-                                    "<li>" + "<p>" + mobileDesc[0] + "  </p>" + "</li>" +
-                                    "<li>" + "<p>" + mobileDesc[1] + "  <span class='glyphicon glyphicon-ok'></span>" + "</p>" + "</li>" +
-                                    "<li>" + "<p>" + mobileDesc[2] + "  </p>" + "</li>" +            
+                                    "<li>" + "<p>" + mobileDesc[0] + " </p>" + "</li>" +
+                                    "<li id=yes>" + "<p>" + mobileDesc[1] + " <span class='glyphicon glyphicon-ok'></span>" + "</p>" + "</li>" +
+                                    "<li>" + "<p>" + mobileDesc[2] + " </p>" + "</li>" +            
                                 "</ul>" + 
                                 "<ul>" +
                                     "<li>" + "<p>" + mobileDesc[0] + "  </p>" + "</li>" +
                                     "<li>" + "<p>" + mobileDesc[1] + "  </p>" + "</li>" +
-                                    "<li>" + "<p>" + mobileDesc[2] + "  <span class='glyphicon glyphicon-ok'></span>" +"</p>" + "</li>" +            
+                                    "<li id=yes>" + "<p>" + mobileDesc[2] + "  <span class='glyphicon glyphicon-ok'></span>" +"</p>" + "</li>" +            
                                 "</ul>" +
                                 "<ul>" +
-                                    "<li>" + "<p>" + mobileDesc[0] + "  <span class='glyphicon glyphicon-ok'></span>" +"</p>" + "</li>" +
+                                    "<li id=yes>" + "<p>" + mobileDesc[0] + "  <span class='glyphicon glyphicon-ok'></span>" +"</p>" + "</li>" +
                                     "<li>" + "<p>" + mobileDesc[1] + "  </p>" + "</li>" +
                                     "<li>" + "<p>" + mobileDesc[2] + "  </p>" +"</p>" + "</li>" +            
                                 "</ul>" + "</div></div>";
