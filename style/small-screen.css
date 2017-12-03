@@ -1121,7 +1121,7 @@
 }
 
 /* zoomed view */
-@media (min-width: 320px) and (max-width: 335px) {
+@media screen and (min-width: 320px) and (max-width: 335px) {
     
     .carousel-inner {
         height: 600px;

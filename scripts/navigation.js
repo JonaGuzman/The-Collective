@@ -79,14 +79,14 @@ function openNav() {
 
     sidenav = 'mySidenav-small';
     
-    if (Modernizr.mq('screen and (max-width: 414px) and (min-width: 400px)')) {
-         wdth = '414px';
-    } 
-    
-    else if (Modernizr.mq('(min-width: 320px) and (max-width: 335px)')) {
+    if (Modernizr.mq('screen and (min-width: 320px) and (max-width: 335px)')) {
         /* zoomed view */
         wdth = '340px';
     }
+    
+    else if (Modernizr.mq('screen and (max-width: 414px) and (min-width: 400px)')) {
+         wdth = '414px';
+    } 
     
     else {
         wdth = '380px';
