@@ -81,10 +81,10 @@ function openNav() {
     
     if (Modernizr.mq('screen and (max-width: 414px) and (min-width: 400px)')) {
          wdth = '414px';
-    }
+    } 
     
-    /* zoomed view */
     else if (Modernizr.mq('(min-width: 320px) and (max-width: 335px)')) {
+        /* zoomed view */
         wdth = '340px';
     }
     
@@ -97,8 +97,6 @@ function openNav() {
     $(".nav-items").animate({ opacity: 1}, "fast", "linear", function() {
         $(this).fadeIn()
     });
-    
-    //document.getElementById(sidenav).style.width = wdth;
 }
 
 function closeNav() {
