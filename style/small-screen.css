@@ -1119,3 +1119,35 @@
         width: 405px;
     }
 }
+
+/* zoomed view */
+@media (min-width: 320px) and (max-width: 335px) {
+    
+    .carousel-inner {
+        height: 600px;
+    }
+    
+    .carousel {
+        width: 320px;
+    }
+    
+    .carousel-indicators {
+        left: 48%;
+    }
+    
+    .tea li {
+        width: 320px !important;
+    }
+    
+    .culture ul {
+        margin-left: 8px !important;
+    }
+            
+    #tea-header, #tea-header li {
+        width: 300px !important;
+    }
+
+    #footer-items {
+        width: 345px !important;
+    }
+}
