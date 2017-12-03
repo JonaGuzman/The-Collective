@@ -82,6 +82,12 @@ function openNav() {
     if (Modernizr.mq('screen and (max-width: 414px) and (min-width: 400px)')) {
          wdth = '414px';
     }
+    
+    /* zoomed view */
+    else if (Modernizr.mq('(min-width: 320px) and (max-width: 335px)')) {
+        wdth = '340px';
+    }
+    
     else {
         wdth = '380px';
     }

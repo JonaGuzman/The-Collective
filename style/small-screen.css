@@ -1146,6 +1146,10 @@
     #tea-header, #tea-header li {
         width: 300px !important;
     }
+    
+    #tea1-overlay, #tea2-overlay {
+        margin: 0 0 0 10px;
+    }
 
     #footer-items {
         width: 345px !important;
