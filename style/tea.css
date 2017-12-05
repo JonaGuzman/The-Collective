@@ -75,7 +75,8 @@ a {
     margin: 0;
 }
 
-#sb-body li {
+#sb-player.html {
+    overflow: hidden !important;
 }
 
 #sb-info {
@@ -238,6 +239,34 @@ a {
         height: 165px;
         width: 127px;
         padding-right: 0px;
+    }
+}
+
+/* zoomed view */
+@media screen and (min-width: 320px) and (max-width: 335px) {
+    
+    #main {
+        height: 1050px;
+    }
+    
+    .tea-items li {
+        padding-left: 16px;
+    }
+    
+    .tea-items img {
+        width: 305px;
+    }
+    
+    .mobile-ratings {
+        padding-left: 4px;
+    }
+    
+    .mobile-ratings ul {
+        width: 95px;
+    }
+    
+    #sb-body img {
+        width: 275px;
     }
 }
 

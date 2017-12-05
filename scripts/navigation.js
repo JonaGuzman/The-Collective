@@ -91,7 +91,6 @@ function openNav() {
     else {
         wdth = '380px';
     }
-
     
     $("#" + sidenav).css("width", wdth);
     $(".nav-items").animate({ opacity: 1}, "fast", "linear", function() {

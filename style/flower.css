@@ -75,7 +75,8 @@ a {
     margin: 0;
 }
 
-#sb-body li {
+#sb-player.html {
+    overflow: hidden !important;
 }
 
 #sb-info {
@@ -219,6 +220,34 @@ a {
     
     .flower-items ul {
         padding-left: 19px !important;
+    }
+}
+
+/* zoomed view */
+@media screen and (min-width: 320px) and (max-width: 335px) {
+    
+    .flower-items li {
+        width: 160px;
+    }
+    
+    .flower-items ul {
+        padding-left: 12px;
+    }
+    
+    .flower-items li a img {
+        width: 135px;
+    }
+    
+        .mobile-ratings {
+        padding-left: 4px;
+    }
+    
+    .mobile-ratings ul {
+        width: 95px;
+    }
+    
+    #sb-body img {
+        width: 275px;
     }
 }
 

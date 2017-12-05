@@ -18,3 +18,20 @@
         height: 170px;
     }
 }
+
+/* zoomed view */
+@media screen and (min-width: 320px) and (max-width: 335px) {
+    
+    #main {
+        height: 370px;
+    }
+    
+    #all img {
+        width: 90px;
+    }
+    
+    #all li {
+        width: 105px;
+    }
+    
+}

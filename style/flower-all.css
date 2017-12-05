@@ -10,3 +10,21 @@
         height: 190px;
     }
 }
+
+/* zoomed view */
+@media screen and (min-width: 320px) and (max-width: 335px) {
+    
+    .flower-items li {
+        width: 107px;
+    }
+    
+    #all img {
+        width: 100px;
+    }
+    
+    #all li {
+        width: 107px;
+    }
+    
+}
+
