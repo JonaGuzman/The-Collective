@@ -190,3 +190,59 @@ a {
             width: 375px;
         }
 }
+
+@media (min-width: 600px) and (max-width: 670px) {
+    .post ul {
+        padding-left: 0;
+    }
+    
+    #rec-posts {
+        display: none;
+    }
+    
+    .post {
+        height: 615px;
+    }
+    
+    .trending-items li {
+        width: 655px;
+    }
+    
+    .trending-items img {
+        width: 637px;
+    }
+    
+    .post h1 {
+        width: 600px;
+    }
+    
+    #load-more {
+        width: 702px;
+    }
+    
+    #load-more img {
+        width: 670px;
+    }
+}
+
+@media (min-width: 680px) and (max-width: 750px) {
+    .post ul {
+        padding-left: 0;
+    }
+    
+    #rec-posts {
+        display: none;
+    }
+    
+    .post {
+        height: 615px;
+    }
+    
+    .post h1 {
+        width: 670px;
+    }
+    
+    #load-more {
+        width: 702px;
+    }
+}

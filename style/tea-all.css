@@ -19,6 +19,13 @@
     }
 }
 
+@media (min-width: 1200px) {
+    .tea-items ul {
+        width: 1220px;
+        padding-left: 40px;
+    }
+}
+
 /* zoomed view */
 @media screen and (min-width: 320px) and (max-width: 335px) {
     
@@ -34,4 +41,30 @@
         width: 105px;
     }
     
+}
+
+@media (min-width: 650px) and (max-width: 750px) and (orientation: landscape) {
+    #main {
+        height: 370px;
+    }
+    
+    .tea-items {
+        height: 160px;
+    }
+    
+    #all li {
+        padding-left: 10px;
+        height: 175px;
+        width: 190px;
+    }
+    
+    #all img {
+        width: 180px;
+        height: 150px;
+    }
+    
+    #all {
+        padding-left: 57px !important;
+        margin: 25px auto;
+    }
 }

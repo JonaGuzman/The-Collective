@@ -761,7 +761,7 @@
         }
     }
 
-@media screen and (max-width: 736px) and (orientation: landscape) {
+@media screen and (max-width: 815px) and (orientation: landscape) {
 
     #inline-nav ul {
         display: inline-flex;
@@ -824,6 +824,7 @@
     
     #carousel-text {
         margin: 53px auto;
+        width: 104%;
     }
     
     .carousel-indicators {
@@ -833,7 +834,7 @@
     .culture {
         padding: 0 0 0 0;
         margin: 0px auto;
-        width: 681px;
+        width: 660px;
         text-align: center;
     }
 
@@ -862,7 +863,7 @@
     .culture ul {
         padding: 0 0px 0 0;
         margin: 0px 0;
-        width: 630px;
+        width: 665px;
         display: flex;
     }
 
@@ -870,7 +871,7 @@
         list-style: none;
         height: 225px;
         text-align: left;
-        margin: 18px 4px 0 0px;
+        margin: 18px 1px 0 0px;
         padding: 0 57px 0 0px;
         font-size: 10px;
     }
@@ -920,18 +921,18 @@
     #tea-header,
     #tea-header li {
         height: 50px;
-        width: 650px;
+        width: 655px;
         padding-left: 0;
     }
 
     .tea {
         padding: 0 0 0 0;
         margin: 0 auto;
-        width: 680px;
+        width: 660px;
     }
 
     .tea ul {
-        width: 350px;
+        width: 665px;
         padding: 0px 0 0 0;
         display: flex;
         margin: 0 0;
@@ -939,7 +940,7 @@
 
     .tea li {
         list-style: none;
-        width: 372px;
+        width: 247px;
         height: 350px;
     }
 
@@ -975,31 +976,31 @@
     .flower-row {
         padding: 0 0 0 0;
         margin: 0 auto;
-        width: 631px;
+        width: 660px;
     }
 
     #flower-header,
     #flower-header li {
         height: 60px;
-        width: 633px;
+        width: 675px;
     }
 
     .flower-row ul {
-        width: 668px;
+        width: 700px;
         padding: 0 0;
     }
 
     .flower-row li {
         list-style: none;
         height: 272px;
-        width: 222px;
+        width: 220px;
         padding: 0 0 0;
     }
 
     .flower-row img {
         list-style: none;
         height: 225px;
-        width: 190px;
+        width: 214px;
     }
 
     .footer {
