@@ -43,7 +43,7 @@
     
 }
 
-@media (min-width: 650px) and (max-width: 750px) and (orientation: landscape) {
+@media (min-width: 650px) and (orientation: landscape) {
     #main {
         height: 370px;
     }
@@ -61,10 +61,19 @@
     #all img {
         width: 180px;
         height: 150px;
-    }
-    
+    } 
+}
+
+@media (min-width: 650px) and (max-width: 700px) and (orientation: landscape) {
     #all {
         padding-left: 57px !important;
         margin: 25px auto;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 750px) and (orientation: landscape) {
+    #all {
+        padding-left: 90px !important;
+        margin: 30px auto;
     }
 }

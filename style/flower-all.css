@@ -33,7 +33,7 @@
     }
 }
 
-@media (min-width: 650px) and (max-width: 750px) and (orientation: landscape) {
+@media (min-width: 650px) and (orientation: landscape) {
     #main {
         height:995px;
     }
@@ -61,8 +61,17 @@
     .flower-items ul {
          width: 680px !important;
     }
-    
-    #all ul {
+}
+
+
+@media (min-width: 650px) and (max-width: 700px) and (orientation: landscape) {
+   .flower-items ul {
+        padding-left: 35px !important;
+    }
+}
+
+@media (min-width: 710px) and (max-width: 750px) and (orientation: landscape) {
+   #all ul {
         padding-left: 30px !important;
     }
 }

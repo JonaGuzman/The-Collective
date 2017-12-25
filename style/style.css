@@ -361,4 +361,8 @@ a {
         padding: 80px 0;
         margin-top: 0;
     }
+    
+    .carousel-control {
+        visibility: hidden !important;
+    }
 }
