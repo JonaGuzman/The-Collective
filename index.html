@@ -63,11 +63,15 @@
             padding: 10px;
         }
 
-        .grid-container > div {
+        .grid-container>div {
             background-color: rgba(255, 255, 255, 0.8);
             text-align: center;
-            padding: 20px 0;
+            padding: 5px 0px;
             font-size: 30px;
+        }
+
+        .auto-fit {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1250px));
         }
 
         ul {
@@ -82,8 +86,28 @@
             margin: 0.3em;
             border: solid;
             padding: 0.5em;
-            width: 393px;
-            height: 558px;
+            width: auto;
+            height: auto;
+        }
+        
+        
+        @media all and (max-width: 414px) {
+          body { 
+            grid-template-areas: 
+                'nav-menu' 
+                'caruosel-area'
+                'tea' 
+                'culture' 
+                'flower' 
+                'footer';
+         }
+            ul {
+                grid-auto-flow: row;
+            }
+            
+            li {
+                margin: 0.1em;
+            }
         }
 
     </style>
@@ -92,31 +116,31 @@
 <body>
 
     <div class="grid-container">
-        <div class="item1">nav-menu</div>
-        <div class="item2">caruosel-area</div>
-        <div class="item3">
-            <ul>
+        <div class="item1 auto-fit">nav-menu</div>
+        <div class="item2 auto-fit">caruosel-area</div>
+        <div class="item3 auto-fit">
+            <ul class="item-list">
                 <li>tea 1</li>
                 <li>tea text</li>
                 <li>tea 2</li>
             </ul>
         </div>
-        <div class="item4">
+        <div class="item4 auto-fit">
             <ul>
-                <li>Cultureblurb</li>
+                <li>Culture</li>
                 <!-- will be trending/shop -->
-                <li>placeholder</li>
-                <li>Silouhuette</li>
+                <li>place</li>
+                <li>silo</li>
             </ul>
         </div>
-        <div class="item5">
+        <div class="item5 auto-fit">
             <ul>
                 <li>flower 1</li>
                 <li>flower 2</li>
                 <li>flower 3</li>
             </ul>
         </div>
-        <div class="item6">footer</div>
+        <div class="item6 auto-fit">footer</div>
     </div>
 
 </body>
