@@ -20,282 +20,103 @@
     <script src="scripts/navigation.js"></script>
     <script src="scripts/googlemap.js"></script>
     <script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
+
+    <style>
+        .item1 {
+            grid-area: nav-menu;
+            height: 80px;
+        }
+
+        .item2 {
+            grid-area: caruosel-area;
+            height: 500px;
+        }
+
+        .item3 {
+            grid-area: tea;
+            display: grid;
+            justify-content: center;
+        }
+
+        .item4 {
+            grid-area: culture;
+            display: grid;
+            justify-content: center;
+        }
+
+        .item5 {
+            grid-area: flower;
+            display: grid;
+            justify-content: center;
+        }
+
+        .item6 {
+            grid-area: footer;
+            height: 300px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas: 'nav-menu nav-menu nav-menu' 'caruosel-area caruosel-area caruosel-area' 'tea tea tea' 'culture culture culture' 'flower flower flower' 'footer footer footer';
+            grid-gap: 10px 20px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        ul {
+            display: grid;
+            grid-auto-flow: column;
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            grid-column: span 1;
+            margin: 0.3em;
+            border: solid;
+            padding: 0.5em;
+            width: 393px;
+            height: 558px;
+        }
+
+    </style>
 </head>
 
 <body>
 
-    <div class="main-container">
-        <div class="nav-container">
-            <script>
-                window.onload = writeHeader(".");
-            </script>
+    <div class="grid-container">
+        <div class="item1">nav-menu</div>
+        <div class="item2">caruosel-area</div>
+        <div class="item3">
+            <ul>
+                <li>tea 1</li>
+                <li>tea text</li>
+                <li>tea 2</li>
+            </ul>
         </div>
-
-        <div class="row">
-
-            <div id="carousel-text">
-                <h1 style="font-size: 70px;">
-                    The HiViE
-                </h1>
-                <h3 style="margin-top: 0;font-style: italic;">Life, Love, Lounge</h3>
-            </div>
-
-            <div class="container-fluid">
-
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="./images/home/pexels-photo-503033-lounge1.jpeg" alt="Lounge">
-                        </div>
-
-                        <div class="item">
-                            <img src="./images/home/background-1.jpg" alt="Woods">
-                        </div>
-
-                        <div class="item">
-                            <img src="./images/home/city.jpeg" alt="City">
-                        </div>
-                    </div>
-
-                    <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                      <span class="glyphicon glyphicon-chevron-left"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-
-                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                      <span class="glyphicon glyphicon-chevron-right"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-
+        <div class="item4">
+            <ul>
+                <li>Cultureblurb</li>
+                <!-- will be trending/shop -->
+                <li>placeholder</li>
+                <li>Silouhuette</li>
+            </ul>
         </div>
-
-        <div id="main">
-
-            <div class="row">
-
-                <div class="container-fluid">
-                    <div class="tea">
-
-                        <div id="tea-header">
-                            <h1>T E A</h1>
-                        </div>
-
-                        <ul>
-                            <li class="col-md-2 col-xs-2">
-                                <div id="tea1-container">
-                                    <div id="tea1-overlay">
-                                        <div class="anchor-items">
-                                            <a href="pages/tea1.html">
-                                                <ul>
-                                                    <li>
-                                                        <h3>Teas</h3>
-                                                    </li>
-                                                    <li>
-                                                        <h3>Smoothies</h3>
-                                                    </li>
-                                                    <li>
-                                                        <h3>Other Beverages</h3>
-                                                    </li>
-                                                </ul>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div>
-                                        <img src="images/home/tea.jpeg" />
-                                    </div>
-                                </div>
-                            </li>
-
-                            <div class="col-md-1 col-xs-1">
-                                <div id="tea-text">
-                                    <li>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut nisl interdum, blandit augue et, efficitur sem. Curabitur ultrices rhoncus iaculis. Integer condimentum turpis aliquam interdum interdum. Nam venenatis erat quis nulla aliquet tempus quis ut neque. Pellentesque sed sem mi. Donec et odio sit amet orci pellentesque pharetra id sed sapien. Quisque luctus hendrerit tincidunt. Suspendisse vel elementum lorem.
-                                        </p>
-                                        <p>
-                                            Vivamus lacus nisi, gravida sed magna non, rhoncus condimentum leo. Cras eleifend, magna sed imperdiet vestibulum, orci lectus vulputate velit, et venenatis neque magna at nulla. Nullam id dui eu neque lobortis imperdiet non quis diam. Quisque a dui purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In eu semper diam. Nullam malesuada accumsan vulputate. Duis ac arcu lectus. Pellentesque nec velit posuere, semper neque eget, sollicitudin nisl. Mauris maximus nisl id quam lacinia, a efficitur est consectetur. Donec convallis sapien quis tristique tempor.
-                                        </p>
-                                    </li>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 col-xs-1"></div>
-
-                            <li class="col-md-2 col-xs-2">
-                                <div id="tea2-container">
-                                    <div id="tea2-overlay">
-                                        <div class="anchor-items">
-                                            <a href="pages/tea2.html">
-                                                <ul>
-                                                    <li>
-                                                        <h3>Teas</h3>
-                                                    </li>
-                                                    <li>
-                                                        <h3>Smoothies</h3>
-                                                    </li>
-                                                    <li>
-                                                        <h3>Other Beverages</h3>
-                                                    </li>
-                                                </ul>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div>
-                                        <img src="images/home/tea.jpeg" />
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row">
-
-                <div class="container-fluid">
-                    <div class="culture">
-
-                        <div id="landscape-header">
-                            <h1>C U L T U R E</h1>
-                        </div>
-
-                        <ul>
-                            <div class="col-md-4 col-xs-3 landscape">
-                                <div id="culture-header">
-                                    <li>
-                                        <h1>C U L T U R E</h1>
-                                    </li>
-                                </div>
-                                <div id="culture-text">
-                                    <li>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut nisl interdum, blandit augue et, efficitur sem. Curabitur ultrices rhoncus iaculis. Integer condimentum turpis aliquam interdum interdum. Nam venenatis erat quis nulla aliquet tempus quis ut neque. Pellentesque sed sem mi. Donec et odio sit amet orci pellentesque pharetra id sed sapien. Quisque luctus hendrerit tincidunt.
-                                        </p>
-                                        <p>
-                                            Vivamus lacus nisi, gravida sed magna non, rhoncus condimentum leo. Cras eleifend, magna sed imperdiet vestibulum, orci lectus vulputate velit, et venenatis neque magna at nulla. Nullam id dui eu neque lobortis imperdiet non quis diam. Quisque a dui purus.
-                                        </p>
-                                    </li>
-                                </div>
-                            </div>
-
-                            <li class="col-md-2 col-xs-3">
-                                <div id="culture1-container">
-                                    <div>
-                                        <img src="images/home/culture1.jpeg" />
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="col-md-2 col-xs-3">
-                                <div id="culture2-container">
-                                    <div id="est-container">
-                                        <h1>The HiViE</h1>
-                                        <ul>
-                                            <li>
-                                                <span><h2>EST</h2></span>
-                                            </li>
-
-                                            <div id="silhouette">
-                                                <li>
-                                                    <img src="./images/home/silo.png" />
-                                                </li>
-                                            </div>
-
-                                            <li>
-                                                <span><h2>2017</h2></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <img id="cult2" src="images/home/culture2.jpeg" />
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row">
-
-                <div class="container-fluid">
-
-                    <div class="flower-row">
-
-                        <div id="flower-header">
-                            <li>
-                                <h1>F L O W E R</h1>
-                            </li>
-                        </div>
-
-                        <ul>
-                            <li class="col-md-4 col-xs-3">
-                                <div id="flower1-container">
-                                    <div id="flower1-overlay">
-                                        <a href="pages/flower1.html">
-                                            <h2>TYPE 1</h2>
-                                        </a>
-                                    </div>
-
-                                    <div><img src="images/home/ind.jpg" /></div>
-                                </div>
-                            </li>
-
-                            <li class="col-md-4 col-xs-3">
-                                <div id="flower2-container">
-                                    <div id="flower2-overlay">
-                                        <a href="pages/flower2.html">
-                                            <h2>TYPE 2</h2>
-                                        </a>
-                                    </div>
-
-                                    <div><img src="images/home/hyb.jpg" /></div>
-                                </div>
-                            </li>
-
-                            <li class="col-md-4 col-xs-3">
-                                <div id="flower3-container">
-                                    <div id="flower3-overlay">
-                                        <a href="pages/flower3.html">
-                                            <h2>TYPE 3</h2>
-                                        </a>
-                                    </div>
-
-                                    <div><img src="images/home/sat.jpg" /></div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-
+        <div class="item5">
+            <ul>
+                <li>flower 1</li>
+                <li>flower 2</li>
+                <li>flower 3</li>
+            </ul>
         </div>
-        <!-- End of Main -->
-
-        <div class="footer">
-            <div class="row">
-                <footer>
-                    <div id="footer-items"></div>
-                </footer>
-            </div>
-        </div>
-
+        <div class="item6">footer</div>
     </div>
 
 </body>
