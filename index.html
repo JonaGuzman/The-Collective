@@ -23,6 +23,7 @@
 
     <style>
         /*TODO: incororate overlay, break out into css file*/
+
         .item1 {
             grid-area: nav-menu;
             background-color: #123132 !important;
@@ -85,27 +86,25 @@
             height: 300px;
             background-color: #123132 !important;
         }
-        
+
         #hours {
             margin-right: 20px;
         }
-        
-        .item6 ul > li > ul {
+
+        .item6 ul>li>ul {
             grid-auto-flow: row;
         }
-        
-        .item6 ul > li > ul > li {
+
+        .item6 ul>li>ul>li {
             padding: 0 0;
         }
 
         .grid-container {
             display: grid;
             grid-template-areas: 'nav-menu nav-menu nav-menu' 'caruosel-area . .' 'tea tea tea' 'culture . .' 'flower flower flower' 'footer footer footer';
-            background-color: #EDEDEE !important;
         }
 
         .grid-container>div {
-            background-color: #EDEDEE;
             text-align: center;
             font-size: 30px;
         }
@@ -130,24 +129,15 @@
         li {
             grid-column: span 1;
             margin: 0.3em;
-            border: solid;
+            border: none;            
             padding: 0.5em;
             width: auto;
             height: auto;
         }
 
         .item1 li {
-            border: none;
             margin: 0;
             padding: 0;
-        }
-
-        .item3 li,
-        .item4 li,
-        .item5 li,
-        .item6 li {
-            border: none;
-            list-style: none;
         }
 
         .item3 img,
@@ -256,8 +246,18 @@
         <div class="item3 auto-fit">
             <ul class="item-list">
                 <li>
-                    <div>
-                        <img src="images/home/tea.jpeg">
+                    <div id="tea1-container">
+                        
+                        <div id="tea1-overlay">
+                            <div></div>
+                            <a href="pages/tea1.html">
+                                <h3>Teas</h3>
+                                <h3>Smoothies</h3>
+                                <h3>Other Beverages</h3>
+                            </a>
+                            <div></div>
+                        </div>
+                        <div><img src="images/home/tea.jpeg"></div>
                     </div>
                 </li>
                 <li style="font-size: 15px;">
@@ -270,8 +270,18 @@
                     </p>
                 </li>
                 <li>
-                    <div>
-                        <img src="images/home/tea.jpeg">
+                    <div id="tea2-container">
+                        
+                        <div id="tea2-overlay">
+                            <div></div>
+                            <a href="pages/tea2.html">
+                                <h3>Teas</h3>
+                                <h3>Smoothies</h3>
+                                <h3>Other Beverages</h3>
+                            </a>
+                            <div></div>
+                        </div>
+                        <div><img src="images/home/tea.jpeg"></div>
                     </div>
                 </li>
             </ul>
@@ -295,9 +305,42 @@
 
         <div class="item5 auto-fit">
             <ul>
-                <li><img src="images/home/ind.jpg"></li>
-                <li><img src="images/home/hyb.jpg"></li>
-                <li><img src="images/home/sat.jpg"></li>
+                <li>
+                    <div id="flower1-container">
+                        <div id="flower1-overlay">
+                            <div></div>
+                            <a href="pages/ind.html">
+                                <h2>Type 1</h2>
+                            </a>
+                            <div></div>
+                        </div>
+                        <div><img src="images/home/ind.jpg"></div>
+                    </div>
+                </li>
+                <li>
+                    <div id="flower2-container">
+                        <div id="flower2-overlay">
+                            <div></div>
+                            <a href="pages/hyb.html">
+                                <h2>Type 2</h2>
+                            </a>
+                            <div></div>
+                        </div>
+                        <div><img src="images/home/hyb.jpg"></div>
+                    </div>
+                </li>
+                <li>
+                    <div id="flower3-container">
+                        <div id="flower3-overlay">
+                            <div></div>
+                            <a href="pages/sat.html">
+                                <h2>Type 3</h2>
+                            </a>
+                            <div></div>
+                        </div>
+                        <div><img src="images/home/sat.jpg"></div>
+                    </div>
+              </li>
             </ul>
         </div>
 

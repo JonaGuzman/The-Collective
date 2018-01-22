@@ -21,11 +21,20 @@ function overlayDisplay(name) {
     });
 }
 
+function overlayClickable(name) {
+    let overlayName = "#" + name + "-overlay";
+    $(overlayName).click(function() {
+      window.location = $(this).find("a").attr("href"); 
+      return false;
+    });
+}
+
 $(document).ready(function () {
 
     let names = ["tea1", "tea2", "flower1", "flower2", "flower3"];
 
     names.forEach(function (item, index, array) {
         overlayDisplay(item);
+        overlayClickable(item);
     })
 });
