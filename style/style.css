@@ -29,7 +29,7 @@ a {
     position: absolute;
     width: 100%;
     z-index: 2;
-    margin: 140px auto;
+    margin: 100px auto;
     height: 500px;
     text-align: center;
     color: #EDEDEE;
@@ -39,7 +39,7 @@ a {
 #caruosel-text h1 {
     font-size: 60px;
 }
-
+/*
 .carousel {
     margin-bottom: -7px;
     width: 1285px;
@@ -65,7 +65,7 @@ a {
     margin-right: -10px;
     opacity: .3;
 }
-
+*/
 
 #tea-header,
 #tea-header li {

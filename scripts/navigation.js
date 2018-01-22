@@ -143,5 +143,5 @@ function writeFooter() {
 }
 
 $(document).ready(function () {
-    writeFooter();
+    //writeFooter();
 });
