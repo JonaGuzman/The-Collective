@@ -22,7 +22,7 @@
     <script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
 
     <style>
-        /*TODO: incororate overlay, break out into css file*/
+        /*TODO: break out into css file*/
 
         .item1 {
             grid-area: nav-menu;
@@ -58,7 +58,7 @@
 
         .carousel-indicators {
             margin-left: 0;
-            left: 48%;
+            left: 47%;
         }
 
         .item3 {
@@ -70,8 +70,11 @@
         .item4 {
             grid-area: culture;
             display: grid;
-            grid-column: 1 / span 3;
             justify-content: center;
+        }
+        
+        .item4 ul {
+            grid-template-columns: 38% 29%;
         }
 
         .item5 {
@@ -101,7 +104,7 @@
 
         .grid-container {
             display: grid;
-            grid-template-areas: 'nav-menu nav-menu nav-menu' 'caruosel-area . .' 'tea tea tea' 'culture . .' 'flower flower flower' 'footer footer footer';
+            grid-template-areas: 'nav-menu nav-menu nav-menu' 'caruosel-area . .' 'tea tea tea' 'culture culture culture' 'flower flower flower' 'footer footer footer';
         }
 
         .grid-container>div {
@@ -129,7 +132,7 @@
         li {
             grid-column: span 1;
             margin: 0.3em;
-            border: none;            
+            border: none;
             padding: 0.5em;
             width: auto;
             height: auto;
@@ -142,7 +145,8 @@
 
         .item3 img,
         .item4 img,
-        .item5 img {
+        .item5 img,
+        #est-container {
             height: 528px;
             width: 366px;
         }
@@ -247,7 +251,7 @@
             <ul class="item-list">
                 <li>
                     <div id="tea1-container">
-                        
+
                         <div id="tea1-overlay">
                             <div></div>
                             <a href="pages/tea1.html">
@@ -271,7 +275,7 @@
                 </li>
                 <li>
                     <div id="tea2-container">
-                        
+
                         <div id="tea2-overlay">
                             <div></div>
                             <a href="pages/tea2.html">
@@ -290,16 +294,18 @@
         <div class="item4 auto-fit">
             <ul>
                 <li style="font-size: 15px;">
-                    <h1>Culture</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut nisl interdum, blandit augue et, efficitur sem. Curabitur ultrices rhoncus iaculis. Integer condimentum turpis aliquam interdum interdum. Nam venenatis erat quis nulla aliquet tempus quis ut neque. Pellentesque sed sem mi. Donec et odio sit amet orci pellentesque pharetra id sed sapien. Quisque luctus hendrerit tincidunt.
-                    </p>
-                    <p>
-                        Vivamus lacus nisi, gravida sed magna non, rhoncus condimentum leo. Cras eleifend, magna sed imperdiet vestibulum, orci lectus vulputate velit, et venenatis neque magna at nulla. Nullam id dui eu neque lobortis imperdiet non quis diam. Quisque a dui purus.
-                    </p>
+                        <h1>Culture</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut nisl interdum, blandit augue et, efficitur sem. Curabitur ultrices rhoncus iaculis. Integer condimentum turpis aliquam interdum interdum. Nam venenatis erat quis nulla aliquet tempus quis ut neque. Pellentesque sed sem mi. Donec et odio sit amet orci pellentesque pharetra id sed sapien. Quisque luctus hendrerit tincidunt.
+                        </p>
+                        <p>
+                            Vivamus lacus nisi, gravida sed magna non, rhoncus condimentum leo. Cras eleifend, magna sed imperdiet vestibulum, orci lectus vulputate velit, et venenatis neque magna at nulla. Nullam id dui eu neque lobortis imperdiet non quis diam. Quisque a dui purus.
+                        </p>
                 </li>
-                <li><img src="images/home/culture1.jpeg"></li>
-                <li><img src="images/home/culture1.jpeg"></li>
+                <li><div><img src="images/home/culture1.jpeg"></div></li>
+                <li>
+                    <div id="est-container"></div>
+                </li>
             </ul>
         </div>
 
@@ -340,7 +346,7 @@
                         </div>
                         <div><img src="images/home/sat.jpg"></div>
                     </div>
-              </li>
+                </li>
             </ul>
         </div>
 
