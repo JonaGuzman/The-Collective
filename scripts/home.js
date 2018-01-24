@@ -31,10 +31,13 @@ function overlayClickable(name) {
 
 $(document).ready(function () {
 
-    let names = ["tea1", "tea2", "flower1", "flower2", "flower3"];
+    let names = ["tea1", "tea2", "flower1", "flower2", "flower3", "trending", "shop"];
 
     names.forEach(function (item, index, array) {
         overlayDisplay(item);
         overlayClickable(item);
-    })
+    });
+    
+    $('.trending').slick();
+    $('.shop').slick();
 });

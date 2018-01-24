@@ -1,6 +1,3 @@
-.main-container {}
-
-
 /*  Default: 1280 x 416
     iphone 6: 375 x 667
     iphone 6 plus: 414 x 736
@@ -25,13 +22,103 @@ a {
     color: #d0b0a6;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-areas: 'nav-menu nav-menu nav-menu' 'caruosel-area . .' 'tea tea tea' 'culture culture culture' 'flower flower flower' 'footer footer footer';
+}
+
+.grid-container > div {
+    text-align: center;
+    font-size: 30px;
+}
+
+.auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1250px));
+}
+
+ul {
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+    padding: 0;
+}
+
+ol {
+    list-style: none;
+    display: inline-flex;
+    padding-left: 0;
+}
+
+li {
+    grid-column: span 1;
+    margin: 0.3em;
+    border: none;
+    padding: 0.5em;
+    width: auto;
+    height: auto;
+}
+
+.item2 {
+    grid-area: caruosel-area;
+    height: 600px !important;
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 1;
+}
+
+.item3 {
+    grid-area: tea;
+    display: grid;
+    justify-content: center;
+}
+
+.item4 {
+    grid-area: culture;
+    display: grid;
+    justify-content: center;
+}
+
+.item4 ul {
+    grid-template-columns: 38% 29%;
+}
+
+.item5 {
+    grid-area: flower;
+    display: grid;
+    justify-content: center;
+}
+
+.item6 {
+    grid-area: footer;
+    display: grid;
+    height: 300px;
+    background-color: #123132 !important;
+}
+
+/* Carousel Area */
+
+#myCarousel {
+    font-size: 16px;
+}
+
+.carousel-inner,
+.carousel-inner img {
+    height: 600px !important;
+}
+
+.carousel-inner img {
+    width: 100%;
+}
+
+.carousel-indicators {
+    margin-left: 0;
+    left: 47.5%;
+}
+
 #carousel-text {
     position: absolute;
     width: 100%;
     z-index: 2;
     margin: 100px auto;
-    height: 500px;
-    text-align: center;
     color: #EDEDEE;
     opacity: 0.8;
 }
@@ -39,88 +126,86 @@ a {
 #caruosel-text h1 {
     font-size: 60px;
 }
-/*
-.carousel {
-    margin-bottom: -7px;
-    width: 1285px;
-    margin: 0 auto;
-}
 
-.carousel-inner {
-    height: 650px;
-    margin: 0 0 10px 0;
-    width: 1285px;
-}
+/* On hover clickable overlay over image */
 
-.carousel-control .glyphicon-chevron-left,
-.carousel-control .icon-prev {
-    left: 20%;
-    margin-left: -10px;
-    opacity: .3;
+#tea1-overlay,
+#tea2-overlay,
+#trending-overlay,
+#shop-overlay,
+#flower1-overlay,
+#flower3-overlay,
+#flower2-overlay {
+    background: #123132;
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+    display: grid;
+    grid-auto-flow: row;
 }
-
-.carousel-control .glyphicon-chevron-right,
-.carousel-control .icon-next {
-    right: 20%;
-    margin-right: -10px;
-    opacity: .3;
-}
-*/
 
 #tea1-overlay,
 #tea2-overlay,
 #flower1-overlay,
 #flower3-overlay,
 #flower2-overlay {
-    background: #123132;
     height: 528px;
     width: 366px;
-    position: absolute;
-    z-index: 2;
-    opacity: 0;
-    color: #ede1de;
-    cursor: pointer;
-    display: grid;
-    grid-auto-flow: row;
 }
 
-#culture1-overlay,
-#culture2-overlay {
-    background: #123132;
-    height: 528px;
-    width: 366px;
-    position: absolute;
-    z-index: 2;
-    opacity: 0;
-    margin: 0 0 0 15px;
-    padding: 155px 0;
-}
-
-#est-container
-{
-    background: #123132;
-    position: absolute;
-    z-index: 2;
-    /* text-align: left; */
-    /* padding: 150px 0px 0 0px; */
-    /* margin: 0px auto; */
-    color: #EDEDEE;
-}
-
-.allheader-container {
-    border-bottom: solid 1px #DCDCDC;
-    color: #DCDCDC;
-    width: 196px;
-    margin-left: -10px;
+#trending-overlay,
+#shop-overlay {
+    height: 264px;
+    width: 315px;
 }
 
 #tea1-container,
-#tea2-container {}
-
+#tea2-container,
+#trending-container,
+#shop-container,
 #flower1-container,
 #flower3-container,
 #flower2-container {}
 
+/* image sizes for tea, culture and flower area */
+
+.item3 img,
+.item5 img,
+#est-container img {
+    height: 528px;
+    width: 366px;
+}
+
+/* Mini carousel area trending/shop */
+
+.trending img,
+.trending,
+.shop img,
+.shop {
+    height: 264px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #B97F6D;
+}
+
+/* Mobile View */
+
+@media all and (max-width: 414px) {
+            body {
+                grid-template-areas: 'nav-menu' 'caruosel-area' 'tea' 'culture' 'flower' 'footer';
+            }
+            ul {
+                grid-auto-flow: row;
+            }
+            li {
+                margin: 0.1em;
+            }
+        }
+
+/*
 @media (max-width: 425px) {
     .carousel {
         width: 415px;
@@ -146,6 +231,7 @@ a {
     }
 }
 
+
 @media (max-width: 425px) and (min-width: 414px) {
     #tea1-overlay, #tea2-overlay {
         margin-left: 54px !important;
@@ -163,4 +249,4 @@ a {
     .carousel-control {
         visibility: hidden !important;
     }
-}
+}*/

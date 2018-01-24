@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./style/style.css" type="text/css">
     <link rel="stylesheet" href="./style/navigation.css" type="text/css">
     <link rel="stylesheet" href="./style/small-screen.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
     <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -22,8 +24,7 @@
     <script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
 
     <style>
-        /*TODO: break out into css file*/
-
+        /*TODO: break out into  navigation css file*/
         .item1 {
             grid-area: nav-menu;
             background-color: #123132 !important;
@@ -35,59 +36,10 @@
         .item1 h2 {
             font-size: 26px
         }
-
-        .item2 {
-            grid-area: caruosel-area;
-            height: 600px !important;
-            grid-column: 1 / span 3;
-            grid-row: 2 / span 1;
-        }
-
-        .carousel-inner,
-        .carousel-inner img {
-            height: 600px !important;
-        }
-
-        .carousel-inner img {
-            width: 100%;
-        }
-
-        #myCarousel {
-            font-size: 16px;
-        }
-
-        .carousel-indicators {
-            margin-left: 0;
-            left: 47%;
-        }
-
-        .item3 {
-            grid-area: tea;
-            display: grid;
-            justify-content: center;
-        }
-
-        .item4 {
-            grid-area: culture;
-            display: grid;
-            justify-content: center;
-        }
         
-        .item4 ul {
-            grid-template-columns: 38% 29%;
-        }
-
-        .item5 {
-            grid-area: flower;
-            display: grid;
-            justify-content: center;
-        }
-
-        .item6 {
-            grid-area: footer;
-            display: grid;
-            height: 300px;
-            background-color: #123132 !important;
+        .item1 li {
+            margin: 0;
+            padding: 0;
         }
 
         #hours {
@@ -101,73 +53,10 @@
         .item6 ul>li>ul>li {
             padding: 0 0;
         }
-
-        .grid-container {
-            display: grid;
-            grid-template-areas: 'nav-menu nav-menu nav-menu' 'caruosel-area . .' 'tea tea tea' 'culture culture culture' 'flower flower flower' 'footer footer footer';
-        }
-
-        .grid-container>div {
-            text-align: center;
-            font-size: 30px;
-        }
-
-        .auto-fit {
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1250px));
-        }
-
-        ul {
-            display: grid;
-            grid-auto-flow: column;
-            list-style: none;
-            padding: 0;
-        }
-
-        ol {
-            list-style: none;
-            display: inline-flex;
-            padding-left: 0;
-        }
-
-        li {
-            grid-column: span 1;
-            margin: 0.3em;
-            border: none;
-            padding: 0.5em;
-            width: auto;
-            height: auto;
-        }
-
-        .item1 li {
-            margin: 0;
-            padding: 0;
-        }
-
-        .item3 img,
-        .item4 img,
-        .item5 img,
-        #est-container {
-            height: 528px;
-            width: 366px;
-        }
-
-        @media all and (max-width: 414px) {
-            body {
-                grid-template-areas: 'nav-menu' 'caruosel-area' 'tea' 'culture' 'flower' 'footer';
-            }
-            ul {
-                grid-auto-flow: row;
-            }
-            li {
-                margin: 0.1em;
-            }
-        }
-
     </style>
 </head>
 
 <body>
-
     <div class="grid-container">
         <div class="item1 auto-fill">
             <div>
@@ -294,17 +183,44 @@
         <div class="item4 auto-fit">
             <ul>
                 <li style="font-size: 15px;">
-                        <h1>Culture</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut nisl interdum, blandit augue et, efficitur sem. Curabitur ultrices rhoncus iaculis. Integer condimentum turpis aliquam interdum interdum. Nam venenatis erat quis nulla aliquet tempus quis ut neque. Pellentesque sed sem mi. Donec et odio sit amet orci pellentesque pharetra id sed sapien. Quisque luctus hendrerit tincidunt.
-                        </p>
-                        <p>
-                            Vivamus lacus nisi, gravida sed magna non, rhoncus condimentum leo. Cras eleifend, magna sed imperdiet vestibulum, orci lectus vulputate velit, et venenatis neque magna at nulla. Nullam id dui eu neque lobortis imperdiet non quis diam. Quisque a dui purus.
-                        </p>
+                    <h1>Culture</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut nisl interdum, blandit augue et, efficitur sem. Curabitur ultrices rhoncus iaculis. Integer condimentum turpis aliquam interdum interdum. Nam venenatis erat quis nulla aliquet tempus quis ut neque. Pellentesque sed sem mi. Donec et odio sit amet orci pellentesque pharetra id sed sapien. Quisque luctus hendrerit tincidunt.
+                    </p>
+                    <p>
+                        Vivamus lacus nisi, gravida sed magna non, rhoncus condimentum leo. Cras eleifend, magna sed imperdiet vestibulum, orci lectus vulputate velit, et venenatis neque magna at nulla. Nullam id dui eu neque lobortis imperdiet non quis diam. Quisque a dui purus.
+                    </p>
                 </li>
-                <li><div><img src="images/home/culture1.jpeg"></div></li>
                 <li>
-                    <div id="est-container"></div>
+                    <div id="trending-container">
+                        <div id="trending-overlay">
+                            <div></div>
+                            <a href="./pages/trending.html">
+                                <h3>Trending Topics</h3>
+                            </a>
+                        </div>
+                        <div class="trending">
+                            <div><img src="./pages/images/running-man.jpeg" /></div>
+                            <div><img src="./pages/images/artistic.jpeg" /></div>
+                        </div>
+                    </div>
+
+                    <div id="shop-container">
+                        <div id="shop-overlay">
+                            <div></div>
+                            <a href="./pages/merch.html">
+                                <h3>Shop</h3>
+                            </a>
+                        </div>
+
+                        <div class="shop">
+                            <div><img src="./pages/images/shop.jpeg" /></div>
+                            <div><img src="./pages/images/shop.jpeg" /></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div id="est-container"><img src="./images/home/silo.png"></div>
                 </li>
             </ul>
         </div>
@@ -315,7 +231,7 @@
                     <div id="flower1-container">
                         <div id="flower1-overlay">
                             <div></div>
-                            <a href="pages/ind.html">
+                            <a href="pages/flower1.html">
                                 <h2>Type 1</h2>
                             </a>
                             <div></div>
@@ -327,7 +243,7 @@
                     <div id="flower2-container">
                         <div id="flower2-overlay">
                             <div></div>
-                            <a href="pages/hyb.html">
+                            <a href="pages/flower2.html">
                                 <h2>Type 2</h2>
                             </a>
                             <div></div>
@@ -339,7 +255,7 @@
                     <div id="flower3-container">
                         <div id="flower3-overlay">
                             <div></div>
-                            <a href="pages/sat.html">
+                            <a href="pages/flower3.html">
                                 <h2>Type 3</h2>
                             </a>
                             <div></div>
@@ -394,6 +310,7 @@
         </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </body>
 
 </html>
