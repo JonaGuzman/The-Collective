@@ -188,7 +188,7 @@ li {
 
 /* Mobile View */
 
-@media all and (max-width: 414px) {
+@media all and (max-width: 425px) {
             body {
                 grid-template-areas: 'nav-menu' 'caruosel-area' 'tea' 'culture' 'flower' 'footer';
             }

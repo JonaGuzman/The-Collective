@@ -40,8 +40,15 @@
     color: #EDEDEE;
 }
 
-.navbar-brand h1 {
+#mySidenav h1 {
     margin: 0;
+}
+
+#mySidenav li:nth-of-type(1) ~ li {
+    margin: 5px auto;
+}
+#smallnav h1 {
+    margin-top: 15px;
 }
 
 #current-deals ol > li:nth-of-type(2) {
