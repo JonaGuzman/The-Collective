@@ -21,22 +21,9 @@
     font-family: 'Michroma', sans-serif;
 }
 
-.nav-container {
-    background: #123132;
-    color: #B97F6D;
-    z-index: 1;
-    position: relative;
-    width: 1285px;
-    margin: 0 auto;
-}
-
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
     color: #B97F6D;
     background-color: transparent;
-}
-
-.nav-container ul {
-    list-style: none;
 }
 
 .navbar-default {
@@ -53,22 +40,12 @@
     color: #EDEDEE;
 }
 
-#inline-nav ul {
-    display: inline-flex;
-}
-
-#inline-nav nav {
-    margin-bottom: 0;
-}
-
 .navbar-brand h1 {
     margin: 0;
 }
 
-#current-deals, #current-deals ol {
-    width: 400px;
-    display: inline-flex;
-    list-style: none;
+#current-deals ol > li:nth-of-type(2) {
+    padding-left: 10px;
 }
 
 #nav-account {
@@ -76,8 +53,10 @@
     height: 40px;
     font-size: 20px;
     text-align: center;
+    color:#EDEDEE;
 }
 
+/* will be item3, item4, item5 instead */
 #main {
     transition: margin-left .5s;
 }
@@ -108,7 +87,7 @@
     cursor:pointer;
 }
 
-#smallnav-container {
+#smallnav {
     display: none;
 }
 

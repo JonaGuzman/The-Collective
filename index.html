@@ -25,6 +25,7 @@
 
     <style>
         /*TODO: break out into  navigation css file*/
+
         .item1 {
             grid-area: nav-menu;
             background-color: #123132 !important;
@@ -36,15 +37,18 @@
         .item1 h2 {
             font-size: 26px
         }
-        
+
         .item1 li {
             margin: 0;
             padding: 0;
         }
-        
-        
-        .slick-prev:before, .slick-next:before { color: #B97F6D; }
-        
+
+
+        .slick-prev:before,
+        .slick-next:before {
+            color: #B97F6D;
+        }
+
         #hours {
             margin-right: 20px;
         }
@@ -56,17 +60,32 @@
         .item6 ul>li>ul>li {
             padding: 0 0;
         }
+        
+        @media all and (max-width: 414px) {
+            .item1 {
+                grid-template-columns: unset;
+            }
+            
+            #inline-nav, #current-deals, #nav-account {
+                display: none;
+            }
+            
+            #smallnav {
+                display: block;
+            }
+        }
+
     </style>
 </head>
 
 <body>
     <div class="grid-container">
         <div class="item1 auto-fill">
-            <div>
+            <div id="inline-nav">
                 <nav class="navbar navbar-default">
                     <ul id="mySidenav" class="nav navbar-nav">
                         <li>
-                            <a class="navbar-brand" href="./index.html">
+                            <a href="./index.html">
                                 <h1>The HiViE</h1>
                             </a>
                         </li>
@@ -77,20 +96,41 @@
                     </ul>
                 </nav>
             </div>
+            <div id="smallnav">
+                <ul>
+                    <li>
+                        <a href="./index.html" style="color: #B97F6D">
+                            <h1>The HiViE</h1>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="nav-small col-md-2">
+                            <div id="mySidenav-small" class="sidenav">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                                <a class="nav-items" href="./index.html">Home</a>
+                                <a class="nav-items" href="./pages/flower-all.html">Flower</a>
+                                <a class="nav-items" href="./pages/tea-all.html">Hi-Tea</a>
+                                <a class="nav-items" href="./pages/trending.html">Trending</a>
+                                <a class="nav-items" href="./pages/merch.html">Shop</a>
+                            </div><span onclick="openNav()">☰</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
-            <div>
+            <div id="current-deals">
                 <ol>
                     <li>
                         <h2>Today's Deals:</h2>
                     </li>
-                    <li style="padding-left: 10px; text-align: left;">
+                    <li>
                         <h2>Deal One For 10$</h2>
                     </li>
                 </ol>
             </div>
 
             <div id="nav-account">
-                <span class="glyphicon glyphicon-user" style="color:#EDEDEE"></span> / <span class="glyphicon glyphicon-shopping-cart" style="color:#EDEDEE"></span>
+                <span class="glyphicon glyphicon-user"></span> / <span class="glyphicon glyphicon-shopping-cart"></span>
             </div>
 
         </div>
