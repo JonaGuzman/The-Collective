@@ -186,11 +186,6 @@ li {
     height: 264px;
 }
 
-.slick-prev:before,
-.slick-next:before {
-    color: #B97F6D;
-}
-
 /* Mobile View */
 
 @media all and (max-width: 414px) {
