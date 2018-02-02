@@ -61,9 +61,23 @@
             padding: 0 0;
         }
         
+        .item6 {
+            height: 100%;
+        }
+        
         @media all and (max-width: 425px) {
             .item1 {
-                grid-template-columns: unset;
+                grid-template-columns: 100%;
+                justify-content: center;
+            }
+            
+            #tea-text {
+                display: none;
+            }
+            
+            .grid-container > div {
+                text-align: center;
+                font-size: unset;
             }
             
             #inline-nav, #current-deals, #nav-account {
@@ -80,7 +94,7 @@
 
 <body>
     <div class="grid-container">
-        <div class="item1 auto-fill">
+        <div class="item1">
             <div id="inline-nav">
                 <nav class="navbar navbar-default">
                     <ul id="mySidenav" class="nav navbar-nav">
@@ -104,7 +118,7 @@
                         </a>
                     </li>
                     <li>
-                        <div class="nav-small col-md-2">
+                        <div class="nav-small">
                             <div id="mySidenav-small" class="sidenav">
                                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                                 <a class="nav-items" href="./index.html">Home</a>
@@ -179,53 +193,47 @@
             </div>
         </div>
 
-        <div class="item3 auto-fit">
-            <ul class="item-list">
-                <li>
-                    <div id="tea1-container">
-
-                        <div id="tea1-overlay">
-                            <div></div>
-                            <a href="pages/tea1.html">
-                                <h3>Teas</h3>
-                                <h3>Smoothies</h3>
-                                <h3>Other Beverages</h3>
-                            </a>
-                            <div></div>
-                        </div>
-                        <div><img src="images/home/tea.jpeg"></div>
-                    </div>
-                </li>
-                <li style="font-size: 15px;">
-                    <h1>T E A</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut nisl interdum, blandit augue et, efficitur sem. Curabitur ultrices rhoncus iaculis. Integer condimentum turpis aliquam interdum interdum. Nam venenatis erat quis nulla aliquet tempus quis ut neque. Pellentesque sed sem mi. Donec et odio sit amet orci pellentesque pharetra id sed sapien. Quisque luctus hendrerit tincidunt. Suspendisse vel elementum lorem.
-                    </p>
-                    <p>
-                        Vivamus lacus nisi, gravida sed magna non, rhoncus condimentum leo. Cras eleifend, magna sed imperdiet vestibulum, orci lectus vulputate velit, et venenatis neque magna at nulla. Nullam id dui eu neque lobortis imperdiet non quis diam. Quisque a dui purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In eu semper diam. Nullam malesuada accumsan vulputate. Duis ac arcu lectus. Pellentesque nec velit posuere, semper neque eget, sollicitudin nisl. Mauris maximus nisl id quam lacinia, a efficitur est consectetur. Donec convallis sapien quis tristique tempor.
-                    </p>
-                </li>
-                <li>
-                    <div id="tea2-container">
-
-                        <div id="tea2-overlay">
-                            <div></div>
-                            <a href="pages/tea2.html">
-                                <h3>Teas</h3>
-                                <h3>Smoothies</h3>
-                                <h3>Other Beverages</h3>
-                            </a>
-                            <div></div>
-                        </div>
-                        <div><img src="images/home/tea.jpeg"></div>
-                    </div>
-                </li>
-            </ul>
+        <div class="item3">
+            <div id="item-header-mobile"><h1>T E A</h1></div>
+            <div id="tea1-container">
+                <div id="tea1-overlay">
+                    <div></div>
+                    <a href="pages/tea1.html">
+                        <h3>Teas</h3>
+                        <h3>Smoothies</h3>
+                        <h3>Other Beverages</h3>
+                    </a>
+                    <div></div>
+                </div>
+                <div><img src="images/home/tea.jpeg"></div>
+            </div>
+            
+        <div id="tea-text" style="font-size: 15px;">
+            <h1>T E A</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut nisl interdum, blandit augue et, efficitur sem. Curabitur ultrices rhoncus iaculis. Integer condimentum turpis aliquam interdum interdum. Nam venenatis erat quis nulla aliquet tempus quis ut neque. Pellentesque sed sem mi. Donec et odio sit amet orci pellentesque pharetra id sed sapien. Quisque luctus hendrerit tincidunt. Suspendisse vel elementum lorem.
+            </p>
+            <p>
+                Vivamus lacus nisi, gravida sed magna non, rhoncus condimentum leo. Cras eleifend, magna sed imperdiet vestibulum, orci lectus vulputate velit, et venenatis neque magna at nulla. Nullam id dui eu neque lobortis imperdiet non quis diam. Quisque a dui purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In eu semper diam. Nullam malesuada accumsan vulputate. Duis ac arcu lectus. Pellentesque nec velit posuere, semper neque eget, sollicitudin nisl. Mauris maximus nisl id quam lacinia, a efficitur est consectetur. Donec convallis sapien quis tristique tempor.
+            </p>
+        </div>
+            
+            <div id="tea2-container">
+                <div id="tea2-overlay">
+                    <div></div>
+                    <a href="pages/tea2.html">
+                        <h3>Teas</h3>
+                        <h3>Smoothies</h3>
+                        <h3>Other Beverages</h3>
+                    </a>
+                    <div></div>
+                </div>
+                <div><img src="images/home/tea.jpeg"></div>
+            </div>
         </div>
 
-        <div class="item4 auto-fit">
-            <ul>
-                <li style="font-size: 15px;">
+        <div class="item4">
+                <div id="culture-text" style="font-size: 15px;">
                     <h1>Culture</h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut nisl interdum, blandit augue et, efficitur sem. Curabitur ultrices rhoncus iaculis. Integer condimentum turpis aliquam interdum interdum. Nam venenatis erat quis nulla aliquet tempus quis ut neque. Pellentesque sed sem mi. Donec et odio sit amet orci pellentesque pharetra id sed sapien. Quisque luctus hendrerit tincidunt.
@@ -233,8 +241,8 @@
                     <p>
                         Vivamus lacus nisi, gravida sed magna non, rhoncus condimentum leo. Cras eleifend, magna sed imperdiet vestibulum, orci lectus vulputate velit, et venenatis neque magna at nulla. Nullam id dui eu neque lobortis imperdiet non quis diam. Quisque a dui purus.
                     </p>
-                </li>
-                <li>
+                </div>
+                <div id="trend-shop-container">
                     <div id="trending-container">
                         <div id="trending-overlay">
                             <div></div>
@@ -247,7 +255,6 @@
                             <div><img src="./pages/images/artistic.jpeg" /></div>
                         </div>
                     </div>
-
                     <div id="shop-container">
                         <div id="shop-overlay">
                             <div></div>
@@ -261,52 +268,48 @@
                             <div><img src="./pages/images/shop.jpeg" /></div>
                         </div>
                     </div>
-                </li>
-                <li>
-                    <div id="est-container"><img src="./images/home/silo.png"></div>
-                </li>
-            </ul>
+                </div>
+                
+            <div id="est-container"><img src="./images/home/silo.png"></div>
         </div>
 
-        <div class="item5 auto-fit">
-            <ul>
-                <li>
-                    <div id="flower1-container">
-                        <div id="flower1-overlay">
-                            <div></div>
-                            <a href="pages/flower1.html">
-                                <h2>Type 1</h2>
-                            </a>
-                            <div></div>
-                        </div>
-                        <div><img src="images/home/ind.jpg"></div>
-                    </div>
-                </li>
-                <li>
-                    <div id="flower2-container">
-                        <div id="flower2-overlay">
-                            <div></div>
-                            <a href="pages/flower2.html">
-                                <h2>Type 2</h2>
-                            </a>
-                            <div></div>
-                        </div>
-                        <div><img src="images/home/hyb.jpg"></div>
-                    </div>
-                </li>
-                <li>
-                    <div id="flower3-container">
-                        <div id="flower3-overlay">
-                            <div></div>
-                            <a href="pages/flower3.html">
-                                <h2>Type 3</h2>
-                            </a>
-                            <div></div>
-                        </div>
-                        <div><img src="images/home/sat.jpg"></div>
-                    </div>
-                </li>
-            </ul>
+        <div class="flower-header">
+            <div></div>
+            <h1>Flower</h1>
+            <div></div>
+        </div>
+        <div class="item5">
+            <div id="item-header-mobile"><h1>Flower</h1></div>
+            <div id="flower1-container">
+                <div id="flower1-overlay">
+                    <div></div>
+                    <a href="pages/flower1.html">
+                        <h2>Type 1</h2>
+                    </a>
+                    <div></div>
+                </div>
+                <div><img src="images/home/ind.jpg"></div>
+            </div>
+            <div id="flower2-container">
+                <div id="flower2-overlay">
+                    <div></div>
+                    <a href="pages/flower2.html">
+                        <h2>Type 2</h2>
+                    </a>
+                    <div></div>
+                </div>
+                <div><img src="images/home/hyb.jpg"></div>
+            </div>
+            <div id="flower3-container">
+                <div id="flower3-overlay">
+                    <div></div>
+                    <a href="pages/flower3.html">
+                        <h2>Type 3</h2>
+                    </a>
+                    <div></div>
+                </div>
+                <div><img src="images/home/sat.jpg"></div>
+            </div>
         </div>
 
         <div class="item6" style="font-size: 15px;">
@@ -350,6 +353,7 @@
                     </li>
                 </ul>
             </div>
+            <div></div>
         </div>
     </div>
 

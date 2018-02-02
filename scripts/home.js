@@ -29,8 +29,8 @@ function overlayClickable(name) {
     });
 }
 
-$(document).ready(function () {
 
+$(document).ready(function () {
     let names = ["tea1", "tea2", "flower1", "flower2", "flower3", "trending", "shop"];
 
     names.forEach(function (item, index, array) {

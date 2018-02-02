@@ -47,6 +47,7 @@
 #mySidenav li:nth-of-type(1) ~ li {
     margin: 5px auto;
 }
+
 #smallnav h1 {
     margin-top: 15px;
 }

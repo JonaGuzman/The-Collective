@@ -183,9 +183,7 @@
         font-size: 10px;
     }
     
-    #culture-text {
-        display: none;
-    }
+
     
     .culture img {
         list-style: none;
@@ -312,11 +310,7 @@
         height: 350px;
     }
     
-    #est-container {
-        padding: 85px 0px 0 0px;
-        height: 350px;
-        width: 300px;
-    }
+
     
     #est-container h1 {
         text-align: center;
@@ -408,14 +402,8 @@
         z-index: 16;
     }
 
-    .carousel-inner {
-        height: 530px;
-        margin: 0 0 10px 0;
-        width: 400px;
-    }
-
     #myCarousel img {
-        height: 530px;
+        height: 566px;
     }
 
     .culture {
@@ -435,12 +423,7 @@
         display: inline;
     }
 
-    #est-container {
-        display: inline;
-        padding-top: 25px;
-        height: 208px;
-        width: 300px;    
-    }
+
 
     #tea-header,
     #tea-header li {
@@ -641,7 +624,6 @@
     
     .nav-small span {
         font-size: 40px;
-        padding-right: 14px;
     }
 
     .nav-container {
@@ -691,11 +673,7 @@
         display: none;
     }
     
-    #est-container {
-    height: 207px;
-    width: 300px;
-    padding: 10px 0px 0 0px;
-}
+
 
     h3 {
         font-size: 14px;
@@ -876,9 +854,7 @@
         font-size: 10px;
     }
 
-    #culture-text {
-        display: none;
-    }
+
 
     .culture img {
         list-style: none;
@@ -887,11 +863,7 @@
         margin: 0px auto;
     }
     
-    #est-container {
-        height: 210px;
-        width: 299px;
-        padding: 5px 0px 0 0px;
-    }
+
     
     #est-container img {
         list-style: none;
@@ -1144,9 +1116,7 @@
         margin-left: 8px;
     }
     
-    #est-container {
-        padding-left: 5px;
-    }
+
             
     #tea-header, #tea-header li {
         width: 300px;
