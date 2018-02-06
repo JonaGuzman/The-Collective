@@ -301,7 +301,7 @@ li {
     }
 }
 
-@media all and (min-width: 315px) and (max-width: 330px) {
+@media screen and (min-width: 315px) and (max-width: 330px) {
     
     #myCarousel {
         margin: 0 0;
@@ -312,7 +312,7 @@ li {
     }
 
     .item3 {
-        grid-template-columns: 100%;
+        grid-template-columns: 80%;
     }
     
     .item4 {
