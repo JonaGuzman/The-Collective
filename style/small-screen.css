@@ -23,10 +23,6 @@
         display: block;
     }
     
-    #inline-nav {
-        display: none;
-    }
-
     .nav-small span {
         font-size: 40px;
         cursor: pointer;
@@ -49,10 +45,6 @@
         padding-right: 14px;
     }
     
-    #silhouette {
-        margin-right: 60px;
-    }
-    
     .sidenav {
         height: 100%;
         width: 0;
@@ -62,9 +54,6 @@
         left: 0;
         background-color: #123132;
         overflow-x: hidden;
-        /*transition: 0.9s;
-            Removed due to render issue on mobile
-        */
         padding-top: 60px;
     }
     
@@ -148,53 +137,6 @@
     .item img, .active img {
         height: 600px !important;
     }
-    
-    #culture-header {
-        height: 50px;
-        width: 330px;
-        text-align: center;
-    }
-
-    #culture-header li {
-        height: 1px;
-        text-align: center;
-        margin-left: 0;
-        padding-left: 0;
-        width: 262px;
-    }
-
-    .culture ul {
-        padding: 0 0px 0 0;
-        margin: 0px auto;
-        width: 300px;
-    }
-    
-    .culture {
-        padding: 0 0 0 0;
-        margin: 0px auto;
-        text-align: center;
-    }
-    
-    .culture li {
-        list-style: none;
-        text-align: left;
-        margin: 0px 0;
-        padding: 0px 0 0 0px;
-        font-size: 10px;
-    }
-    
-
-    
-    .culture img {
-        list-style: none;
-        width: 300px;
-        margin: 0px auto;
-    }
-    
-    .tea img {
-        width: 300px;
-        height: 325px;
-    }
 
     #tea1-overlay, #tea2-overlay {
         height: 325px;
@@ -208,44 +150,6 @@
         padding: 10px 8px;
         font-size: 8px;
         display: none;
-    }
-    
-    .anchor-items li, .anchor-items ul {
-        width: 304px !important;
-        height: 10px !important;
-    }
-
-    h3 {
-        font-size: 14px;
-    }
-
-    .flower-row {
-        padding: 0 0 0 0;
-        width: 300px;
-    }
-    
-    #flower-header,
-    #flower-header li {
-        height: 60px;
-        width: 300px;
-    }
-
-    .flower-row ul {
-        width: 400px;
-        padding: 0 0;
-    }
-
-    .flower-row li {
-        list-style: none;
-        height: 272px;
-        width: 325px;
-        padding: 0 0 0;
-    }
-
-    .flower-row img {
-        list-style: none;
-        height: 250px;
-        width: 300px;
     }
 
     #flower1-overlay,
@@ -268,10 +172,13 @@
         list-style: none;
     }
 
-    #footer-items {
+    #company-info {
         display: grid;
-        margin: 0 0;
-        padding: 0 0;
+        justify-content: center;
+    }
+    
+    #hours {
+        margin-right: 0 !important;
     }
 }
 
@@ -301,41 +208,6 @@
     .carousel-inner .item img {
         height: 600px;
     }
-
-    .culture {
-        width: 350px;
-    }
-
-    .culture li {
-        height: 350px;
-    }
-    
-
-    
-    #est-container h1 {
-        text-align: center;
-        margin: 2px 15px 0 auto;
-    }
-    
-    #est-container ul {
-        list-style: none;
-        width: 180px;
-        display: inline-flex;
-        margin-left: 10px;
-    }
-    
-    #est-container li {
-        list-style: none;
-        width: 90px;
-        height: 200px;
-        padding-left: 0;
-    }
-    
-    #est-container img {
-        list-style: none;
-        width: 160px;
-        height: 140px;
-    }
     
     #culture1-overlay,
     #culture2-overlay,
@@ -345,35 +217,6 @@
 
     .culture img {
         height: 325px;
-    }
-
-    #tea-header,
-    #tea-header li {
-        height: 25px;
-        width: 340px;
-        padding-left: 0;
-    }
-
-    .tea {
-        padding: 0 0 0 0;
-        margin: 0 auto;
-        width: 630px;
-    }
-
-    .tea ul {
-        width: 300px;
-        padding: 0px 0 0 0;
-        display: block;
-    }
-
-    .tea li {
-        list-style: none;
-        width: 300px;
-        height: 350px;
-    }
-    
-    .flower-row {
-        margin: 10px auto;
     }
 
     #footer-items {
@@ -404,58 +247,6 @@
 
     #myCarousel img {
         height: 566px;
-    }
-
-    .culture {
-        width: 375px;
-    }
-
-    .culture li {
-        height: 228px;
-    }
-
-
-    .culture img {
-        height: 207px;
-    }
-
-    #cult2 {
-        display: inline;
-    }
-
-
-
-    #tea-header,
-    #tea-header li {
-        height: 50px;
-        width: 365px;
-        padding-left: 0;
-    }
-
-    .tea {
-        padding: 0 0 0 0;
-        margin: 0 auto;
-        width: 375px;
-    }
-
-    .tea ul {
-        width: 350px;
-        padding: 0px 0 0 0;
-        display: block;
-        margin: 0 0;
-    }
-
-    .tea li {
-        list-style: none;
-        width: 372px;
-        height: 350px;
-    }
-   .flower-row {
-        margin: 0 auto;
-    }
-
-    #footer-items {
-        width: 405px;
     }
 }
 
@@ -497,13 +288,6 @@
     #myCarousel img {
         height: 530px;
     }
-    
-    .culture {
-        padding: 0 0 0 0;
-        margin: 0px auto;
-        width: 665px;
-        text-align: center;
-    }
 
     .landscape {
         display: none;
@@ -517,90 +301,6 @@
         display: block;
         margin-bottom: 0px;
         margin-top: 10px;
-    }
-    
-    .culture ul {
-        margin: 0px 0;
-        width: 630px;
-        display: flex;
-    }
-
-    .culture li {
-        height: 225px;
-        margin: 18px 4px 0 0px;
-        padding: 0 57px 0 0px;
-    }
-
-    #cult2 {
-        display: inline;
-    }
-
-    .culture img {
-        height: 207px;
-        width: 299px;
-    }
-
-    #tea-header,
-    #tea-header li {
-        height: 30px;
-        width: 667px;
-        padding-left: 0;
-        text-align: center;
-    }
-
-    .tea {
-        padding: 0 0 0 0;
-        margin: 0 auto;
-        width: 680px;
-    }
-
-    .tea ul {
-        width: 300px;
-        padding: 0px 0 0 0;
-        display: flex;
-        margin: 40px 3px 0;
-    }
-
-    .tea li {
-        list-style: none;
-        width: 372px;
-        height: 350px;
-    }
-
-    .flower-row {
-        margin: 0 auto;
-        width: 631px;
-    }
-
-    #flower-header,
-    #flower-header li {
-        width: 633px;
-    }
-
-    .flower-row ul {
-        width: 668px;
-    }
-
-    .flower-row li {
-        width: 222px;
-    }
-
-    .flower-row img {
-        list-style: none;
-        height: 225px;
-        width: 190px;
-    }
-
-    .footer {
-        width: 100%;
-    }
-
-    .footer ul {
-        width: 665px;
-    }
-    
-    #footer-items {
-        width: 100%;
     }
     
     .social-media-container {
@@ -649,76 +349,6 @@
         margin: 0 0 10px 0;
     }
 
-    .culture {
-        padding: 0 0 0 0;
-        margin: 0px auto;
-        width: 375px;
-    }
-
-    #culture-header li {
-        width: 270px;
-    }
-
-    .culture li {
-        height: 228px;
-    }
-
-    .culture img {
-        height: 207px;
-        width: 300px;
-        margin: 0px auto;
-    }
-
-    #cult2 {
-        display: none;
-    }
-    
-
-
-    h3 {
-        font-size: 14px;
-    }
-
-    #tea-header,
-    #tea-header li {
-        height: 50px;
-        width: 400px;
-        padding-left: 0;
-    }
-
-    .tea {
-        padding: 0 0 0 0;
-        margin: 0 auto;
-        width: 630px;
-    }
-
-    .tea ul {
-        width: 350px;
-        padding: 0px 0 0 0;
-        display: block;
-        margin: 0 0;
-    }
-
-    .tea li {
-        list-style: none;
-        width: 407px;
-        height: 350px;
-    }
-
-    .anchor-items {}
-
-    .anchor-items li,
-    .anchor-items ul {
-        list-style: none;
-        height: 15px;
-        width: auto;
-        display: block;
-    }
-
-    .flower-row {
-        margin: 0 auto;
-    }
-
     #footer-items {
         width: 433px;
     }
@@ -728,14 +358,6 @@
 @media screen and (max-width: 667px) and (min-width: 650px) and (orientation: landscape) {
         .carousel-indicators {
             width: 705px;
-        }
-        
-        .culture {
-            padding-left: 3px !important;
-        }
-    
-        .tea {
-            padding-left: 3px !important;
         }
     }
 
@@ -808,120 +430,12 @@
     .carousel-indicators {
         margin-left: -51%;
     }
-    
-    .culture {
-        padding: 0 0 0 0;
-        margin: 0px auto;
-        width: 660px;
-        text-align: center;
-    }
 
     .landscape {
         display: none;
     }
 
-    #culture-header {
-        display: none;
-    }
-
-    #landscape-header {
-        display: block;
-        margin-bottom: 0px;
-        margin-top: 10px;
-    }
-
-    #culture-header li {
-        height: 1px;
-        text-align: center;
-        margin-left: 0;
-        padding-left: 0;
-        width: 262px;
-    }
-
-    .culture ul {
-        padding: 0 0px 0 0;
-        margin: 0px 0;
-        width: 665px;
-        display: flex;
-    }
-
-    .culture li {
-        list-style: none;
-        height: 225px;
-        text-align: left;
-        margin: 18px 1px 0 0px;
-        padding: 0 57px 0 0px;
-        font-size: 10px;
-    }
-
-
-
-    .culture img {
-        list-style: none;
-        height: 207px;
-        width: 299px;
-        margin: 0px auto;
-    }
-    
-
-    
-    #est-container img {
-        list-style: none;
-        width: 160px;
-        height: 120px;
-    }
-    
-    #est-container ul {
-        margin-left: 5px;
-    }
-    
-    #est-container li {
-        list-style: none;
-        width: 50px;
-        height: 200px;
-        padding-left: 0;
-    }
-    
-    #silhouette {
-        margin-right: 101px;
-    }
-
-    h3 {
-        font-size: 14px;
-    }
-
-    #tea-header,
-    #tea-header li {
-        height: 50px;
-        width: 655px;
-        padding-left: 0;
-    }
-
-    .tea {
-        padding: 0 0 0 0;
-        margin: 0 auto;
-        width: 660px;
-    }
-
-    .tea ul {
-        width: 665px;
-        padding: 0px 0 0 0;
-        display: flex;
-        margin: 0 0;
-    }
-
-    .tea li {
-        list-style: none;
-        width: 247px;
-        height: 350px;
-    }
-
-    .tea img {
-        width: 300px;
-        height: 325px;
-    }
-    
-    #tea1-overlay, #tea2-overlay {
+   #tea1-overlay, #tea2-overlay {
         margin-left: 0;
         height: 330px;
         width: 300px;
@@ -933,46 +447,6 @@
         padding: 10px 8px;
         font-size: 8px;
         display: none;
-    }
-
-    .anchor-items {}
-
-    .anchor-items li,
-    .anchor-items ul {
-        list-style: none;
-        height: 15px;
-        width: auto;
-        display: block;
-    }
-
-    .flower-row {
-        padding: 0 0 0 0;
-        margin: 0 auto;
-        width: 660px;
-    }
-
-    #flower-header,
-    #flower-header li {
-        height: 60px;
-        width: 675px;
-    }
-
-    .flower-row ul {
-        width: 700px;
-        padding: 0 0;
-    }
-
-    .flower-row li {
-        list-style: none;
-        height: 272px;
-        width: 220px;
-        padding: 0 0 0;
-    }
-
-    .flower-row img {
-        list-style: none;
-        height: 225px;
-        width: 214px;
     }
 
     .footer {
@@ -1023,78 +497,10 @@
         /*!important;*/
         margin: 0 0 10px 0;
     }
-
-    .culture {
-        padding: 0 0 0 0;
-        margin: 0px auto;
-        width: 375px;
-    }
-
-    #culture-header li {
-        width: 270px;
-    }
-
-    .culture li {
-        height: 228px;
-    }
-
-    #culture1-overlay,
-    #culture2-overlay,
-    #culture3-overlay {
-        display: none;
-    }
-
-    #anchor-container {
-        padding: 0;
-        height: 70px;
-        width: 35px;
-    }
-
-    .culture img {
-        height: 207px;
-    }
-
-    h3 {
-        font-size: 14px;
-    }
-
-    #tea-header,
-    #tea-header li {
-        height: 50px;
-        width: 400px;
-        padding-left: 0;
-    }
-
-    .tea {
-        padding: 0 0 0 0;
-        margin: 0 auto;
-        width: 630px;
-    }
-
-    .tea ul {
-        width: 350px;
-        padding: 0px 0 0 0;
-        display: block;
-        margin: 0 0;
-    }
-
-    .tea li {
-        list-style: none;
-        width: 407px;
-        height: 350px;
-    }
-
-    .flower-row {
-        margin: 0 auto;
-    }
-
-    #footer-items {
-        width: 405px;
-    }
 }
 
 /* zoomed view */
-@media screen and (min-width: 320px) and (max-width: 335px) {
+@media screen and (min-width: 312px) and (max-width: 335px) {
     
     .carousel-inner {
         height: 600px;
@@ -1106,27 +512,5 @@
     
     .carousel-indicators {
         left: 48%;
-    }
-    
-    .tea li {
-        width: 320px;
-    }
-    
-    .culture ul {
-        margin-left: 8px;
-    }
-    
-
-            
-    #tea-header, #tea-header li {
-        width: 300px;
-    }
-    
-    #tea1-overlay, #tea2-overlay {
-        margin: 0 0 0 10px;
-    }
-
-    #footer-items {
-        width: 345px !important;
     }
 }

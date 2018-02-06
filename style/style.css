@@ -301,22 +301,31 @@ li {
     }
 }
 
-@media all and (max-width: 320px) {
+@media all and (min-width: 315px) and (max-width: 330px) {
     
     #myCarousel {
         margin: 0 0;
     }
     
-    .item3 div,
-    .item4 div,
-    .item5 div {
+    .carousel {
         width: 320px;
     }
+
+    .item3 {
+        grid-template-columns: 100%;
+    }
     
+    .item4 {
+        grid-template-columns: 77% !important;
+    }
+        
+    .item1,
+    .item2,
     .item3,
     .item4,
-    .item5 {
-        grid-template-columns: 100%;
+    .item5,
+    .item6 {
+        width: 320px;
     }
 }
 
@@ -395,9 +404,9 @@ li {
     #myCarousel > ol {
         visibility: hidden;    
     }
-
-    .carousel-inner {
-        height: 566px;
+    
+    .carousel {
+      height: 566px;
     }
     
     .flower-header {
