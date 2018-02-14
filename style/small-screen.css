@@ -252,15 +252,64 @@
 
 /* Landscape */
 
-@media screen and (max-width: 667px) and (min-width: 420px) and (orientation: landscape) {
+@media screen and (max-width: 750px) and (min-width: 430px) and (orientation: landscape) {
 
+    .grid-container {
+        display: grid;
+        grid-template-areas: 'nav-menu nav-menu nav-menu' 'caruosel-area . .' '. tea-header .' 'tea tea' 'culture culture culture' '. flower-head .' 'flower flower flower' 'footer footer footer' !important;
+    }
+    
+    .nav {
+        display: grid;
+    }
+    
+    .item1 {
+        grid-template-columns: 79% 28% !important;
+    }
+    
+    #tea-text > p {
+        display: none;
+    }
+    
     .nav-small {
         line-height: 10px;
         z-index: 10;
     }
-
-    #hivie {
-        text-align: center;
+    
+    .item3 {
+        grid-gap: 0;
+        grid-auto-flow: column;
+        grid-template-columns: 40% 10% 40%;
+        margin-top: 0;
+    }
+    
+    .item4 {
+        grid-gap: .7em;
+        grid-template-columns: 38% 21% 34%;
+    }
+    
+    #culture-text {
+        font-size: 11px !important;
+    }
+    
+    #trend-shop-container,
+    #trending-shop-container > img {
+        height: 290px;
+        width: 225px;
+    }
+    
+    #trending-container,
+    #shop-container,
+    .trending img,
+    .trending,
+    .shop img,
+    .shop {
+        height: 155px;
+        width: 140px;
+    }
+    
+    .item5 {
+        grid-gap: 0;
     }
 
     .nav-container {

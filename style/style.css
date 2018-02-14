@@ -24,7 +24,7 @@ a {
 
 .grid-container {
     display: grid;
-    grid-template-areas: 'nav-menu nav-menu nav-menu' 'caruosel-area . .' 'tea tea tea' 'culture culture culture' '. flower-head .' 'flower flower flower' 'footer footer footer';
+    grid-template-areas: 'nav-menu nav-menu nav-menu' 'caruosel-area . .' '. tea-header .' 'tea tea tea' 'culture culture culture' '. flower-head .' 'flower flower flower' 'footer footer footer';
 }
 
 .grid-container > div {
@@ -62,9 +62,15 @@ li {
 
 .item2 {
     grid-area: caruosel-area;
-    height: 600px !important;
     grid-column: 1 / span 3;
     grid-row: 2 / span 1;
+}
+
+
+.tea-header {
+    grid-area: tea-header;
+    display: grid;
+    justify-content: center;
 }
 
 .item3 {
@@ -74,7 +80,7 @@ li {
     grid-gap: 1em;
     grid-auto-flow: column;
     grid-template-columns: 30% 33% 29%;
-    margin-top: 1em;
+    margin-top: .5em;
 }
 
 #item-header-mobile {
@@ -344,6 +350,10 @@ li {
     
     li {
         margin: 0.1em;
+    }
+    
+    .item2 {
+        height: 600px;
     }
     
     .item5 img  {
