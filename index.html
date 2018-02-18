@@ -24,130 +24,18 @@
     <script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
 
     <style>
-        /*TODO: break out into  navigation css file*/
-
-        .item1 {
-            grid-area: nav-menu;
-            background-color: #123132 !important;
-            display: grid;
-            grid-template-columns: 51% 39% 10%;
-            grid-template-rows: 100px;
-        }
-
-        .item1 h2 {
-            font-size: 26px
-        }
-
-        .item1 li {
-            margin: 0;
-            padding: 0;
-        }
-
-
-        .slick-prev:before,
-        .slick-next:before {
-            color: #B97F6D;
-        }
-
-        #hours {
-            margin-right: 20px;
-        }
-
-        .item6 ul>li>ul {
-            grid-auto-flow: row;
-        }
-
-        .item6 ul>li>ul>li {
-            padding: 0 0;
-        }
-        
-        .item6 {
-            height: 100%;
-        }
-        
-        @media all and (max-width: 425px) {
-            .item1 {
-                grid-template-columns: 100%;
-                justify-content: center;
-            }
-            
-            #tea-text {
-                display: none;
-            }
-            
-            .grid-container > div {
-                text-align: center;
-                font-size: unset;
-            }
-            
-            #inline-nav, #current-deals, #nav-account {
-                display: none;
-            }
-            
-            #smallnav {
-                display: block;
-            }
-        }
-
+        .slick-prev:before, .slick-next:before { color: #B97F6D;}
     </style>
 </head>
 
 <body>
     <div class="grid-container">
         <div class="item1">
-            <div id="inline-nav">
-                <nav class="navbar navbar-default">
-                    <ul id="mySidenav" class="nav navbar-nav">
-                        <li>
-                            <a href="./index.html">
-                                <h1>The HiViE</h1>
-                            </a>
-                        </li>
-                        <li><a href="./pages/flower-all.html">Flower</a></li>
-                        <li><a href="./pages/tea-all.html">Hi-Tea</a></li>
-                        <li><a href="./pages/trending.html">Trending</a></li>
-                        <li><a href="./pages/merch.html">Shop</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div id="smallnav">
-                <ul>
-                    <li>
-                        <a href="./index.html" style="color: #B97F6D">
-                            <h1>The HiViE</h1>
-                        </a>
-                    </li>
-                    <li>
-                        <div class="nav-small">
-                            <div id="mySidenav-small" class="sidenav">
-                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                                <a class="nav-items" href="./index.html">Home</a>
-                                <a class="nav-items" href="./pages/flower-all.html">Flower</a>
-                                <a class="nav-items" href="./pages/tea-all.html">Hi-Tea</a>
-                                <a class="nav-items" href="./pages/trending.html">Trending</a>
-                                <a class="nav-items" href="./pages/merch.html">Shop</a>
-                            </div><span onclick="openNav()">☰</span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <div id="current-deals">
-                <ol>
-                    <li>
-                        <h2>Today's Deals:</h2>
-                    </li>
-                    <li>
-                        <h2>Deal One For 10$</h2>
-                    </li>
-                </ol>
-            </div>
-
-            <div id="nav-account">
-                <span class="glyphicon glyphicon-user"></span> / <span class="glyphicon glyphicon-shopping-cart"></span>
-            </div>
-
+            <script>
+                window.onload = writeHeader(".");
+            </script>
         </div>
+        
         <div class="item2">
             <div id="carousel-text">
                 <h1 style="font-size: 70px;">
@@ -167,12 +55,6 @@
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
-                    <!--<div class="item active">
-                        <img src="./images/home/pexels-photo-503033-lounge1.jpeg" alt="Lounge">
-                    </div>
-                    Bug Found where the other elements are resized widths, could be due to image
-                    -->
-
                     <div class="item active">
                         <img src="./images/home/background-1.jpg" alt="Woods">
                     </div>
@@ -319,49 +201,7 @@
             </div>
         </div>
 
-        <div class="item6" style="font-size: 15px;">
-            <div class="social-media" style="font-size: 10px; margin-top: 5px;">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-instagram"></a>
-            </div>
-            <div id="company-info">
-                <ul>
-                    <li id="loc" class="text-muted">
-                        <ul>
-                            <li>
-                                <h3>Our Store</h3>
-                            </li>
-                            <li>9999 Crenshaw Blvd</li>
-                            <li>Los Angeles, CA 90008</li>
-                            <li>123-456-7890</li>
-                            <li>info@my-domain.com</li>
-                        </ul>
-                    </li>
-                    <li id="hours" class="text-muted">
-                        <ul>
-                            <li>
-                                <h3>Hours</h3>
-                            </li>
-                            <li>Mon - Fri: 7am - 10pm</li>
-                            <li>Saturday: 8am - 10pm</li>
-                            <li>Sunday: 8am - 11pm</li>
-                        </ul>
-                    </li>
-                    <li id="help" class="text-muted">
-                        <ul>
-                            <li>
-                                <h3>Help</h3>
-                            </li>
-                            <li><a class="text-muted" href="#">Shipping &amp; Returns</a></li>
-                            <li><a class="text-muted" href="#">Privacy Policy</a></li>
-                            <li><a class="text-muted" href="#">FAQ</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div></div>
-        </div>
+        <div class="item6" style="font-size: 15px;"></div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
