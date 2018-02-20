@@ -14,7 +14,6 @@ a {
     grid-template-areas: 'nav-menu nav-menu nav-menu' '. shop-title .' 'shop1 shop1 shop1' 'shop2 shop2 shop2' 'footer footer footer';
 }
 
-
 .grid-container > div {
     text-align: center;
 }
@@ -39,7 +38,6 @@ p {
     display: grid;
     grid-area: shop2;
     grid-auto-flow: column;
-
 }
 
 img {
@@ -100,27 +98,37 @@ img {
     
     .shop-items ul {
         margin-bottom: 0;
-    }  
+    }
+    
+    .item1,
+    .item6,
+    .shop-items1,
+    .shop-items2 {
+        width: 320px;
+    }
 }
 
 
 @media (max-width: 425px) {
-    .shop-items {
-        width: 400px;
-    }
     
-    .shop-items ul {
-        margin: 10px auto;
-        margin-bottom: 0;
-        padding-left: 0px;
-    }
-    
-    .shop-items li {
-        width: 398px;
-    }
-    
-    .shop-items img {
+    .shop-items1 img,
+    .shop-items2 img {
         width: 370px;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-areas: 'nav-menu' 'shop-title' 'shop1' 'shop2' 'footer';
+    }
+    
+    .shop-items1,
+    .shop-items2 {
+        grid-auto-flow: row;
+    }
+    
+    .shop-items1,
+    .shop-items2 {
+        display: block;
     }
     
 }
@@ -132,11 +140,6 @@ img {
     
     .shop-items ul {
         padding-left: 20px;
-    }
-    
-    .grid-container {
-        display: grid;
-       grid-template-areas: 'nav-menu' 'shop-title' 'shop1' 'shop2' 'footer';
     }
 }
 

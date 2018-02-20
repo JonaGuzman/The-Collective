@@ -142,6 +142,10 @@
     #smallnav {
         display: block;
     }
+    
+    .item6 ul {
+        grid-auto-flow: row;
+    }
 }
 
 .nav {
