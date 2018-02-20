@@ -228,6 +228,16 @@ li {
     height: 264px;
 }
 
+@media (min-width: 768px) {
+    #link-mobile {
+        display: none;
+    }
+    
+    #link-regular {
+        display: block;
+    }
+}
+
 @media screen and (max-width: 1040px) {
 
     .auto-fit {
@@ -322,6 +332,26 @@ li {
     .item6 {
         width: 320px;
     }
+    
+    #tea1-overlay,
+    #tea2-overlay {
+        height: 5% !important;
+        width: 53% !important;
+        margin: 0 0 0 19px !important;
+    }
+    
+    #trending-overlay,
+    #shop-overlay {
+        height: 5% !important;
+        width: 77% !important;
+    }
+    
+    #flower1-overlay,
+    #flower3-overlay,
+    #flower2-overlay {
+        height: 5% !important;
+        width: 76% !important;
+    }
 }
 
 /* Mobile View */
@@ -371,6 +401,18 @@ li {
     
     .item3 {
         margin-top: -1em;
+    }
+    
+    #link-regular {
+        display: none;
+    }
+    
+    #line-mobile {
+        display: block;
+    }
+    
+    #link-mobile h4 {
+        margin-top: 4px;
     }
     
     .item4 {
