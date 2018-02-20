@@ -115,6 +115,10 @@
         grid-template-columns: 100%;
         justify-content: center;
     }
+    
+    .item1 ul {
+        grid-auto-flow: row;
+    }
 
     #tea-text {
         display: none;
@@ -129,6 +133,10 @@
     #current-deals,
     #nav-account {
         display: none;
+    }
+    
+    .text-muted {
+        font-size: 11px !important;
     }
 
     #smallnav {
@@ -206,6 +214,19 @@
     margin-right: 20px;
 }
 
+ul {
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+    padding: 0;
+}
+ol {
+    list-style: none;
+    display: inline-flex;
+    padding-left: 0;
+}
+
+
 .item6 {
     grid-area: footer;
     display: grid;
@@ -223,6 +244,10 @@
 
 .item6 {
     height: 100%;
+}
+
+.text-muted {
+    font-size: 15px;
 }
 
 #map {
