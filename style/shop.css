@@ -133,59 +133,55 @@ img {
     
 }
 
-@media (max-width: 425px) and (min-width: 414px) {
-    #merch-title {
-        width: 425px;
-    }
-    
-    .shop-items ul {
-        padding-left: 20px;
+@media screen and (min-width: 550px) and (max-width: 570px) and (orientation: landscape) {
+    img {
+        width: 175px !important;
     }
 }
 
+@media screen and (max-width: 750px) and (min-width: 500px) and (orientation: landscape) {
 
-@media (max-width: 670px) and (min-width: 500px) {
-    .shop-items {
-        width: 800px;
+    .grid-container {
+        display: grid;
+        grid-template-areas: 'nav-menu nav-menu nav-menu' '. shop-title .' 'shop1 shop1 shop1' 'shop2 shop2 shop2' 'footer footer footer';
     }
     
-    .shop-items ul {
-        padding-left: 20px;
+    .nav {
+        display: grid;
     }
     
-    .shop-items li {
-        width: 215px;
-        height: 350px;
+    .nav-small {
+        line-height: 10px;
+        z-index: 10;
     }
     
-    .shop-items img {
+    .navbar-default {
+        height: 0;
+    }
+    
+    img {
+        width: 190px;
+    }
+    
+    #sb-player {
+        width: 430px;
+    }
+    
+    .shop-items1 {
+        display: grid;
+        grid-area: shop1;
+        justify-content: space-around;
+    }
+    
+    .shop-items2 {
+        display: grid;
+        grid-area: shop2;
+        justify-content: space-around;
+    }
+    
+    .social-media-container {
         width: 200px;
-        height: 300px;
-    }
-}
-
-@media (max-width: 820px) and (min-width: 720px) {
-    .shop-items li {
-        width: 234px;
-        height: 350px;
-    }
-    
-    .shop-items ul {
-        padding-left: 30px;
-    }
-    
-    .shop-items {
-        width: 800px;
-    }
-    
-    .shop-items img {
-        width: 200px;
-        height: 285px;
-    }
-}
-
-@media (max-width: 850px) and (min-width: 810px) {
-    .shop-items ul {
-        padding-left: 70px;
+        margin: 15px 245px;
+        height: 30px;
     }
 }
