@@ -91,6 +91,11 @@
     transition: margin-left .5s;
 }
 
+@media screen and (min-width: 800px) {
+    #hours {
+        margin-right: 30px;
+    }
+}
 
 @media screen and (min-width: 500px) {
     #smallnav {
@@ -98,19 +103,108 @@
     }
 } 
 
-@media screen and (max-width: 750px) and (min-width: 430px) and (orientation: landscape) {
- .item1 {
-        grid-template-columns: 79% 28% !important;
+@media screen and (max-width: 750px) and (min-width: 500px) and (orientation: landscape) {
+    .item1 {
+        grid-template-columns: 68% 32%;
     }
+    
+    #current-deals {
+        display: none;
+    }
+    
+    .navbar, .navbar-default {
+        height: 126px;
+    }
+    
+    .nav {
+        display: grid;
+    }
+    
+    #company-info {
+        display: grid;
+    }
+    
+    #hours {
+        margin-right: 0;
+    }  
 }
 
 @media screen and (max-width: 450px) {
-    .sidenav {
-        padding-top: 15px;
+    
+    #smallnav-container {
+        display: block;
     }
+    
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 4;
+        top: 0;
+        left: 0;
+        background-color: #123132;
+        overflow-x: hidden;
+        padding-top: 60px;
+    }
+    
+    .nav-small {
+        display: block;
+        text-align: center;
+        height: 12px;
+        line-height: 20px;
+        z-index: 16;
+    }
+    
+    .nav-small span {
+        font-size: 40px;
+        cursor: pointer;
+        padding-left: 0px;
+        line-height: 10px;
+    }
+            
+    #nav-account {
+        height: 0;
+        margin: -40px 0px 0 0px;
+        float: right;
+        width: 48px;
+        padding-left: 0;
+    }
+
+    #nav-account span {
+        font-size: 10px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #B97F6D;
+        display: block;
+        transition: 0.5s;
+        margin-bottom: -30px
+    }
+
+    .nav-items {
+        opacity: 0;
+    }
+
+    .sidenav a:hover,
+    .offcanvas a:focus {
+        color: #ede1de;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    
     .sidenav a {
         font-size: 18px;
     }
+    
     .item1 {
         grid-template-columns: 100%;
         justify-content: center;
@@ -146,6 +240,21 @@
     .item6 ul {
         grid-auto-flow: row;
     }
+    
+    #hours {
+        margin-right: 0;
+    }
+    
+    .footer {
+        position: relative;
+        bottom: 0;
+        width: 500px;
+        height: 500px;
+        background-color: #123132;
+        color: #F2EC30;
+        text-align: center;
+        list-style: none;
+    }
 }
 
 .nav {
@@ -164,13 +273,6 @@
 .nav span {
     font-size: 30px;
     cursor: pointer;
-}
-
-.company-logo {
-    display: block;
-    width: 300px;
-    margin: 0 375px auto 235px;
-    padding: 15px;
 }
 
 .social-media-container {
@@ -213,10 +315,6 @@
     <div id="map"></div>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBt-Vm99mpjLqXHnuDIX3EiQI_URst0NW8&callback=initMap"></script> 
 */
-
-#hours {
-    margin-right: 20px;
-}
 
 ul {
     display: grid;

@@ -18,112 +18,10 @@
 */
 
 @media (max-width: 425px) {
-    
-    #smallnav-container {
-        display: block;
-    }
-    
-    .nav-small span {
-        font-size: 40px;
-        cursor: pointer;
-        padding-left: 0px;
-        line-height: 10px;
-    }
 
     body {
         color: #B97F6D;
         background-color: #EDEDEE;
-    }
-
-    div #hivie a {
-        color: #B97F6D;
-    }
-
-      #hivie {
-        text-align: center;
-        height: 65px;
-        padding-right: 14px;
-    }
-    
-    .sidenav {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 4;
-        top: 0;
-        left: 0;
-        background-color: #123132;
-        overflow-x: hidden;
-        padding-top: 60px;
-    }
-    
-    .nav-small {
-        display: block;
-        text-align: center;
-        height: 12px;
-    }
-        
-    .nav-container {
-        background: #123132;
-        color: #B97F6D;
-        position: relative;
-        width: 100%;
-        margin: 0 auto;
-        height: 140px;
-    }
-
-    #nav-account {
-        height: 0;
-        margin: -40px 0px 0 0px;
-        float: right;
-        width: 48px;
-        padding-left: 0;
-    }
-
-    #nav-account span {
-        font-size: 10px;
-    }
-
-    .company-logo {
-        display: block;
-        width: 150px;
-        margin: 0 0px auto 110px;
-        padding: 0px;
-    }
-
-    .sidenav a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 20px;
-        color: #B97F6D;
-        display: block;
-        transition: 0.5s;
-        margin-bottom: -30px
-    }
-
-    .nav-items {
-        opacity: 0;
-    }
-
-    .sidenav a:hover,
-    .offcanvas a:focus {
-        color: #ede1de;
-    }
-
-    .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-    }
-    
-        .nav-container ul {
-        padding: 0;
-    }
-    
-        .social-media-container {
-        display: none;
     }
     
     #map {
@@ -169,26 +67,6 @@
         padding: 0px 0;
         opacity: 1;
     }
-
-    .footer {
-        position: relative;
-        bottom: 0;
-        width: 500px;
-        height: 500px;
-        background-color: #123132;
-        color: #F2EC30;
-        text-align: center;
-        list-style: none;
-    }
-
-    #company-info {
-        display: grid;
-        justify-content: center;
-    }
-    
-    #hours {
-        margin-right: 0 !important;
-    }
 }
 
 @media screen and (max-width: 360px) {
@@ -233,6 +111,8 @@
     }
 }
 
+
+
 @media screen and (max-width: 375px) {
   
     .nav-small {
@@ -267,22 +147,19 @@
         display: grid;
         grid-template-areas: 'nav-menu nav-menu nav-menu' 'caruosel-area . .' '. tea-header .' 'tea tea' 'culture culture culture' '. flower-head .' 'flower flower flower' 'footer footer footer' !important;
     }
-    
+
     .nav {
         display: grid;
     }
     
-    .item1 {
-        grid-template-columns: 80% 28% !important;
+    .carousel-inner {
+        height: 530px;
+        margin: 0 0 10px 0;
+        width: 100%;
     }
-    
-    #tea-text > p {
-        display: none;
-    }
-    
-    .nav-small {
-        line-height: 10px;
-        z-index: 10;
+
+    #myCarousel img {
+        height: 530px;
     }
     
     .item3 {
@@ -290,6 +167,10 @@
         grid-auto-flow: column;
         grid-template-columns: 40% 10% 40%;
         margin-top: 0;
+    }
+    
+    #tea-text > p {
+        display: none;
     }
     
     .item4 {
@@ -319,52 +200,6 @@
     
     .item5 {
         grid-gap: 0;
-    }
-
-    .nav-container {
-        z-index: 16;
-    }
-
-    #current-deals {
-        display: none;
-    }
-    
-    .navbar, .navbar-default {
-        height: 126px;
-    }
-
-    .company-logo {
-        margin: 0 0px auto 220px;
-    }
-
-    .carousel-inner {
-        height: 530px;
-        margin: 0 0 10px 0;
-        width: 100%;
-    }
-
-    #myCarousel img {
-        height: 530px;
-    }
-
-    .landscape {
-        display: none;
-    }
-
-    #culture-header {
-        display: none;
-    }
-
-    #landscape-header {
-        display: block;
-        margin-bottom: 0px;
-        margin-top: 10px;
-    }
-    
-    .social-media-container {
-        width: 200px;
-        margin: 15px 245px;
-        height: 30px;
     }
 }
 
@@ -397,10 +232,6 @@
     .nav-container ul {
         list-style: none;
         padding-left: 15px;
-    }
-
-    .company-logo {
-        margin: 0 0px auto 125px;
     }
 
     .carousel-inner {

@@ -83,7 +83,7 @@ function closeNav() {
 }
 
 function writeFooter() {
-    var footer = "<div class=social-media style=font-size: 10px; margin-top: 5px;>" +
+    var footer = "<div class=social-media style=font-size:10px; margin-top:5px;>" +
                     "<a href=# class='fa fa-facebook'></a>" +
                     "<a href=# class='fa fa-twitter'></a>" +
                     "<a href=# class='fa fa-instagram'></a>" +
