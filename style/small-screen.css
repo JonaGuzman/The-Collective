@@ -115,11 +115,6 @@
 
 @media screen and (max-width: 375px) {
   
-    .nav-small {
-        line-height: 20px;
-        z-index: 16;
-    }
-
     .sidenav a {
         font-size: 30px;
         margin-bottom: 0;
