@@ -168,6 +168,10 @@
         display: none;
     }
     
+    #link-regular {
+        display: none;
+    }
+    
     .item4 {
         grid-gap: .7em;
         grid-template-columns: 38% 21% 34%;
@@ -195,6 +199,42 @@
     
     .item5 {
         grid-gap: 0;
+    }
+    
+    #tea1-overlay,
+    #tea2-overlay {
+        height: 9%;
+        width: 32.8%;
+        margin: 0 0 0 24px;
+        opacity: 1;
+    }
+    
+    #trending-overlay,
+    #shop-overlay {
+        opacity: 1;
+        width: 21.3%;
+        height: 8%;
+    }
+    
+    #trending-overlay a h4,
+    #shop-overlay a h4 {
+        margin-top: 6px;
+    }
+    
+    #flower1-overlay a h4,
+    #flower2-overlay a h4,
+    #flower3-overlay a h4 {
+        margin-top: 6px;
+    }
+    
+    #flower1-overlay,
+    #flower3-overlay,
+    #flower2-overlay {
+        height: 9%;
+        width: 27.5%;
+        margin: 0 0 0 20px;
+        padding: 0px 0;
+        opacity: 1;
     }
 }
 
@@ -244,16 +284,6 @@
             width: 705px;
         }
     }
-
-@media screen and (max-width: 815px) and (orientation: landscape) {
-
-
-}
-
-@media screen and (max-width: 412px) and (device-height: 732px) {
-
-    
-}
 
 /* zoomed view */
 @media screen and (min-width: 312px) and (max-width: 335px) {

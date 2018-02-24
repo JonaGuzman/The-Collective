@@ -130,9 +130,16 @@
         display: grid;
     }
     
+    #loc,
+    #hours,
+    #help {
+        margin-right: 18px;
+        padding: 0 0;
+    }
+    
     #hours {
-        margin-right: 0;
-    }  
+        margin-right: 25px;
+    }
 }
 
 @media screen and (max-width: 450px) {
