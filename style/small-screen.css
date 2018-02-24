@@ -152,6 +152,10 @@
         margin: 0 0 10px 0;
         width: 100%;
     }
+    
+    .carousel-indicators {
+        display: none;
+    }
 
     #myCarousel img {
         height: 530px;

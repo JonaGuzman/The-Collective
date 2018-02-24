@@ -357,8 +357,7 @@ li {
 /* Mobile View */
 
 @media screen and (max-width: 425px) {
-    
-    
+      
     li {
         margin: unset;
     }
