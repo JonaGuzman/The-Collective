@@ -34,7 +34,9 @@ $(document).ready(function () {
     let names = ["tea1", "tea2", "flower1", "flower2", "flower3", "trending", "shop"];
 
     names.forEach(function (item, index, array) {
-        overlayDisplay(item);
+        if (Modernizr.mq('screen and (min-width: 800px)')) {
+            overlayDisplay(item);
+        }
         overlayClickable(item);
     });
     
