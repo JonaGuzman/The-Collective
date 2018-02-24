@@ -66,7 +66,11 @@
 }
 
 #mySidenav li:nth-of-type(1) ~ li {
-    margin: 5px auto;
+    margin: 5px 0;
+}
+
+#inline-nav {
+    display: grid;
 }
 
 #smallnav h1 {
@@ -106,7 +110,7 @@
 @media screen and (max-width: 750px) and (min-width: 500px) and (orientation: landscape) {
     
     .item1 {
-        grid-template-columns: 76% 24%;
+        grid-template-columns: 78% 24%;
     }
     
     #current-deals {
@@ -116,10 +120,10 @@
     .navbar, .navbar-default {
         height: 126px;
     }
-    
+
     #mySidenav {
         display: grid;
-        grid-template-columns: 0% 25% 13% 15% 10%;
+        text-align: left;
     }
     
     #company-info {
