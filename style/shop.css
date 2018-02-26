@@ -40,6 +40,10 @@ p {
     grid-auto-flow: column;
 }
 
+#sb-body img {
+    width: inherit;
+}
+
 img {
     width: 370px;
     height: auto;

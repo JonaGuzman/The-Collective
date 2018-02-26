@@ -29,60 +29,43 @@
 
 <body>
 
-    <div class="main-container">
-
-        <div class="nav-container">
+<div class="grid-container">
+        <div class="item1">
             <script>
                 window.onload = writeHeader("..");
             </script>
         </div>
-
-        <div id="main">
-
-            <div class="tea-items">
-                <ul>
-                    <div class="row">
-
-                        <div id="inline-content1" style=" display:none;">
-                            <script>
-                                var jsonTea = JSON.parse(teaA1());
-                                setContentTea(jsonTea.name, jsonTea.type, jsonTea.inline, jsonTea.content, jsonTea.ratings);
-                            </script>
-                        </div>
-                        
-                        <div id="inline-content2" style=" display:none;">
-                            <script>
-                                var jsonTea = JSON.parse(teaA2());
-                                setContentTea(jsonTea.name, jsonTea.type, jsonTea.inline, jsonTea.content, jsonTea.ratings);
-                            </script>
-                        </div>
-                        
-                        <div id="inline-content3" style=" display:none;">
-                            <script>
-                                var jsonTea = JSON.parse(teaA3());
-                                setContentTea(jsonTea.name, jsonTea.type, jsonTea.inline, jsonTea.content, jsonTea.ratings);
-                            </script>
-                        </div>
-                        
-                        <li class="col-md-3 col-xs-1"><a href="#inline-content1" rel="shadowbox[Demo]"><img src="images/tea.jpg"></a></li>
-                        <li class="col-md-3 col-xs-1"><a href="#inline-content2" rel="shadowbox[Demo]"><img src="images/tea.jpg"></a></li>
-                        <li class="col-md-3 col-xs-1"><a href="#inline-content3" rel="shadowbox[Demo]"><img src="images/tea.jpg"></a></li>
-
+        
+        <div class="tea">
+                    <div id="inline-content1" style=" display:none;">
+                        <script>
+                            var jsonTea = JSON.parse(teaA1());
+                            setContentTea(jsonTea.name, jsonTea.type, jsonTea.inline, jsonTea.content, jsonTea.ratings);
+                        </script>
                     </div>
-                </ul>
 
-            </div>
+                    <div id="inline-content2" style=" display:none;">
+                        <script>
+                            var jsonTea = JSON.parse(teaA2());
+                            setContentTea(jsonTea.name, jsonTea.type, jsonTea.inline, jsonTea.content, jsonTea.ratings);
+                        </script>
+                    </div>
+
+                    <div id="inline-content3" style=" display:none;">
+                        <script>
+                            var jsonTea = JSON.parse(teaA3());
+                            setContentTea(jsonTea.name, jsonTea.type, jsonTea.inline, jsonTea.content, jsonTea.ratings);
+                        </script>
+                    </div>
+
+                    <div><a href="#inline-content1" rel="shadowbox[Demo]"><img src="images/tea.jpg"></a></div>
+                    <div><a href="#inline-content2" rel="shadowbox[Demo]"><img src="images/tea.jpg"></a></div>
+                    <div><a href="#inline-content3" rel="shadowbox[Demo]"><img src="images/tea.jpg"></a></div>
+
 
         </div>
-        <!-- End of Main -->
 
-        <div class="footer">
-            <div class="row">
-                <footer>
-                    <div id="footer-items"></div>
-                </footer>
-            </div>
-        </div>
+        <div class="item6" style="font-size: 15px;"></div>
 
     </div>
 

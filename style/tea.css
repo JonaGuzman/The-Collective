@@ -9,10 +9,31 @@ a {
     color: #d0b0a6;
 }
 
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'nav-menu nav-menu nav-menu' 'tea tea tea' 'footer footer footer';
+}
+
+.grid-container > div {
+    text-align: center;
+}
+
+.tea {
+    display: grid;
+    grid-area: tea;
+    grid-auto-flow: column;
+    justify-content: center;
+    grid-gap: 20px;
+    grid-template-rows: auto;
+    margin: 10px 0 10px 0;
+}
+
 .tea-items {
     width: 1270px;
     height: 400px;
     margin: 0 auto;
+    
 }
 
 .tea-items ul {
@@ -29,7 +50,7 @@ a {
     height: 405px;
 }
 
-.tea-items img {
+.tea img {
     width: 370px;
     height: 350px;
 }
