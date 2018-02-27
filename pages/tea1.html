@@ -29,40 +29,44 @@
 
 <body>
 
-<div class="grid-container">
+    <div class="grid-container">
         <div class="item1">
             <script>
                 window.onload = writeHeader("..");
             </script>
         </div>
         
+        <div class="tea-type">
+            <div></div>
+            <div><h1>Tea 1</h1></div>
+            <div></div>
+        </div>
+    
         <div class="tea">
-                    <div id="inline-content1" style=" display:none;">
-                        <script>
-                            var jsonTea = JSON.parse(teaA1());
-                            setContentTea(jsonTea.name, jsonTea.type, jsonTea.inline, jsonTea.content, jsonTea.ratings);
-                        </script>
-                    </div>
+            <div id="inline-content1" style=" display:none;">
+                <script>
+                    var jsonTea = JSON.parse(teaA1());
+                    setContentTea(jsonTea.name, jsonTea.type, jsonTea.inline, jsonTea.content, jsonTea.ratings);
+                </script>
+            </div>
 
-                    <div id="inline-content2" style=" display:none;">
-                        <script>
-                            var jsonTea = JSON.parse(teaA2());
-                            setContentTea(jsonTea.name, jsonTea.type, jsonTea.inline, jsonTea.content, jsonTea.ratings);
-                        </script>
-                    </div>
+            <div id="inline-content2" style=" display:none;">
+                <script>
+                    var jsonTea = JSON.parse(teaA2());
+                    setContentTea(jsonTea.name, jsonTea.type, jsonTea.inline, jsonTea.content, jsonTea.ratings);
+                </script>
+            </div>
 
-                    <div id="inline-content3" style=" display:none;">
-                        <script>
-                            var jsonTea = JSON.parse(teaA3());
-                            setContentTea(jsonTea.name, jsonTea.type, jsonTea.inline, jsonTea.content, jsonTea.ratings);
-                        </script>
-                    </div>
+            <div id="inline-content3" style=" display:none;">
+                <script>
+                    var jsonTea = JSON.parse(teaA3());
+                    setContentTea(jsonTea.name, jsonTea.type, jsonTea.inline, jsonTea.content, jsonTea.ratings);
+                </script>
+            </div>
 
-                    <div><a href="#inline-content1" rel="shadowbox[Demo]"><img src="images/tea.jpg"></a></div>
-                    <div><a href="#inline-content2" rel="shadowbox[Demo]"><img src="images/tea.jpg"></a></div>
-                    <div><a href="#inline-content3" rel="shadowbox[Demo]"><img src="images/tea.jpg"></a></div>
-
-
+            <div><a href="#inline-content1" rel="shadowbox[Demo]"><img src="images/tea.jpg"></a><h3>Tea One</h3></div>
+            <div><a href="#inline-content2" rel="shadowbox[Demo]"><img src="images/tea.jpg"></a><h3>Tea Two</h3></div>
+            <div><a href="#inline-content3" rel="shadowbox[Demo]"><img src="images/tea.jpg"></a><h3>Tea Three</h3></div>
         </div>
 
         <div class="item6" style="font-size: 15px;"></div>

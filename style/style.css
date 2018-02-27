@@ -333,11 +333,15 @@ li {
         width: 320px;
     }
     
+    .item3 img {
+        width: 100%;
+    }
+    
     #tea1-overlay,
     #tea2-overlay {
         height: 5% !important;
-        width: 53% !important;
-        margin: 0 0 0 19px !important;
+        width: 65% !important;
+        margin: 0 0 0 0px !important;
     }
     
     #trending-overlay,

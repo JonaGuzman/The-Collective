@@ -12,11 +12,17 @@ a {
 
 .grid-container {
     display: grid;
-    grid-template-areas: 'nav-menu nav-menu nav-menu' 'tea tea tea' 'footer footer footer';
+    grid-template-areas: 'nav-menu nav-menu nav-menu' '. tea-type .' 'tea tea tea' 'footer footer footer';
 }
 
 .grid-container > div {
     text-align: center;
+}
+
+.tea-type {
+    display: grid;
+    grid-area: tea-type;
+    justify-content: center;
 }
 
 .tea {
@@ -26,33 +32,20 @@ a {
     justify-content: center;
     grid-gap: 20px;
     grid-template-rows: auto;
-    margin: 10px 0 10px 0;
+    margin: 10px 0 30px 0;
 }
 
-.tea-items {
-    width: 1270px;
-    height: 400px;
-    margin: 0 auto;
-    
-}
-
-.tea-items ul {
-    list-style: none;
-    display: inline-flex;
-    width: 1300px;
-    margin: 25px auto;
-    padding-left: 42px;
-}
-
-.tea-items li {
-    list-style: none;
-    width: 405px;
-    height: 405px;
+.tea > div > h3 {
+    display: block;
 }
 
 .tea img {
     width: 370px;
     height: 350px;
+}
+
+#tea-info ul {
+    display: inherit;
 }
 
 #tea-name {
@@ -174,12 +167,30 @@ a {
 
 
 @media (max-width: 425px) {
-    #main {
-        height: 1070px;
-    }
     
     .ratings {
         display: none;
+    }
+    
+    .tea img {
+        width: 85%;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-areas: 'nav-menu' 'tea-type' 'tea' 'footer';
+        grid-auto-flow: row;
+    }
+    
+    .tea-type {
+        display: grid;
+        grid-area: tea-type;
+    }
+    
+    .tea {
+        grid-auto-flow: row;
+        grid-area: tea;
+        grid-gap: 3em;
     }
     
     .tea-items li {
@@ -191,29 +202,28 @@ a {
     #mobile-img {
         height: 230px;
     }
+    
+    .mobile-ratings {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-auto-flow: column;
+        padding-left: 30px;
+    }
+    
+    .ratings {
+        display: none;
+    }
+    
+    .mobile-ratings > ul {
+        grid-auto-flow: row;
+    }
+    
+    .tea > div > h3 {
+        display: none;
+    }  
 }
 
 @media (max-width: 375px) {
-    .tea-items {
-        width: 420px;
-        height: 190px;
-    }
-    
-    .tea-items ul {
-        width: 400px;
-        height: 44px;
-        padding-left: 7px;
-    }
-    
-    .tea-items li {
-        width: 300px;
-        height: 340px;
-    }
-    
-    .tea-items img {
-        width: 320px;
-        height: 320px;
-    }
     
     #tea-info p {
         margin: 0 auto;
@@ -222,22 +232,7 @@ a {
         text-align: left;
         width: 100px;
     }
-    
-    .ratings {
-        display: none;
-    }
-    
-    .mobile-ratings {
-        display: inline-flex;
-        width: 300px;
-        padding-left: 15px;
-        padding-top: 25px
-    }
-    
-    .mobile-ratings ul {
-        width: 145px;
-    }
-    
+      
     #sb-wrapper {
         top: 90px !important;
     }

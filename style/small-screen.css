@@ -249,6 +249,16 @@
         padding-left: 0px;
     }
     
+    .item3 img {
+        width: 98%;
+    }
+        
+    .item3,
+    .item4,
+    .item5 {
+        grid-template-columns: 60%;
+    }
+    
     .nav-small {
         line-height: 30px;
         z-index: 16;
@@ -279,6 +289,23 @@
 
     #footer-items {
         width: 433px;
+    }
+    
+    #tea1-overlay,
+    #tea2-overlay {
+        width: 59%;
+        margin: 0 0 0 2px;
+    }
+    
+    #trending-overlay,
+    #shop-overlay {
+        width: 59.5%;
+    }
+    
+    #flower1-overlay,
+    #flower3-overlay,
+    #flower2-overlay {
+        width: 59%;
     }
 }
 
