@@ -1,6 +1,6 @@
 function setContentFlower(flowerName, type, inlineId, desc, catVal, ...args) {
     
-    if (Modernizr.mq('(max-width: 425px)') || Modernizr.mq('(max-width: 750px) and (orientation: landscape)')) {
+    if (Modernizr.mq('(max-width: 425px)') || Modernizr.mq('(max-width: 750px) and (min-width: 500px) and (orientation: landscape)')) {
          let mobileDesc = ['low', 'med', 'high'];
          
          var inlineContent = "<div id=flower-name><h3>" + flowerName + "</h3><h4>" + type + "</h4></div>" +

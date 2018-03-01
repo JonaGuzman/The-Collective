@@ -214,16 +214,17 @@ a {
         display: none;
     }
     
+    #sb-wrapper {
+        top: 90px !important;
+    }
+    
     .mobile-ratings > ul {
         grid-auto-flow: row;
     }
     
-    .tea > div > h3 {
-        display: none;
-    }  
-}
-
-@media (max-width: 375px) {
+    .glyphicon, .glyphicon-ok {
+        color: #007F00;
+    }
     
     #tea-info p {
         margin: 0 auto;
@@ -232,13 +233,9 @@ a {
         text-align: left;
         width: 100px;
     }
-      
-    #sb-wrapper {
-        top: 90px !important;
-    }
     
-    .glyphicon, .glyphicon-ok {
-        color: #007F00;
+    .tea > div > h3 {
+        display: none;
     }
     
     #all {
@@ -273,16 +270,37 @@ a {
         width: 305px;
     }
     
+    #sb-wrapper-inner {
+        height: 464px !important;
+    }
+    
     .mobile-ratings {
-        padding-left: 4px;
+        padding-left: 9px;
+        grid-template-columns: 35% 34%;
     }
     
     .mobile-ratings ul {
         width: 95px;
     }
     
+    #tea-info p {
+        width: 92px;
+    }
+    
     #sb-body img {
-        width: 275px;
+        width: 245px;
+    }
+}
+
+@media screen and (min-width: 550px) and (max-width: 570px) and (orientation: landscape) {
+    .tea > div > a > img {
+        width: 181px !important;
+        height: 200px !important;
+    }
+    
+    .tea {
+        grid-gap: 5px;
+        margin: 0;
     }
 }
 
@@ -374,24 +392,11 @@ a {
     }
 }
 
-@media (max-width: 750px) and (orientation: landscape) {
+@media (max-width: 750px) and (min-width: 500px) and (orientation: landscape) {
 
-    .tea-items {
-        width: 800px;
-    }
-    
-    .tea-items ul {
-        padding-left: 16px;
-        margin: 100px auto;
-    }
-    
-    .tea-items li {
-       width: 220px;
-    }
-    
-    .tea-items img {
+    .tea > div > a > img {
         width: 200px;
-        height: 200px;
+        height: 220px;
     }
     
     #tea-info p {
@@ -408,14 +413,16 @@ a {
     }
     
     .mobile-ratings {
-        display: inline-flex;
-        width: 315px;
-        padding-left: 7px;
-        padding-top: 5px
+        display: inline-grid;
+        width: unset;
+        padding-left: 0px;
+        padding-top: 5px;
+        grid-auto-flow: column;
     }
     
     .mobile-ratings ul {
-        width: 145px;
+        width: unset;
+        grid-auto-flow: row;
     }
     
     .mobile-ratings li {
@@ -436,10 +443,12 @@ a {
     
     #sb-wrapper {
         top: 90px !important;
+        left: 165px !important;
+        width: 350px !important;
     }
     
     #sb-body {
-        height: 368px !important;
+        height: 355px !important;
     }
     
     #sb-wrapper-inner {

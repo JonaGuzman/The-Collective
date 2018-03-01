@@ -107,6 +107,13 @@
     }
 } 
 
+/* iphone 6 zoomed */
+@media (max-width: 568px) and (device-height: 320px) and (orientation: landscape) {
+    .item1 {
+        grid-template-columns: 80% 20% !important;
+    }
+}
+
 @media screen and (max-width: 750px) and (min-width: 500px) and (orientation: landscape) {
     
     .item1 {
@@ -115,10 +122,6 @@
     
     #current-deals {
         display: none;
-    }
-    
-    .navbar, .navbar-default {
-        height: 126px;
     }
 
     #mySidenav {

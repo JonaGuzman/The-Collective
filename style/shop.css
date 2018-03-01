@@ -141,6 +141,10 @@ img {
     img {
         width: 175px !important;
     }
+    
+    #sb-player {
+        width: 350px !important;
+    }
 }
 
 @media screen and (max-width: 750px) and (min-width: 500px) and (orientation: landscape) {
