@@ -22,111 +22,85 @@
 
 <body>
 
-    <div class="main-container">
-        <div class="nav-container">
+    <div class="grid-container">
+        
+        <div class="item1">
             <script>
                 window.onload = writeHeader("..");
             </script>
         </div>
 
-        <div id="trending-title">
-            <h1>Trending</h1>
+        <div class="trending-title">
+            <div><h1>Trending</h1></div>
+            <div></div>
+            <div></div>
         </div>
 
-        <div id="main">
-
-            <div class="row trending-items">
-                
-                <div class="row col-md-12">
-                    <div id="sub-header" class="col-md-2">
-                        <div id="date">
-                            <script>
-                                var n = new Date();
-                                var y = n.getFullYear();
-                                var m = n.getMonth() + 1;
-                                var d = n.getDate();
-                                document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
-                            </script>
-                        </div>
-                        <h4>Trending at The HiVie</h4>
-                    </div>
-                    
-                    
-                    <div class="col-md-8">
-                        <div class="post">
-                            <h1>Post 1</h1>
-                            <ul>
-                                <li><img src="./images/running-man.jpeg" /></li>
-                                <li>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere metus ut elit dignissim, vitae malesuada eros feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur leo turpis, tincidunt et finibus et, bibendum quis purus.
-                                    </p>
-                                    <h3><a href="#">Read More</a></h3>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-2" id="rec-posts">
-                        <h4>Recent Posts</h4>
-                        <ul>
-                            <li
-                                ><a href="#"><h5>post 1</h5></a>
-                                October 17, 2017
-                            </li>
-                            <li>
-                                <a href="#"><h5>post 2</h5></a>
-                                October 16, 2017
-                            </li>
-                            <li>
-                                <a href="#"><h5>post 3</h5></a>
-                                October 17, 2017
-                            </li>
-                        </ul>
-                    </div>
+        <div class="trending1">
+            <div class="sub-header">
+                <div id="date">
+                    <script>
+                        var n = new Date();
+                        var y = n.getFullYear();
+                        var m = n.getMonth() + 1;
+                        var d = n.getDate();
+                        document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+                    </script>
+                </div>
+                <h4 id="trend-msg">Trending at The HiVie</h4>
+            </div>
+            
+            <div class="post">
+                <div><h1>Post 1</h1></div>
+                <div><img src="./images/running-man.jpeg" /></div>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere metus ut elit dignissim, vitae malesuada eros feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur leo turpis, tincidunt et finibus et, bibendum quis purus.
+                    </p>
+                </div>
+                <a href="#" style="text-align:left;"><h3>Read More</h3></a>
+            </div>
+            
+            <div class="rec-posts">
+                <div><h4>Recent Posts</h4></div>
+                <div>
+                    <a href="#" style="text-align:left;"><h5>post 1</h5></a>
+                    <div>October 12, 2017</div>
+                </div>
+                <div>
+                    <a href="#" style="text-align:left;"><h5>post 2</h5></a>
+                    <div>October 18, 2017</div>
+                </div>
+                <div><a href="#" style="text-align:left;"><h5>post 3</h5></a>
+                    <div>October 19, 2017</div>
                 </div>
             </div>
-
         </div>
         
-        <div id="last-item" class="row trending-items">      
-                <div class="row col-md-12">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8">
-                        <div class="post">
-                            <h1>Post 2</h1>
-                            <ul>
-                                <li><img src="./images/artistic.jpeg" /></li>
-                                <li>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere metus ut elit dignissim, vitae malesuada eros feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur leo turpis, tincidunt et finibus et, bibendum quis purus.
-                                    </p>
-                                    <h3><a href="#">Read More</a></h3>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-2"></div>
+        <div class="trending2">
+            <div></div>
+            <div class="post">
+                <div><h1>Post 2</h1></div>
+                <div><img src="./images/artistic.jpeg" /></div>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere metus ut elit dignissim, vitae malesuada eros feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur leo turpis, tincidunt et finibus et, bibendum quis purus.
+                    </p>
                 </div>
+                <a href="#" style="text-align:left;"><h3>Read More</h3></a> 
             </div>
+            <div></div>
+        </div>
         
-        <div id="load-more">
+        <div class="load-more">
             <a href="#">
                 <img src="images/loadmore.png" />
             </a>
         </div>
-
-        </div>
-
-
-        <!-- End of Main -->
-        <div class="footer">
-            <div class="row">
-                <footer>
-                    <div id="footer-items"></div>
-                </footer>
-            </div>
-        </div>
-
+        
+        <div class="item6" style="font-size: 15px;"></div>
+        
+    </div>
+    
 </body>
-
 </html>

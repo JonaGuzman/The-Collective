@@ -322,10 +322,11 @@ a {
     }
     
     .mobile-ratings {
-        display: inline-flex;
+        display: grid;
+        grid-gap: 1em;
         width: 300px;
-        padding-left: 15px;
-        padding-top: 25px
+        padding-left: 20px;
+        padding-top: 25px;
     }
     
     .mobile-ratings ul {
