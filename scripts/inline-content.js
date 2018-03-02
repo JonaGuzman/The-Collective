@@ -19,7 +19,7 @@ function setContentFlower(flowerName, type, inlineId, desc, catVal, ...args) {
                                 "<ul>" +
                                     "<li id=yes>" + "<p>" + mobileDesc[0] + "  <span class='glyphicon glyphicon-ok'></span>" +"</p>" + "</li>" +
                                     "<li>" + "<p>" + mobileDesc[1] + "  </p>" + "</li>" +
-                                    "<li>" + "<p>" + mobileDesc[2] + "  </p>" +"</p>" + "</li>" +            
+                                    "<li>" + "<p>" + mobileDesc[2] + "  </p>" + "</li>" +            
                                 "</ul>" + "</div></div>";
     }
     

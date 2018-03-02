@@ -241,6 +241,24 @@
     }
 }
 
+
+/* Landscape on 7 plus screen */
+@media screen and (max-width: 750px) and (min-width: 730px) and (orientation: landscape) {
+    #tea1-overlay, #tea2-overlay {
+        width: 32.8% !important;
+        margin: 0 0 0 27px !important;
+    }
+    
+    #trending-overlay, #shop-overlay {
+        width: 19% !important;
+    }
+    
+    #flower1-overlay, #flower3-overlay, #flower2-overlay {
+        margin: 0 0 0 22px;
+    }
+}
+
+
 /* Landscape zoomed */
 @media screen and (min-width: 550px) and (max-width: 570px) and (orientation: landscape) {
     #tea1-overlay, #tea2-overlay {
