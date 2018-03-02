@@ -202,6 +202,7 @@
     
     .item5 {
         grid-gap: 0;
+        grid-template-columns: 33% 33% 33%;
     }
     
     #tea1-overlay,
