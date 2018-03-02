@@ -29,87 +29,72 @@
 
 <body>
 
-    <div class="main-container">
-
-        <div class="nav-container">
+    <div class="grid-container">
+        <div class="item1">
             <script>
                 window.onload = writeHeader("..");
             </script>
         </div>
-
-        <div id="main">
-
-            <div class="flower-items">
-                <ul>
-                    <div class="row">
-
-                        <div id="inline-content7" style=" display:none;">
-                            <script>
-                                var jsonFlower = JSON.parse(flowerB1());
-                                setContentFlower(jsonFlower.name, jsonFlower.type, jsonFlower.inline, jsonFlower.content, jsonFlower.ratings);
-                            </script>
-                        </div>
-                        
-                        <div id="inline-content8" style=" display:none;">
-                            <script>
-                                var jsonFlower = JSON.parse(flowerB2());
-                                setContentFlower(jsonFlower.name, jsonFlower.type, jsonFlower.inline, jsonFlower.content, jsonFlower.ratings);
-                            </script>
-                        </div>
-                        
-                        <div id="inline-content9" style=" display:none;">
-                            <script>
-                                var jsonFlower = JSON.parse(flowerB3());
-                                setContentFlower(jsonFlower.name, jsonFlower.type, jsonFlower.inline, jsonFlower.content, jsonFlower.ratings);
-                            </script>
-                        </div>
-                        
-                        <div id="inline-content10" style=" display:none;">
-                            <script>
-                                var jsonFlower = JSON.parse(flowerB4());
-                                setContentFlower(jsonFlower.name, jsonFlower.type, jsonFlower.inline, jsonFlower.content, jsonFlower.ratings);
-                            </script>
-                        </div>
-                        
-                        <div id="inline-content11" style=" display:none;">
-                            <script>
-                                var jsonFlower = JSON.parse(flowerB5());
-                                setContentFlower(jsonFlower.name, jsonFlower.type, jsonFlower.inline, jsonFlower.content, jsonFlower.ratings);
-                            </script>
-                        </div>
-                        
-                        <div id="inline-content12" style=" display:none;">
-                            <script>
-                                var jsonFlower = JSON.parse(flowerB6());
-                                setContentFlower(jsonFlower.name, jsonFlower.type, jsonFlower.inline, jsonFlower.content, jsonFlower.ratings);
-                            </script>
-                        </div>
-                        
-                        <li class="col-md-3 col-xs-1"><a href="#inline-content7" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a></li>
-                        <li class="col-md-3 col-xs-1"><a href="#inline-content8" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a></li>
-                        <li class="col-md-3 col-xs-1"><a href="#inline-content9" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a></li>
-                        <li class="col-md-3 col-xs-1"><a href="#inline-content10" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a></li>
-                        <li class="col-md-3 col-xs-1"><a href="#inline-content11" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a></li>
-                        <li class="col-md-3 col-xs-1"><a href="#inline-content12" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a></li>
-
-                    </div>
-                </ul>
-
-            </div>
-
-        </div>
-        <!-- End of Main -->
-
-        <div class="footer">
-            <div class="row">
-                <footer>
-                    <div id="footer-items"></div>
-                </footer>
-            </div>
+        
+        <div class="flower-type">
+            <div></div>
+            <div><h1>Flower 2</h1></div>
+            <div></div>
         </div>
 
+        <div class="flower">
+            <div id="inline-content7" style=" display:none;">
+                <script>
+                    var jsonFlower = JSON.parse(flowerB1());
+                    setContentFlower(jsonFlower.name, jsonFlower.type, jsonFlower.inline, jsonFlower.content, jsonFlower.ratings);
+                </script>
+            </div>
+
+            <div id="inline-content8" style=" display:none;">
+                <script>
+                    var jsonFlower = JSON.parse(flowerB2());
+                    setContentFlower(jsonFlower.name, jsonFlower.type, jsonFlower.inline, jsonFlower.content, jsonFlower.ratings);
+                </script>
+            </div>
+
+            <div id="inline-content9" style=" display:none;">
+                <script>
+                    var jsonFlower = JSON.parse(flowerB3());
+                    setContentFlower(jsonFlower.name, jsonFlower.type, jsonFlower.inline, jsonFlower.content, jsonFlower.ratings);
+                </script>
+            </div>
+
+            <div id="inline-content10" style=" display:none;">
+                <script>
+                    var jsonFlower = JSON.parse(flowerB4());
+                    setContentFlower(jsonFlower.name, jsonFlower.type, jsonFlower.inline, jsonFlower.content, jsonFlower.ratings);
+                </script>
+            </div>
+
+            <div id="inline-content11" style=" display:none;">
+                <script>
+                    var jsonFlower = JSON.parse(flowerB5());
+                    setContentFlower(jsonFlower.name, jsonFlower.type, jsonFlower.inline, jsonFlower.content, jsonFlower.ratings);
+                </script>
+            </div>
+
+            <div id="inline-content12" style=" display:none;">
+                <script>
+                    var jsonFlower = JSON.parse(flowerB6());
+                    setContentFlower(jsonFlower.name, jsonFlower.type, jsonFlower.inline, jsonFlower.content, jsonFlower.ratings);
+                </script>
+            </div>
+
+            <div><a href="#inline-content7" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a><h3>Flower Seven</h3></div>
+            <div><a href="#inline-content8" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a><h3>Flower Eight</h3></div>
+            <div><a href="#inline-content9" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a><h3>Flower Nine</h3></div>
+            <div><a href="#inline-content10" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a><h3>Flower Ten</h3></div>
+            <div><a href="#inline-content11" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a><h3>Flower Eleven</h3></div>
+            <div><a href="#inline-content12" rel="shadowbox[Demo]"><img src="images/flower.jpg"></a><h3>Flower Twelve</h3></div>
+        </div>
+        
+        <div class="item6" style="font-size: 15px;"></div>
     </div>
-
+    
 </body>
-
 </html>
