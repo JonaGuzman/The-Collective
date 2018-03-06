@@ -248,27 +248,32 @@ a {
 }
 
 /* zoomed view */
+
 @media screen and (min-width: 320px) and (max-width: 335px) {
 
     #sb-wrapper-inner {
         height: 464px !important;
     }
-    
+
     .mobile-ratings {
         padding-left: 9px;
         grid-template-columns: 35% 34%;
     }
-    
+
     .mobile-ratings ul {
         width: 95px;
     }
-    
+
     #tea-info p {
         width: 92px;
     }
-    
+
     #sb-body img {
         width: 245px;
+    }
+
+    #sb-wrapper-inner {
+        bottom: 70px;
     }
 }
 

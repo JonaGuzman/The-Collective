@@ -261,6 +261,10 @@ a {
     #sb-body img {
         width: 275px;
     }
+
+    #sb-wrapper-inner {
+        bottom: 70px;
+    }
 }
 
 @media screen and (min-width: 540px) and (max-width: 580px) and (orientation: landscape) {
