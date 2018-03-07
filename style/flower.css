@@ -273,7 +273,7 @@ a {
     }
 }
 
-@media (max-width: 750px) and (min-width: 500px) and (orientation: landscape) {
+@media (max-width: 800px) and (min-width: 500px) and (orientation: landscape) {
     
     .flower img {
         width: 200px;
@@ -356,5 +356,13 @@ a {
         height: 165px;
         width: 127px;
         padding-right: 0px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .flower {
+        grid-template-columns: 40% 40%;
+        justify-content: center;
+        margin: 0;
     }
 }

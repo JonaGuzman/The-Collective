@@ -238,6 +238,136 @@ li {
     }
 }
 
+@media (max-width: 2600px) and (min-width: 2000px) {
+
+    .item3 {
+        grid-template-columns: 37.5% 23% 37%;
+    }
+
+    #culture-text,
+    #tea-text {
+        font-size: 17px !important;
+    }
+
+    .item4 {
+        grid-gap: 6em;
+        grid-template-columns: 25% 24% 24.5%;
+    }
+
+    .item5 {
+        grid-gap: 1em 4em;
+        grid-auto-columns: 27% 27% 28%;
+    }
+
+    #flower1-overlay,
+    #flower3-overlay, 
+    #flower2-overlay {
+        margin-left: 49px;
+    }
+
+    #tea1-overlay,
+    #tea2-overlay {
+        margin-left: 183px;
+    }
+
+    .item3 img,
+    .item5 img,
+    #est-container img,
+    #trend-shop-container {
+        height: 600px;
+        width: 600px;
+    }
+
+    #tea1-overlay,
+    #tea2-overlay,
+    #flower1-overlay,
+    #flower3-overlay,
+    #flower2-overlay {
+        height: 600px;
+        width: 600px;
+    }
+
+    #trending-container,
+    #shop-container,
+    .trending img,
+    .trending,
+    .shop img,
+    .shop,
+    #trending-overlay,
+    #shop-overlay {
+        height: 300px;
+        width: 600px;
+    }   
+}
+
+
+@media (max-width: 2200px) and (min-width: 1800px) {
+    .item3 {
+        grid-template-columns: 37.5% 23% 37%;
+    }
+
+    .item3 img,
+    .item5 img,
+    #est-container img,
+    #trend-shop-container {
+        height: 580px;
+        width: 550px;
+    }
+
+    #culture-text,
+    #tea-text {
+        font-size: 17px !important;
+    }
+
+    .item4 {
+        grid-gap: 3em;
+        grid-template-columns: 25% 25% 24.5%
+    }
+
+    .item5 {
+        grid-gap: 1em 3em;
+        grid-auto-columns: 27% 27% 28%;
+    }
+
+    #tea1-overlay,    
+    #tea2-overlay {
+        margin-left: 80px;
+    }
+
+    #tea1-overlay,
+    #tea2-overlay,
+    #flower1-overlay,
+    #flower3-overlay,
+    #flower2-overlay {
+        height: 580px;
+        width: 550px;
+    }
+
+    #trending-container,
+    #shop-container,
+    .trending img,
+    .trending,
+    .shop img,
+    .shop,
+    #trending-overlay,
+    #shop-overlay {
+        height: 290px;
+        width: 500px;
+    }
+}
+
+@media (max-width: 1440px) {
+        .item4 {
+        grid-gap: 4em;
+        grid-template-columns: 24.7% 25% 24.5%;
+    }
+
+        .item5 {
+        grid-gap: 1em 4em;
+    }
+
+}
+
 @media screen and (max-width: 1040px) {
 
     .auto-fit {
