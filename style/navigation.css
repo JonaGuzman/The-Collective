@@ -95,6 +95,12 @@
     transition: margin-left .5s;
 }
 
+@media screen and (max-width: 1300px) {
+    .item1 {
+        grid-template-columns: 51% 35% 10%;
+    }
+}
+
 @media screen and (min-width: 800px) {
     #hours {
         margin-right: 30px;
@@ -354,7 +360,6 @@ ol {
 .item6 {
     grid-area: footer;
     display: grid;
-    height: 300px;
     background-color: #123132 !important;
 }
 
