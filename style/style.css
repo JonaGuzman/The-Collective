@@ -107,7 +107,7 @@ li {
     grid-area: flower;
     display: grid;
     justify-content: center;
-    grid-gap: 1em 2em;
+    grid-gap: 1em 2.2em;
     grid-auto-flow: column;
     margin-bottom: 1em;
 }
@@ -356,7 +356,7 @@ li {
     }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1440px) and (min-width: 1400px) {
         .item4 {
         grid-gap: 4em;
         grid-template-columns: 24.7% 25% 24.5%;

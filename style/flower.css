@@ -199,9 +199,9 @@ a {
     
     .flower {
         grid-auto-flow: row;
-        grid-area: flower;
-        grid-gap: 24px 57px;
-        grid-template-columns: 30% 50%;
+        grid-gap: 2em;
+        grid-template-columns: 42% 44%;
+        margin: 10px 0 30px 0;
     }
     
     .flower > div > h3 {
@@ -245,7 +245,12 @@ a {
     
     .flower {
         grid-gap: 24px;
-        grid-template-columns: 60%
+        grid-template-columns: 42% 44%;
+    }
+
+    .flower img {
+        width: 140px;
+        height: 165px;
     }
     
     .mobile-ratings {
@@ -359,7 +364,7 @@ a {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 900px) {
     .flower {
         grid-template-columns: 40% 40%;
         justify-content: center;
