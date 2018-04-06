@@ -108,6 +108,15 @@ a {
     padding-left: 55px;
 }
 
+/* zoomed view with no grid */
+@supports not (display: grid) and (max-width: 425px) {
+    
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 /* zoomed view */
 @media screen and (min-width: 320px) and (max-width: 335px) {
     .load-more img {

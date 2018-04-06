@@ -350,6 +350,15 @@
         }
     }
 
+/* zoomed view with no grid */
+@supports not (display: grid) and (max-width: 425px) {
+    
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 /* zoomed view */
 @media screen and (min-width: 312px) and (max-width: 335px) {
     
