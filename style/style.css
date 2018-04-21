@@ -436,18 +436,13 @@ li {
     }
 }
 
-/* zoomed view with no grid */
-@supports not (display: grid) and (max-width: 425px) {
+@media screen and (min-width: 315px) and (max-width: 330px) {
     
     .grid-container {
         display: flex;
         flex-direction: column;
     }
-}
 
-
-@media screen and (min-width: 315px) and (max-width: 330px) {
-    
     #myCarousel {
         margin: 0 0;
     }
