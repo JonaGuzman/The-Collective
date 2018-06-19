@@ -175,14 +175,6 @@ li {
     width: 366px;
 }
 
-#tea1-container,
-#tea2-container,
-#trending-container,
-#shop-container,
-#flower1-container,
-#flower3-container,
-#flower2-container {}
-
 /* image sizes for tea, culture and flower area */
 
 .item3 img,
@@ -457,8 +449,16 @@ li {
     }
 
     #culture-text {
-        width: 305px;
+        width: 285px;
+        padding-left: 2.5em;
         font-size: 13px !important;
+    }
+
+    /* Add padding where item5 contains 'container' */
+    #tea2-container,
+    #est-container,
+    .item5 > div[id*='container'] {
+        padding-top: 1em;
     }
 
     #trend-shop-container, #est-container {
@@ -583,6 +583,7 @@ li {
     
     .item3 {
         margin-top: -1em;
+        grid-gap: 1em;
     }
     
     #link-regular {
@@ -598,7 +599,7 @@ li {
     }
     
     .item4 {
-        margin: 1em 0 1em 0;
+        margin: 0 0 1em 0;
     }
     
     #item-header-mobile {
