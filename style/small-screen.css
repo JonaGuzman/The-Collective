@@ -163,7 +163,7 @@
     .item3 {
         grid-gap: 0;
         grid-auto-flow: column;
-        grid-template-columns: 40% 10% 40%;
+        grid-template-columns: 1fr .5fr 1fr;
         margin-top: 0;
     }
     
@@ -176,12 +176,20 @@
     }
     
     .item4 {
-        grid-gap: .7em;
-        grid-template-columns: 38% 21% 34%;
+        grid-gap: 1em;
+        grid-template-columns: 36% 18% 34%;
+    }
+
+    #culture-text h1 {
+        margin-top: 0;
     }
     
     #culture-text {
-        font-size: 11px !important;
+        font-size: 11.5px !important;
+    }
+
+    #culture-text p {
+        text-align: justify;
     }
     
     #trend-shop-container,
@@ -196,8 +204,17 @@
     .trending,
     .shop img,
     .shop {
-        height: 155px;
-        width: 140px;
+        height: 153px;
+        width: 141px;
+    }
+
+    /* image sizes for tea, culture and flower area */
+    .image3 li,
+    .image5 li,
+    #est-container li,
+    .item3 img,
+    .item5 img {
+        height: 305px;
     }
     
     .item5 {
@@ -263,16 +280,34 @@
 /* Landscape zoomed */
 @media screen and (min-width: 550px) and (max-width: 570px) and (orientation: landscape) {
     #tea1-overlay, #tea2-overlay {
-        width: 32.5% !important;
-        margin: 0 0 0 21px !important;
+        width: 33% !important;
+        margin: 0 0 0 20px !important;
     }
     
     #trending-overlay, #shop-overlay {
         width: 24.7% !important;
     }
+
+    .item4 {
+        grid-gap: .7em;
+        grid-template-columns: 35% 22% 31%;
+    }
     
     #flower1-overlay, #flower3-overlay, #flower2-overlay {
-        margin: 0 0 0 15px;
+        margin: 0 0 0 17px;
+    }
+
+    #est-container {
+        margin-right: -10px;
+    }
+
+    .slick-next {
+        right: -19px !important;
+    }
+
+    #culture-text p {
+        text-align: center;
+        font-size: 10.5px !important;
     }
 }
 
@@ -340,32 +375,5 @@
     #flower3-overlay,
     #flower2-overlay {
         width: 59%;
-    }
-}
-
-/* Landscape */
-@media screen and (max-width: 667px) and (min-width: 650px) and (orientation: landscape) {
-        .carousel-indicators {
-            width: 705px;
-        }
-    }
-
-/* zoomed view */
-@media screen and (min-width: 312px) and (max-width: 335px) {
-    .grid-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .carousel-inner {
-        height: 600px;
-    }
-    
-    .carousel {
-        width: 320px;
-    }
-    
-    .carousel-indicators {
-        left: 48%;
     }
 }
