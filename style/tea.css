@@ -467,8 +467,7 @@ a {
     }
 }
 
-
-@media (max-width: 2000px) {
+@media (max-width: 2000px) and (min-width: 1000px) {
     .item6 {
         height: 340px;
     }
